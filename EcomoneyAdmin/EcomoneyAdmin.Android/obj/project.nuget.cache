@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "v7sGP5UCwhhGc1I1VNI/gjBuvZVjXfJWeLvKtiURPALbm1nRadTg9DMYeOge6uPdxdVAv9XSoQba3ww1pTT+7A==",
+  "dgSpecHash": "mNd0DX510mRkodbiliQjjkGCc3yLCJd92oDfmDMOukQr+PcmiwqXmg4if9FzJ+H1U3gQB0bxpVfOmU3FdlREaQ==",
   "success": true,
   "projectFilePath": "D:\\1-Software\\Platzi\\B-Projects\\DMP\\EcoMoney\\EcomoneyAdmin\\EcomoneyAdmin.Android\\EcomoneyAdmin.Android.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\aleVR\\.nuget\\packages\\system.componentmodel\\4.3.0\\system.componentmodel.4.3.0.nupkg.sha512",
     "C:\\Users\\aleVR\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",
     "C:\\Users\\aleVR\\.nuget\\packages\\xamarin.androidx.activity\\1.2.4.1\\xamarin.androidx.activity.1.2.4.1.nupkg.sha512",
     "C:\\Users\\aleVR\\.nuget\\packages\\xamarin.androidx.annotation\\1.2.0.1\\xamarin.androidx.annotation.1.2.0.1.nupkg.sha512",
@@ -60,6 +61,7 @@
     "C:\\Users\\aleVR\\.nuget\\packages\\xamarin.androidx.viewpager2\\1.0.0.10\\xamarin.androidx.viewpager2.1.0.0.10.nupkg.sha512",
     "C:\\Users\\aleVR\\.nuget\\packages\\xamarin.essentials\\1.7.0\\xamarin.essentials.1.7.0.nupkg.sha512",
     "C:\\Users\\aleVR\\.nuget\\packages\\xamarin.forms\\5.0.0.2196\\xamarin.forms.5.0.0.2196.nupkg.sha512",
+    "C:\\Users\\aleVR\\.nuget\\packages\\xamarin.forms.pancakeview\\2.3.0.759\\xamarin.forms.pancakeview.2.3.0.759.nupkg.sha512",
     "C:\\Users\\aleVR\\.nuget\\packages\\xamarin.google.android.material\\1.4.0.2\\xamarin.google.android.material.1.4.0.2.nupkg.sha512",
     "C:\\Users\\aleVR\\.nuget\\packages\\xamarin.google.guava.listenablefuture\\1.0.0.2\\xamarin.google.guava.listenablefuture.1.0.0.2.nupkg.sha512"
   ],

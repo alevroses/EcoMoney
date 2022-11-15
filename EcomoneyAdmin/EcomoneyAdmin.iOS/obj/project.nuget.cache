@@ -1,12 +1,14 @@
 {
   "version": 2,
-  "dgSpecHash": "oDguYaX6cY/kAs/C6XXbuYnRfUGMwVCnSHf/CF4GIwpcC4HMbgWAcBVZSXr0TjY72D3LIS2GmSjb73cXE3OZkg==",
+  "dgSpecHash": "4118pYbElDVUcGMHsaJbiAaF4Va/105/0UDhVkYNb5lO2Vv4R3O2Gi7sa5q2MpXSoIjCI2vcSz9Z/1TyoxZq3A==",
   "success": true,
   "projectFilePath": "D:\\1-Software\\Platzi\\B-Projects\\DMP\\EcoMoney\\EcomoneyAdmin\\EcomoneyAdmin.iOS\\EcomoneyAdmin.iOS.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\aleVR\\.nuget\\packages\\system.componentmodel\\4.3.0\\system.componentmodel.4.3.0.nupkg.sha512",
     "C:\\Users\\aleVR\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",
     "C:\\Users\\aleVR\\.nuget\\packages\\xamarin.essentials\\1.7.0\\xamarin.essentials.1.7.0.nupkg.sha512",
-    "C:\\Users\\aleVR\\.nuget\\packages\\xamarin.forms\\5.0.0.2196\\xamarin.forms.5.0.0.2196.nupkg.sha512"
+    "C:\\Users\\aleVR\\.nuget\\packages\\xamarin.forms\\5.0.0.2196\\xamarin.forms.5.0.0.2196.nupkg.sha512",
+    "C:\\Users\\aleVR\\.nuget\\packages\\xamarin.forms.pancakeview\\2.3.0.759\\xamarin.forms.pancakeview.2.3.0.759.nupkg.sha512"
   ],
   "logs": []
 }

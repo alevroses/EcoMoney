@@ -1,8 +1,22 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="EcomoneyAdmin.Vistas.Menuprincipal">
-    <Grid>
-        
+             x:Class="EcomoneyAdmin.Vistas.Menuprincipal"
+             xmlns:degradado="clr-namespace:Xamarin.Forms.PancakeView;assembly=Xamarin.Forms.PancakeView">
+    <Grid RowDefinitions="*,*,*,*"
+          BackgroundColor="#26213d">
+        <degradado:PancakeView BackgroundColor="#191725"
+                               CornerRadius="0,0,30,30">
+            <Frame Margin="15,30,15,30"
+                   CornerRadius="15"
+                   HasShadow="False">
+                <Frame.Background>
+                    <LinearGradientBrush>
+                        <GradientStop Color="#191725"/>
+                        <GradientStop Color="#813fdf"/>
+                    </LinearGradientBrush>
+                </Frame.Background>
+            </Frame>
+        </degradado:PancakeView>
     </Grid>
 </ContentPage>
