@@ -1,6 +1,7 @@
 ﻿using System;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
+using EcomoneyAdmin.Vistas;
 
 namespace EcomoneyAdmin
 {
@@ -10,7 +11,7 @@ namespace EcomoneyAdmin
         {
             InitializeComponent();
 
-            MainPage = new MainPage();
+            MainPage = new Menuprincipal();
         }
 
         protected override void OnStart()
