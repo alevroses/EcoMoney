@@ -3,7 +3,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="EcomoneyAdmin.Vistas.Menuprincipal"
              xmlns:degradado="clr-namespace:Xamarin.Forms.PancakeView;assembly=Xamarin.Forms.PancakeView">
-    <Grid RowDefinitions="*,*,*,*"
+    <Grid RowDefinitions="300,*,*,*"
           BackgroundColor="#26213d">
         <degradado:PancakeView BackgroundColor="#191725"
                                CornerRadius="0,0,30,30">
@@ -22,8 +22,23 @@
                            FontAttributes="Bold"
                            HorizontalOptions="Center"/>
                     <Grid ColumnDefinitions="*,*">
-                        <StackLayout>
-                            
+                        <StackLayout VerticalOptions="Center">
+                            <Image Source="https://i.postimg.cc/1RMctdHx/container.png"
+                                   HeightRequest="30"
+                                   HorizontalOptions="Start"/>
+                            <StackLayout Orientation="Horizontal">
+                                <Label Text="Eco"
+                                       CharacterSpacing="10"
+                                       FontSize="18"
+                                       FontAttributes="Bold"
+                                       VerticalOptions="Center"/>
+                                <Button Text="Money"
+                                        BackgroundColor="White"
+                                        CornerRadius="15"
+                                        FontAttributes="Bold"
+                                        TextColor="#26213d"
+                                        FontSize="20"/>
+                            </StackLayout>
                         </StackLayout>
                         <Image Grid.Column="1"
                                Source="https://i.postimg.cc/CLN5Cy27/forest.png"/>
@@ -31,5 +46,23 @@
                 </StackLayout>
             </Frame>
         </degradado:PancakeView>
+        <Frame Grid.Row="1"
+               CornerRadius="20"
+               HasShadow="False"
+               Margin="15, 15, 15, 0">
+            <Grid ColumnDefinitions="*,*">
+                <StackLayout>
+                    <Frame HasShadow="False"
+                           Padding="0"
+                           BackgroundColor="#EEF1FD"
+                           CornerRadius="25"
+                           HorizontalOptions="Center">
+                        <Image Source="https://i.postimg.cc/0Nj5xbcK/hero.png"
+                               HeightRequest="35"
+                               Margin="10"/>
+                    </Frame>
+                </StackLayout>
+            </Grid>
+        </Frame>
     </Grid>
 </ContentPage>
