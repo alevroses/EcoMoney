@@ -3,7 +3,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="EcomoneyAdmin.Vistas.Menuprincipal"
              xmlns:degradado="clr-namespace:Xamarin.Forms.PancakeView;assembly=Xamarin.Forms.PancakeView">
-    <Grid RowDefinitions="300,*,*,*"
+    <Grid RowDefinitions="300,*,40,*"
           BackgroundColor="#26213d">
         <degradado:PancakeView BackgroundColor="#191725"
                                CornerRadius="0,0,30,30">
@@ -49,20 +49,71 @@
         <Frame Grid.Row="1"
                CornerRadius="20"
                HasShadow="False"
-               Margin="15, 15, 15, 0">
-            <Grid ColumnDefinitions="*,*">
+               Margin="15, 15, 15, 0"
+               Padding="10">
+            <Grid ColumnDefinitions="*,*"
+                  VerticalOptions="Center">
                 <StackLayout>
                     <Frame HasShadow="False"
                            Padding="0"
                            BackgroundColor="#EEF1FD"
-                           CornerRadius="25"
+                           CornerRadius="50"
                            HorizontalOptions="Center">
                         <Image Source="https://i.postimg.cc/0Nj5xbcK/hero.png"
                                HeightRequest="35"
                                Margin="10"/>
                     </Frame>
+                    <Label Text="CONFIGURAR"
+                           HorizontalOptions="Center"
+                           TextColor="Black"
+                           FontSize="12"
+                           FontAttributes="Bold"
+                           CharacterSpacing="2"/>
+                </StackLayout>
+                <StackLayout Grid.Column="1">
+                    <Frame HasShadow="False"
+                           Padding="0"
+                           BackgroundColor="#EBFAF9"
+                           CornerRadius="50"
+                           HorizontalOptions="Center">
+                        <Image Source="https://i.postimg.cc/k4fxGjSX/assign.png"
+                               HeightRequest="35"
+                               Margin="10" />
+                    </Frame>
+                    <Label Text="ASIGNACIONES"
+                           HorizontalOptions="Center"
+                           TextColor="Black"
+                           FontSize="12"
+                           FontAttributes="Bold"
+                           CharacterSpacing="2" />
                 </StackLayout>
             </Grid>
+        </Frame>
+        <Label Grid.Row="2"
+               Text="Solicitudes de recojo"
+               FontAttributes="Bold"
+               FontSize="18"
+               TextColor="White"
+               Margin="16,0,0,0"
+               VerticalOptions="Center"/>
+        <Frame Grid.Row="3"
+               CornerRadius="20"
+               Margin="15,0,15,0"
+               HasShadow="False">
+            <CollectionView>
+                <CollectionView.ItemsLayout>
+                    <GridItemsLayout Orientation="Vertical"
+                                     Span="1"
+                                     VerticalItemSpacing="20"/>
+                </CollectionView.ItemsLayout>
+                <CollectionView.ItemTemplate>
+                    <DataTemplate>
+                        <Frame>
+                            
+                        </Frame>
+                    </DataTemplate>
+                </CollectionView.ItemTemplate>
+            </CollectionView>
         </Frame>
     </Grid>
 </ContentPage>
