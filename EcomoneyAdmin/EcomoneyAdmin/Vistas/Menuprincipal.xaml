@@ -11,11 +11,24 @@
                    CornerRadius="15"
                    HasShadow="False">
                 <Frame.Background>
-                    <LinearGradientBrush>
-                        <GradientStop Color="#191725"/>
-                        <GradientStop Color="#813fdf"/>
+                    <LinearGradientBrush EndPoint="1,0">
+                        <GradientStop Color="#813fdf" Offset="0.1"/>
+                        <GradientStop Color="#191725" Offset="1.0"/>
                     </LinearGradientBrush>
                 </Frame.Background>
+                <StackLayout>
+                    <Label Text="Administrador"
+                           FontSize="25"
+                           FontAttributes="Bold"
+                           HorizontalOptions="Center"/>
+                    <Grid ColumnDefinitions="*,*">
+                        <StackLayout>
+                            
+                        </StackLayout>
+                        <Image Grid.Column="1"
+                               Source="https://i.postimg.cc/CLN5Cy27/forest.png"/>
+                    </Grid>
+                </StackLayout>
             </Frame>
         </degradado:PancakeView>
     </Grid>
