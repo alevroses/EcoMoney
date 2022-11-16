@@ -9,6 +9,118 @@
                 <GradientStop Color="#26213d" Offset="1.0"/>
             </LinearGradientBrush>
         </Grid.Background>
-        <ImageButton Source="leftarrow.png"/>
+        <ImageButton Source="https://i.postimg.cc/0yyLwbqv/leftarrow.png"
+                     BackgroundColor="Transparent"
+                     HorizontalOptions="Start"
+                     Margin="10,40,0,0"/>
+        <ScrollView Grid.Row="1">
+            <Grid ColumnDefinitions="*,*"
+                  RowDefinitions="auto,auto,auto"
+                  Margin="20">
+                <Frame CornerRadius="15"
+                       HasShadow="False"
+                       VerticalOptions="Center"
+                       HorizontalOptions="Center">
+                    <StackLayout VerticalOptions="Center"
+                                 Margin="15">
+                        <Frame BackgroundColor="#A1E6B2"
+                               CornerRadius="100"
+                               HasShadow="False">
+                            <Image Source="https://i.postimg.cc/m2npnVHc/truck.png" />
+                        </Frame>
+                        <Label Text="Recolectores"
+                               FontSize="20"
+                               FontAttributes="Bold"
+                               TextColor="#26213d"
+                               HorizontalOptions="Center"
+                               VerticalOptions="Center"/>
+                    </StackLayout>
+                </Frame>
+                <Frame CornerRadius="15"
+                       HasShadow="False"
+                       Grid.Row="0"
+                       Grid.Column="1"
+                       VerticalOptions="Center"
+                       HorizontalOptions="Center">
+                    <StackLayout VerticalOptions="Center"
+                                 Margin="15">
+                        <Frame BackgroundColor="#A1E6B2"
+                               CornerRadius="100"
+                               HasShadow="False">
+                            <Image Source="https://i.postimg.cc/m2npnVHc/truck.png" />
+                        </Frame>
+                        <Label Text="Recolectores"
+                               FontSize="20"
+                               FontAttributes="Bold"
+                               TextColor="#26213d"
+                               HorizontalOptions="Center"
+                               VerticalOptions="Center" />
+                    </StackLayout>
+                </Frame>
+                <Frame CornerRadius="15"
+                       HasShadow="False"
+                       Grid.Row="1"
+                       Grid.Column="0"
+                       VerticalOptions="Center"
+                       HorizontalOptions="Center">
+                    <StackLayout VerticalOptions="Center"
+                                 Margin="15">
+                        <Frame BackgroundColor="#A1E6B2"
+                               CornerRadius="100"
+                               HasShadow="False">
+                            <Image Source="https://i.postimg.cc/m2npnVHc/truck.png" />
+                        </Frame>
+                        <Label Text="Recolectores"
+                               FontSize="20"
+                               FontAttributes="Bold"
+                               TextColor="#26213d"
+                               HorizontalOptions="Center"
+                               VerticalOptions="Center" />
+                    </StackLayout>
+                </Frame>
+                <Frame CornerRadius="15"
+                       HasShadow="False"
+                       Grid.Row="1"
+                       Grid.Column="1"
+                       VerticalOptions="Center"
+                       HorizontalOptions="Center">
+                    <StackLayout VerticalOptions="Center"
+                                 Margin="15">
+                        <Frame BackgroundColor="#A1E6B2"
+                               CornerRadius="100"
+                               HasShadow="False">
+                            <Image Source="https://i.postimg.cc/m2npnVHc/truck.png" />
+                        </Frame>
+                        <Label Text="Recolectores"
+                               FontSize="20"
+                               FontAttributes="Bold"
+                               TextColor="#26213d"
+                               HorizontalOptions="Center"
+                               VerticalOptions="Center" />
+                    </StackLayout>
+                </Frame>
+                <Frame CornerRadius="15"
+                       HasShadow="False"
+                       Grid.Row="2"
+                       Grid.Column="0"
+                       VerticalOptions="Center"
+                       HorizontalOptions="Center">
+                    <StackLayout VerticalOptions="Center"
+                                 Margin="15">
+                        <Frame BackgroundColor="#A1E6B2"
+                               CornerRadius="100"
+                               HasShadow="False">
+                            <Image Source="https://i.postimg.cc/m2npnVHc/truck.png" />
+                        </Frame>
+                        <Label Text="Recolectores"
+                               FontSize="20"
+                               FontAttributes="Bold"
+                               TextColor="#26213d"
+                               HorizontalOptions="Center"
+                               VerticalOptions="Center" />
+                    </StackLayout>
+                </Frame>
+            </Grid>
+        </ScrollView>
     </Grid>
 </ContentPage>
