@@ -636,3 +636,4 @@ D:\1-Software\Platzi\B-Projects\DMP\EcoMoney\EcomoneyAdmin\EcomoneyAdmin.Android
 D:\1-Software\Platzi\B-Projects\DMP\EcoMoney\EcomoneyAdmin\EcomoneyAdmin.Android\obj\Debug\120\android\bin\com.mrjed.ecomoneyadmin.aab
 D:\1-Software\Platzi\B-Projects\DMP\EcoMoney\EcomoneyAdmin\EcomoneyAdmin.Android\obj\Debug\120\android\bin\com.mrjed.ecomoneyadmin.apks
 D:\1-Software\Platzi\B-Projects\DMP\EcoMoney\EcomoneyAdmin\EcomoneyAdmin.Android\obj\Debug\120\android\src\com\mrjed\ecomoneyadmin\R.java
+D:\1-Software\Platzi\B-Projects\DMP\EcoMoney\EcomoneyAdmin\EcomoneyAdmin.Android\obj\Debug\120\res\drawable\leftarrow.png
