@@ -6,6 +6,8 @@ using System.Windows.Input;
 using Xamarin.Forms;
 using EcomoneyAdmin.Datos;
 using EcomoneyAdmin.Modelo;
+using Firebase.Auth;
+using EcomoneyAdmin.Conexiones;
 
 namespace EcomoneyAdmin.VistaModelo
 {
@@ -15,6 +17,7 @@ namespace EcomoneyAdmin.VistaModelo
         string txtnombre;
         string txtcorreo;
         string txtidentificacion;
+        string txtcontraseña;
         #endregion
 
         #region CONSTRUCTOR
@@ -22,10 +25,17 @@ namespace EcomoneyAdmin.VistaModelo
         {
             Navigation = navigation;
             Insertarcomamd = new Command(async () => await InsertarRecolectores());
+            Volvercomamd = new Command(async () => await Volver());
         }
         #endregion
 
         #region OBJETOS
+        public string Txtcontraseña
+        {
+            get { return txtcontraseña; }
+            set { SetValue(ref txtcontraseña, value); }
+        }
+
         public string Txtnombre
         {
             get { return txtnombre; }
@@ -46,6 +56,11 @@ namespace EcomoneyAdmin.VistaModelo
         #endregion
 
         #region PROCESOS
+        private async Task Volver()
+        {
+            await Navigation.PopAsync();
+        }
+
         private async Task InsertarRecolectores()
         {
             var funcion = new Drecolectores();
@@ -60,13 +75,21 @@ namespace EcomoneyAdmin.VistaModelo
 
             if(estadofuncion == true)
             {
-                await DisplayAlert("Estado", "Registro realizado", "Ok");
+                await CrearCorreo(Txtcorreo, Txtcontraseña);
             }            
+        }
+
+        private async Task CrearCorreo(string correo, string contraseña)
+        {
+            var authProvider = new FirebaseAuthProvider(new FirebaseConfig(Constantes.WebapyFirebase));
+            await authProvider.CreateUserWithEmailAndPasswordAsync(correo, contraseña);
+            await DisplayAlert("Estado", "Registro realizado", "Ok");
         }
         #endregion
 
         #region COMANDOS
-        public Command Insertarcomamd { get; }        
+        public Command Insertarcomamd { get; }
+        public Command Volvercomamd { get; }
         #endregion
     }
 }

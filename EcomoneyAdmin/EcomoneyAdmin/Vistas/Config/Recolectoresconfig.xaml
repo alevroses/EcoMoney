@@ -14,7 +14,8 @@
             <ImageButton Source="https://i.postimg.cc/0yyLwbqv/leftarrow.png"
                          BackgroundColor="Transparent"
                          HorizontalOptions="Start"
-                         Margin="10,40,0,0"/>
+                         Margin="10,40,0,0"
+                         Command="{Binding Volvercomamd}"/>
             <Frame Grid.Row="1" Padding="0"
                    Margin="10"
                    CornerRadius="15"
@@ -73,7 +74,8 @@
                         <Entry FontSize="18"
                                Placeholder="Ingrese la contraseña"
                                HorizontalOptions="FillAndExpand"
-                               TextColor="#7c7b7c"/>
+                               TextColor="#7c7b7c"
+                               Text="{Binding Txtcontraseña}"/>
                     </StackLayout>
                     <Button Text="Guardar"
                             HorizontalOptions="Center"
