@@ -20,6 +20,7 @@ namespace EcomoneyAdmin.VistaModelo
         public VMpatron(INavigation navigation)
         {
             Navigation = navigation;
+            Logincomamd = new Command(async() => await proceso());
         }
         #endregion
 
@@ -32,7 +33,7 @@ namespace EcomoneyAdmin.VistaModelo
         #endregion
 
         #region PROCESOS
-        public async Task ProcesoAsyncrono()
+        public async Task proceso()
         {
 
         }
@@ -45,8 +46,9 @@ namespace EcomoneyAdmin.VistaModelo
         #endregion
 
         #region COMANDOS
+        public Command Logincomamd { get;}
         //Llamar al Proceso Asincrona: await es para tareas asincronas
-        public ICommand ProcesoAsyncommand => new Command(async () => await ProcesoAsyncrono());
+        //public ICommand ProcesoAsyncommand => new Command(async () => await ProcesoAsyncrono());
         //Llamar al Proceso Simple o no Asincrono
         public ICommand ProcesoSimpcommand => new Command(ProcesoSimple);
         #endregion
