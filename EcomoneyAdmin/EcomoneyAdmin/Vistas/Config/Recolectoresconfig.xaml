@@ -31,7 +31,8 @@
                         <Entry FontSize="18"
                                Placeholder="Ingrese el nombre"
                                HorizontalOptions="FillAndExpand"
-                               TextColor="#7c7b7c"/>
+                               TextColor="#7c7b7c"
+                               Text="{Binding Txtnombre}"/>
                     </StackLayout>
                     <StackLayout Orientation="Horizontal">
                         <Image Source="https://i.postimg.cc/Vk6PYJCH/biometric-identification.png"
@@ -44,7 +45,8 @@
                         <Entry FontSize="18"
                                Placeholder="Ingrese la identificación"
                                HorizontalOptions="FillAndExpand"
-                               TextColor="#7c7b7c"/>
+                               TextColor="#7c7b7c"
+                               Text="{Binding Txtidentificacion}"/>
                     </StackLayout>
                     <StackLayout Orientation="Horizontal">
                         <Image Source="https://i.postimg.cc/tTrhGmQc/email.png"
@@ -57,7 +59,8 @@
                         <Entry FontSize="18"
                                Placeholder="Ingrese el correo"
                                HorizontalOptions="FillAndExpand"
-                               TextColor="#7c7b7c"/>
+                               TextColor="#7c7b7c"
+                               Text="{Binding Txtcorreo}"/>
                     </StackLayout>
                     <StackLayout Orientation="Horizontal">
                         <Image Source="https://i.postimg.cc/J49ztwNL/password.png"
@@ -77,7 +80,8 @@
                             CornerRadius="15"
                             BackgroundColor="White"
                             FontAttributes="Bold"
-                            VerticalOptions="EndAndExpand"/>
+                            VerticalOptions="EndAndExpand"
+                            Command="{Binding Insertarcomamd}"/>
                     <Image Source="https://i.postimg.cc/m2npnVHc/truck.png"
                            HeightRequest="280"/>
                 </StackLayout>

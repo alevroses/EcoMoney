@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
+using EcomoneyAdmin.VistaModelo;
 
 namespace EcomoneyAdmin.Vistas.Config
 {
@@ -15,6 +16,7 @@ namespace EcomoneyAdmin.Vistas.Config
         public Recolectoresconfig()
         {
             InitializeComponent();
+            BindingContext = new VMrecolectoresconfig(Navigation);
         }
     }
 }
