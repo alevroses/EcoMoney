@@ -45,7 +45,7 @@
                                CornerRadius="200"
                                HasShadow="False"
                                HorizontalOptions="Center">
-                            <Image Source="https://i.postimg.cc/dQkVPwQQ/recycling.png" />
+                            <Image Source="https://i.postimg.cc/dQkVPwQQ/recycling.png"/>
                         </Frame>
                         <Label Text="Productos"
                                FontSize="20"

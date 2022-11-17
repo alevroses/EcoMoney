@@ -2,7 +2,8 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="EcomoneyAdmin.Vistas.Menuprincipal"
-             xmlns:degradado="clr-namespace:Xamarin.Forms.PancakeView;assembly=Xamarin.Forms.PancakeView">
+             xmlns:degradado="clr-namespace:Xamarin.Forms.PancakeView;assembly=Xamarin.Forms.PancakeView"
+             NavigationPage.HasNavigationBar="False">
     <Grid RowDefinitions="300,130,40,*"
           BackgroundColor="#26213d">
         <degradado:PancakeView BackgroundColor="#191725"
@@ -59,11 +60,10 @@
                            BackgroundColor="#EEF1FD"
                            CornerRadius="50"
                            HorizontalOptions="Center">
-                        <ImageButton Source="https://i.postimg.cc/0Nj5xbcK/hero.png"
+                        <Image Source="https://i.postimg.cc/0Nj5xbcK/hero.png"
                                HeightRequest="35"
                                Margin="10"
-                               x:Name="btnconfig"
-                               Clicked="btnconfig_Clicked" />
+                               x:Name="btnconfig"/>
                     </Frame>
                     <Label Text="CONFIGURAR"
                            HorizontalOptions="Center"
@@ -71,6 +71,9 @@
                            FontSize="12"
                            FontAttributes="Bold"
                            CharacterSpacing="2"/>
+                    <StackLayout.GestureRecognizers>
+                        <TapGestureRecognizer Command="{Binding Navegarmenuconfigcomamd}"/>
+                    </StackLayout.GestureRecognizers>
                 </StackLayout>
                 <StackLayout Grid.Column="1">
                     <Frame HasShadow="False"
@@ -102,7 +105,8 @@
                CornerRadius="20"
                Margin="15,0,15,0"
                HasShadow="False">
-            <CollectionView>
+            <CollectionView ItemsSource="{Binding ListasolRecojo}"
+                            x:Name="Listasolicitudes">
                 <CollectionView.ItemsLayout>
                     <GridItemsLayout Orientation="Vertical"
                                      Span="1"
@@ -111,7 +115,16 @@
                 <CollectionView.ItemTemplate>
                     <DataTemplate>
                         <Frame>
-                            
+                            <StackLayout Orientation="Horizontal">
+                                <Label Text="{Binding Idsolicitud}"
+                                       VerticalOptions="Center"/>
+                                <Button Text="Asignar"
+                                        CornerRadius="15"
+                                        FontAttributes="Bold"
+                                        Command="{Binding Source={x:Reference Listasolicitudes},
+                                    Path=BindingContext.NavegarAsignacionescomamd}"
+                                        CommandParameter="{Binding .}"/>
+                            </StackLayout>
                         </Frame>
                     </DataTemplate>
                 </CollectionView.ItemTemplate>

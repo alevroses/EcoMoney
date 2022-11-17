@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
+using EcomoneyAdmin.VistaModelo;
 
 namespace EcomoneyAdmin.Vistas
 {
@@ -15,6 +16,7 @@ namespace EcomoneyAdmin.Vistas
         public Menuprincipal()
         {
             InitializeComponent();
+            BindingContext = new VMmenuprincipal(Navigation);
         }
         
     }

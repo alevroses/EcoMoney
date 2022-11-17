@@ -20,7 +20,6 @@
     <Folder Include="Datos\" />
     <Folder Include="Modelo\" />
     <Folder Include="Conexiones\" />
-    <Folder Include="VistaModelo\" />
   </ItemGroup>
 
   <ItemGroup>
