@@ -103,7 +103,7 @@
                             FontAttributes="Bold"
                             VerticalOptions="EndAndExpand"
                             Command="{Binding Insertarcomamd}" />
-                    <Image Source="https://i.postimg.cc/m2npnVHc/truck.png"
+                    <Image Source="https://i.postimg.cc/dQkVPwQQ/recycling.png"
                            HeightRequest="280" />
                 </StackLayout>
             </Frame>

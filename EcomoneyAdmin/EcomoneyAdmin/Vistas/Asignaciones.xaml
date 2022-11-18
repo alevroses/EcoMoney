@@ -1,12 +1,47 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="EcomoneyAdmin.Vistas.Asignaciones">
-    <ContentPage.Content>
-        <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
-        </StackLayout>
-    </ContentPage.Content>
+             x:Class="EcomoneyAdmin.Vistas.Asignaciones"
+             NavigationPage.HasNavigationBar="False">
+    <Grid>
+        <Grid.Background>
+            <LinearGradientBrush EndPoint="1,0">
+                <GradientStop Color="#191725"
+                              Offset="0.1" />
+                <GradientStop Color="#26213d" 
+                              Offset="1.0" />
+            </LinearGradientBrush>
+        </Grid.Background>
+        <ImageButton Source="https://i.postimg.cc/0yyLwbqv/leftarrow.png"
+                     BackgroundColor="Transparent"
+                     WidthRequest="30"
+                     VerticalOptions="Start"
+                     HorizontalOptions="Start"
+                     Margin="10,30,0,0"
+                     Command="{Binding Volvercomamd}"/>
+        <ScrollView>
+            <StackLayout Margin="10,60,10,0">
+                <SearchBar />
+                <StackLayout Orientation="Horizontal">
+                    <Label Text="Recolector"
+                           FontSize="18"
+                           FontAttributes="Bold"
+                           VerticalOptions="Center"/>
+                    <Label Text="-"
+                           FontSize="18"
+                           FontAttributes="Bold"
+                           VerticalOptions="Center" />
+                </StackLayout>
+                <Button Text="Asignar"
+                        TextTransform="None"
+                        HorizontalOptions="Center"
+                        CornerRadius="15"
+                        FontSize="20"
+                        FontAttributes="Bold"
+                        BackgroundColor="White"
+                        Margin="0,20,0,0"
+                        Command="{Binding Insertarcomamd}"/>
+            </StackLayout>
+        </ScrollView>
+    </Grid>
 </ContentPage>

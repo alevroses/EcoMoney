@@ -22,9 +22,8 @@ namespace EcomoneyAdmin.VistaModelo
         public VMmenuprincipal(INavigation navigation)
         {
             Navigation = navigation;
-            Navegarmenuconfigcomamd = new Command(async() => await NavegarMenuconfig());
-            NavegarAsignacionescomamd = new Command(async () => await NavegarAsignaciones());
-            /*NavegarAsignacionescomamd = new Command<Msolicitudesrecojo>(async (f) => await NavegarAsignaciones(f));*/
+            Navegarmenuconfigcomamd = new Command(async() => await NavegarMenuconfig());            
+            NavegarAsignacionescomamd = new Command<Msolicitudesrecojo>(async (f) => await NavegarAsignaciones(f));
 
             Mostrarsolicitudesrecojo();
         }
@@ -57,10 +56,10 @@ namespace EcomoneyAdmin.VistaModelo
             ListasolRecojo = await funcion.Mostrarsolicitudesrecojo();
         }
 
-        private async Task NavegarAsignaciones(/*Msolicitudesrecojo parametros*/)
+        private async Task NavegarAsignaciones(Msolicitudesrecojo parametros)
         {
-            /*string Idsolicitud = parametros.Idsolicitud;
-            VMasignaciones.idsolicitud = Idsolicitud;*/
+            string Idsolicitud = parametros.Idsolicitud;
+            VMasignaciones.idsolicitud = Idsolicitud;
             await Navigation.PushAsync(new Asignaciones());
         }
         #endregion

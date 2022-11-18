@@ -20,6 +20,7 @@
                 <StackLayout>
                     <Label Text="Administrador"
                            FontSize="25"
+                           TextColor="Black"
                            FontAttributes="Bold"
                            HorizontalOptions="Center"/>
                     <Grid ColumnDefinitions="*,*">
@@ -31,6 +32,7 @@
                                 <Label Text="Eco"
                                        CharacterSpacing="10"
                                        FontSize="18"
+                                       TextColor="Black"
                                        FontAttributes="Bold"
                                        VerticalOptions="Center"/>
                                 <Button Text="Money"
@@ -51,7 +53,8 @@
                CornerRadius="20"
                HasShadow="False"
                Margin="15, 15, 15, 0"
-               Padding="10">
+               Padding="10"
+               BackgroundColor="#191725">
             <Grid ColumnDefinitions="*,*"
                   VerticalOptions="Center">
                 <StackLayout>
@@ -104,6 +107,7 @@
         <Frame Grid.Row="3"
                CornerRadius="20"
                Margin="15,0,15,0"
+               BackgroundColor="#191725"
                HasShadow="False">
             <CollectionView ItemsSource="{Binding ListasolRecojo}"
                             x:Name="Listasolicitudes">
@@ -114,13 +118,25 @@
                 </CollectionView.ItemsLayout>
                 <CollectionView.ItemTemplate>
                     <DataTemplate>
-                        <Frame>
+                        <Frame CornerRadius="20">
+                            <Frame.Background>
+                                <LinearGradientBrush EndPoint="1,0">
+                                    <GradientStop Color="#26213d"
+                                                  Offset="1.0" />
+                                    <GradientStop Color="#191725"
+                                                  Offset="0.1" />
+                                </LinearGradientBrush>
+                            </Frame.Background>
                             <StackLayout Orientation="Horizontal">
                                 <Label Text="{Binding Idsolicitud}"
-                                       VerticalOptions="Center"/>
+                                       TextColor="White"
+                                       VerticalOptions="Center" 
+                                       HorizontalOptions="FillAndExpand"/>
                                 <Button Text="Asignar"
                                         CornerRadius="15"
-                                        FontAttributes="Bold"
+                                        FontAttributes="Bold"                                        
+                                        TextColor="#26213d"
+                                        HeightRequest="40"
                                         Command="{Binding Source={x:Reference Listasolicitudes},
                                     Path=BindingContext.NavegarAsignacionescomamd}"
                                         CommandParameter="{Binding .}"/>
