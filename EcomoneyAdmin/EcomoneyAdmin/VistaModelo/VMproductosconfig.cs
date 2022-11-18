@@ -18,7 +18,6 @@ namespace EcomoneyAdmin.VistaModelo
         public string unidadmedida;
         public string color;
         public string estado;
-        public string icono;
         #endregion
 
         #region CONSTRUCTOR
@@ -26,6 +25,7 @@ namespace EcomoneyAdmin.VistaModelo
         {
             Navigation = navigation;
             Insertarcomamd = new Command(async () => await InsertarProductos());
+            Volvercomamd = new Command(async () => await Volver());
         }
         #endregion
 
@@ -59,15 +59,14 @@ namespace EcomoneyAdmin.VistaModelo
             get { return color; }
             set { SetProperty(ref color, value); }
         }
-
-        public string txtIcono
-        {
-            get { return icono; }
-            set { SetProperty(ref icono, value); }
-        }
         #endregion
 
         #region PROCESOS
+        private async Task Volver()
+        {
+            await Navigation.PopAsync();
+        }
+
         public async Task InsertarProductos()
         {
             var funcion = new Dproductos();
@@ -75,9 +74,9 @@ namespace EcomoneyAdmin.VistaModelo
             parametros.Descripcion = txtDescripcion;
             parametros.Precioventa = txtPrecioventa;
             parametros.Preciocompra = txtPreciocompra;
-            parametros.Und = unidadmedida;
+            parametros.Und = txtUndmedida;
             parametros.Color = txtColor;
-            parametros.Icono = txtIcono;
+            parametros.Icono = "-";
             parametros.Estado = "Activo";
 
             var estadofuncion = await funcion.InsertarProductos(parametros);
@@ -96,7 +95,7 @@ namespace EcomoneyAdmin.VistaModelo
 
         #region COMANDOS
         public Command Insertarcomamd { get; }
-        
+        public Command Volvercomamd { get; }
         #endregion
     }
 }
