@@ -59,6 +59,9 @@
                                HorizontalOptions="Center"
                                VerticalOptions="Center" />
                     </StackLayout>
+                    <Frame.GestureRecognizers>
+                        <TapGestureRecognizer Command="{Binding NavegarProductosconfigcomamd}"/>
+                    </Frame.GestureRecognizers>
                 </Frame>
             </Grid>
         </ScrollView>

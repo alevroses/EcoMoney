@@ -20,6 +20,7 @@ namespace EcomoneyAdmin.VistaModelo
             Navigation = navigation;
             Volvercomamd = new Command(async () => await Volver());
             NavegarRecolectoresconfigcomamd = new Command(async () => await Navegarrecolectoresconfig());
+            NavegarProductosconfigcomamd = new Command(async () => await NavegarProductosconfig());
         }
         #endregion
 
@@ -41,11 +42,17 @@ namespace EcomoneyAdmin.VistaModelo
         {
             await Navigation.PushAsync(new Recolectoresconfig());
         }
+
+        private async Task NavegarProductosconfig()
+        {
+            await Navigation.PushAsync(new Productosconfig());
+        }
         #endregion
 
         #region COMANDOS
         public Command Volvercomamd { get; }        
-        public Command NavegarRecolectoresconfigcomamd { get; }                
+        public Command NavegarRecolectoresconfigcomamd { get; }  
+        public Command NavegarProductosconfigcomamd { get; }
         #endregion
     }
 }

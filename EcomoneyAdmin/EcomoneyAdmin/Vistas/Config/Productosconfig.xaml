@@ -1,0 +1,96 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="EcomoneyAdmin.Vistas.Config.Productosconfig"
+             NavigationPage.HasNavigationBar="False">
+    <ContentPage.Content>
+        <Grid RowDefinitions="70,*">
+            <Grid.Background>
+                <LinearGradientBrush EndPoint="0,1">
+                    <GradientStop Color="#191725"
+                                  Offset="0.1" />
+                    <GradientStop Color="#26213d"
+                                  Offset="1.0" />
+                </LinearGradientBrush>
+            </Grid.Background>
+            <ImageButton Source="https://i.postimg.cc/0yyLwbqv/leftarrow.png"
+                         BackgroundColor="Transparent"
+                         HorizontalOptions="Start"
+                         Margin="10,40,0,0"
+                         Command="{Binding Volvercomamd}" />
+            <Frame Grid.Row="1"
+                   Padding="0"
+                   Margin="10"
+                   CornerRadius="15"
+                   BackgroundColor="#26213d">
+                <StackLayout Margin="10">
+                    <StackLayout Orientation="Horizontal">
+                        <Image Source="https://i.postimg.cc/pLKJ7Z0f/carnet.png"
+                               HeightRequest="30" />
+                        <Label Text="Nombres"
+                               FontSize="18"
+                               FontAttributes="Bold"
+                               VerticalOptions="Center"
+                               TextColor="White" />
+                        <Entry FontSize="18"
+                               Placeholder="Ingrese el nombre"
+                               HorizontalOptions="FillAndExpand"
+                               TextColor="#7c7b7c"
+                               Text="{Binding Txtnombre}" />
+                    </StackLayout>
+                    <StackLayout Orientation="Horizontal">
+                        <Image Source="https://i.postimg.cc/Vk6PYJCH/biometric-identification.png"
+                               HeightRequest="30" />
+                        <Label Text="Identificación"
+                               FontSize="18"
+                               FontAttributes="Bold"
+                               VerticalOptions="Center"
+                               TextColor="White" />
+                        <Entry FontSize="18"
+                               Placeholder="Ingrese la identificación"
+                               HorizontalOptions="FillAndExpand"
+                               TextColor="#7c7b7c"
+                               Text="{Binding Txtidentificacion}" />
+                    </StackLayout>
+                    <StackLayout Orientation="Horizontal">
+                        <Image Source="https://i.postimg.cc/tTrhGmQc/email.png"
+                               HeightRequest="28" />
+                        <Label Text="Correo"
+                               FontSize="18"
+                               FontAttributes="Bold"
+                               VerticalOptions="Center"
+                               TextColor="White" />
+                        <Entry FontSize="18"
+                               Placeholder="Ingrese el correo"
+                               HorizontalOptions="FillAndExpand"
+                               TextColor="#7c7b7c"
+                               Text="{Binding Txtcorreo}" />
+                    </StackLayout>
+                    <StackLayout Orientation="Horizontal">
+                        <Image Source="https://i.postimg.cc/J49ztwNL/password.png"
+                               HeightRequest="28" />
+                        <Label Text="Contraseña"
+                               FontSize="18"
+                               FontAttributes="Bold"
+                               VerticalOptions="Center"
+                               TextColor="White" />
+                        <Entry FontSize="18"
+                               Placeholder="Ingrese la contraseña"
+                               HorizontalOptions="FillAndExpand"
+                               TextColor="#7c7b7c"
+                               Text="{Binding Txtcontraseña}" />
+                    </StackLayout>
+                    <Button Text="Guardar"
+                            HorizontalOptions="Center"
+                            CornerRadius="15"
+                            BackgroundColor="White"
+                            FontAttributes="Bold"
+                            VerticalOptions="EndAndExpand"
+                            Command="{Binding Insertarcomamd}" />
+                    <Image Source="https://i.postimg.cc/m2npnVHc/truck.png"
+                           HeightRequest="280" />
+                </StackLayout>
+            </Frame>
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>
