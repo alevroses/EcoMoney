@@ -7,6 +7,7 @@ using Xamarin.Forms;
 using EcomoneyAdmin.Vistas.Config;
 using EcomoneyAdmin.Datos;
 using EcomoneyAdmin.Modelo;
+using EcomoneyAdmin.Vistas;
 
 namespace EcomoneyAdmin.VistaModelo
 {
@@ -22,6 +23,7 @@ namespace EcomoneyAdmin.VistaModelo
         {
             Navigation = navigation;
             Navegarmenuconfigcomamd = new Command(async() => await NavegarMenuconfig());
+            NavegarAsignacionescomamd = new Command(async () => await NavegarAsignaciones());
             /*NavegarAsignacionescomamd = new Command<Msolicitudesrecojo>(async (f) => await NavegarAsignaciones(f));*/
 
             Mostrarsolicitudesrecojo();
@@ -55,17 +57,17 @@ namespace EcomoneyAdmin.VistaModelo
             ListasolRecojo = await funcion.Mostrarsolicitudesrecojo();
         }
 
-        /*private async Task NavegarAsignaciones(Msolicitudesrecojo parametros)
+        private async Task NavegarAsignaciones(/*Msolicitudesrecojo parametros*/)
         {
-            string Idsolicitud = parametros.Idsolicitud;
-            VMasignaciones.idsolicitud = Idsolicitud;
+            /*string Idsolicitud = parametros.Idsolicitud;
+            VMasignaciones.idsolicitud = Idsolicitud;*/
             await Navigation.PushAsync(new Asignaciones());
-        }*/
+        }
         #endregion
 
         #region COMANDOS
         public Command Navegarmenuconfigcomamd { get; }
-        /*public Command NavegarAsignacionescomamd { get; }*/
+        public Command NavegarAsignacionescomamd { get; }
 
         #endregion
     }

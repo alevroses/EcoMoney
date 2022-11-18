@@ -16,3 +16,4 @@ D:\1-Software\Platzi\B-Projects\DMP\EcoMoney\EcomoneyAdmin\EcomoneyAdmin\obj\Deb
 D:\1-Software\Platzi\B-Projects\DMP\EcoMoney\EcomoneyAdmin\EcomoneyAdmin\obj\Debug\netstandard2.0\Vistas\Config\Menuconfig.xaml.g.cs
 D:\1-Software\Platzi\B-Projects\DMP\EcoMoney\EcomoneyAdmin\EcomoneyAdmin\obj\Debug\netstandard2.0\Vistas\Config\Recolectoresconfig.xaml.g.cs
 D:\1-Software\Platzi\B-Projects\DMP\EcoMoney\EcomoneyAdmin\EcomoneyAdmin\obj\Debug\netstandard2.0\Vistas\Config\Productosconfig.xaml.g.cs
+D:\1-Software\Platzi\B-Projects\DMP\EcoMoney\EcomoneyAdmin\EcomoneyAdmin\obj\Debug\netstandard2.0\Vistas\Asignaciones.xaml.g.cs
