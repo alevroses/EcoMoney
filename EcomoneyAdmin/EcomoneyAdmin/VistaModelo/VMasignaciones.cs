@@ -9,7 +9,7 @@ using EcomoneyAdmin.Modelo;
 
 namespace EcomoneyAdmin.VistaModelo
 {
-    public class VMasignaciones:BaseViewModel
+    public class VMasignaciones : BaseViewModel
     {
         #region VARIABLES
         string idrecolector;
@@ -24,6 +24,7 @@ namespace EcomoneyAdmin.VistaModelo
             Navigation = navigation;
             Insertarcomamd = new Command(async () => await Insertarasignaciones());
             Volvercomamd = new Command(async () => await Volver());
+            Buscarcommand = new Command(async () => await BuscarRecolectores());
         }
         #endregion
 
@@ -50,17 +51,24 @@ namespace EcomoneyAdmin.VistaModelo
         #region PROCESOS
         public async Task Insertarasignaciones()
         {
-            var funcion = new Dasignaciones();
-            var parametros = new Masignaciones();
-            parametros.Estado = "Pendiente";
-            parametros.Idrecolector = Idrecolector;
-            parametros.Idsolicitud = idsolicitud;
-
-            var estadofuncion = await funcion.Insertar(parametros);
-
-            if (estadofuncion == true)
+            if (!string.IsNullOrEmpty(Txtidentificacion))
             {
-                await DisplayAlert("Registrado", "Registro realizado", "Ok");
+                var funcion = new Dasignaciones();
+                var parametros = new Masignaciones();
+                parametros.Estado = "Pendiente";
+                parametros.Idrecolector = Idrecolector;
+                parametros.Idsolicitud = idsolicitud;
+
+                var estadofuncion = await funcion.Insertar(parametros);
+
+                if (estadofuncion == true)
+                {
+                    await DisplayAlert("Registrado", "Registro realizado", "Ok");
+                }
+            }
+            else
+            {
+                await DisplayAlert("Sin datos", "Asigne un recolector", "Ok");
             }
         }
 
@@ -88,6 +96,7 @@ namespace EcomoneyAdmin.VistaModelo
         #region COMANDOS
         public Command Insertarcomamd { get; }
         public Command Volvercomamd { get; }
+        public Command Buscarcommand { get; }
         #endregion
     }
 }

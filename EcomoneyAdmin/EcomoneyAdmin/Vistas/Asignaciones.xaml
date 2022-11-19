@@ -21,13 +21,14 @@
                      Command="{Binding Volvercomamd}"/>
         <ScrollView>
             <StackLayout Margin="10,60,10,0">
-                <SearchBar Text="{Binding Txtidentificacion}"/>
+                <SearchBar Text="{Binding Txtidentificacion}"
+                           SearchCommand="{Binding Buscarcommand}"/>
                 <StackLayout Orientation="Horizontal">
                     <Label Text="Recolector"
                            FontSize="18"
                            FontAttributes="Bold"
                            VerticalOptions="Center"/>
-                    <Label Text="-"
+                    <Label Text="{Binding TxtnombreRecolector}"
                            FontSize="18"
                            FontAttributes="Bold"
                            VerticalOptions="Center" />
