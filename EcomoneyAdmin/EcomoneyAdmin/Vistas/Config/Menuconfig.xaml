@@ -6,20 +6,23 @@
     <Grid RowDefinitions="70">
         <Grid.Background>
             <LinearGradientBrush EndPoint="1,0">
-                <GradientStop Color="#191725" Offset="0.1"/>
-                <GradientStop Color="#26213d" Offset="1.0"/>
+                <GradientStop Color="#26213d"
+                              Offset="1.0" />
+                <GradientStop Color="#191725"
+                              Offset="0.1" />
             </LinearGradientBrush>
         </Grid.Background>
         <ImageButton Source="https://i.postimg.cc/0yyLwbqv/leftarrow.png"
                      BackgroundColor="Transparent"
                      HorizontalOptions="Start"
-                     Margin="10,40,0,0"
+                     Margin="10,30,0,0"
                      Command="{Binding Volvercomamd}"/>
         <ScrollView Grid.Row="1">
             <Grid ColumnDefinitions="*,*"
-                  RowDefinitions="auto,auto,auto"
+                  RowDefinitions="240,240,240"
                   Margin="20">
                 <Frame CornerRadius="15"
+                       BackgroundColor="#191725"
                        HasShadow="False">
                     <StackLayout VerticalOptions="Center"
                                  Margin="15">
@@ -32,7 +35,7 @@
                         <Label Text="Recolectores"
                                FontSize="20"
                                FontAttributes="Bold"
-                               TextColor="#26213d"
+                               TextColor="White"
                                HorizontalOptions="Center"
                                VerticalOptions="Center"/>
                     </StackLayout>
@@ -41,6 +44,7 @@
                     </Frame.GestureRecognizers>
                 </Frame>
                 <Frame CornerRadius="15"
+                       BackgroundColor="#191725"
                        HasShadow="False"
                        Grid.Row="0"
                        Grid.Column="1">
@@ -50,17 +54,17 @@
                                CornerRadius="200"
                                HasShadow="False"
                                HorizontalOptions="Center">
-                            <Image Source="https://i.postimg.cc/dQkVPwQQ/recycling.png"/>
+                            <Image Source="https://i.postimg.cc/dQkVPwQQ/recycling.png" />
                         </Frame>
                         <Label Text="Productos"
                                FontSize="20"
                                FontAttributes="Bold"
-                               TextColor="#26213d"
+                               TextColor="White"
                                HorizontalOptions="Center"
                                VerticalOptions="Center" />
                     </StackLayout>
                     <Frame.GestureRecognizers>
-                        <TapGestureRecognizer Command="{Binding NavegarProductosconfigcomamd}"/>
+                        <TapGestureRecognizer Command="{Binding NavegarProductosconfigcomamd}" />
                     </Frame.GestureRecognizers>
                 </Frame>
             </Grid>

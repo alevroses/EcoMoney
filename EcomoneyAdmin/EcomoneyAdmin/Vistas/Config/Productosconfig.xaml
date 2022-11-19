@@ -7,22 +7,22 @@
         <Grid RowDefinitions="70,*">
             <Grid.Background>
                 <LinearGradientBrush EndPoint="0,1">
-                    <GradientStop Color="#191725"
-                                  Offset="0.1" />
                     <GradientStop Color="#26213d"
                                   Offset="1.0" />
+                    <GradientStop Color="#191725"
+                                  Offset="0.1" />
                 </LinearGradientBrush>
             </Grid.Background>
             <ImageButton Source="https://i.postimg.cc/0yyLwbqv/leftarrow.png"
                          BackgroundColor="Transparent"
                          HorizontalOptions="Start"
-                         Margin="10,40,0,0"
+                         Margin="10,30,0,0"
                          Command="{Binding Volvercomamd}" />
             <Frame Grid.Row="1"
                    Padding="0"
                    Margin="10"
                    CornerRadius="15"
-                   BackgroundColor="#26213d">
+                   BackgroundColor="#191725">
                 <StackLayout Margin="10">
                     <StackLayout Orientation="Horizontal">
                         <Image Source="https://i.postimg.cc/28jbtgrd/description.png"

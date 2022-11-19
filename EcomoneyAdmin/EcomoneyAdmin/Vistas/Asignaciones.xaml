@@ -6,10 +6,10 @@
     <Grid>
         <Grid.Background>
             <LinearGradientBrush EndPoint="1,0">
+                <GradientStop Color="#26213d"
+                              Offset="1.0" />
                 <GradientStop Color="#191725"
                               Offset="0.1" />
-                <GradientStop Color="#26213d" 
-                              Offset="1.0" />
             </LinearGradientBrush>
         </Grid.Background>
         <ImageButton Source="https://i.postimg.cc/0yyLwbqv/leftarrow.png"
