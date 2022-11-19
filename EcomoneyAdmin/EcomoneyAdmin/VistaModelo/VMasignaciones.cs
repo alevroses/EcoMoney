@@ -14,6 +14,8 @@ namespace EcomoneyAdmin.VistaModelo
         #region VARIABLES
         string idrecolector;
         public static string idsolicitud;
+        string txtidentificacion;
+        string txtnombreRecolector;
         #endregion
 
         #region CONSTRUCTOR
@@ -31,6 +33,18 @@ namespace EcomoneyAdmin.VistaModelo
             get { return idrecolector; }
             set { SetValue(ref idrecolector, value); }
         }
+
+        public string TxtnombreRecolector
+        {
+            get { return txtnombreRecolector; }
+            set { SetValue(ref txtnombreRecolector, value); }
+        }
+
+        public string Txtidentificacion
+        {
+            get { return txtidentificacion; }
+            set { SetValue(ref txtidentificacion, value); }
+        }
         #endregion
 
         #region PROCESOS
@@ -47,6 +61,21 @@ namespace EcomoneyAdmin.VistaModelo
             if (estadofuncion == true)
             {
                 await DisplayAlert("Registrado", "Registro realizado", "Ok");
+            }
+        }
+
+        private async Task BuscarRecolectores()
+        {
+            var funcion = new Drecolectores();
+            var parametros = new Mrecolectores();
+            parametros.Identificacion = Txtidentificacion;
+
+            var lista = await funcion.Buscarrecolectores(parametros);
+
+            foreach (var data in lista)
+            {
+                TxtnombreRecolector = data.Nombre;
+                Idrecolector = data.Idrecolectores;
             }
         }
 

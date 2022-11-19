@@ -21,7 +21,7 @@
                      Command="{Binding Volvercomamd}"/>
         <ScrollView>
             <StackLayout Margin="10,60,10,0">
-                <SearchBar />
+                <SearchBar Text="{Binding Txtidentificacion}"/>
                 <StackLayout Orientation="Horizontal">
                     <Label Text="Recolector"
                            FontSize="18"

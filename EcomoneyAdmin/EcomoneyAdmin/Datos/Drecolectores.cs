@@ -5,6 +5,7 @@ using System.Threading.Tasks;
 using EcomoneyAdmin.Modelo;
 using EcomoneyAdmin.Conexiones;
 using Firebase.Database.Query;
+using System.Linq;
 
 namespace EcomoneyAdmin.Datos
 {
@@ -22,6 +23,21 @@ namespace EcomoneyAdmin.Datos
                     Nombre = parametros.Nombre
                 });
             return true;
+        }
+
+        public async Task <List<Mrecolectores>> Buscarrecolectores(Mrecolectores parametrosPedir)
+        {
+            return (await Constantes.firebase
+                .Child("Recolectores")
+                .OrderByKey()
+                .OnceAsync<Mrecolectores>())
+                .Where(a => a.Object.Identificacion == parametrosPedir.Identificacion)
+                .Where(b => b.Object.Estado=="Activo")
+                .Select(item => new Mrecolectores
+                {
+                    Idrecolectores = item.Key,
+                    Nombre = item.Object.Nombre
+                }).ToList();
         }
     }
 }
