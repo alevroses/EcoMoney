@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="EcomoneyCliente.Vistas.Login">
+    <Grid>
+        <StackLayout VerticalOptions="Center">
+            <Image Source="https://i.postimg.cc/CLN5Cy27/forest.png" 
+                   VerticalOptions="Center"
+                   HeightRequest="200"/>
+            <StackLayout Orientation="Horizontal"
+                         HorizontalOptions="Center">
+                <Image Source="https://i.postimg.cc/NM9cp2qH/eco.png"
+                       HeightRequest="80"/>
+                <Label Text="Money"
+                       FontSize="50"
+                       FontAttributes="Bold"
+                       VerticalTextAlignment="Center"/>
+            </StackLayout>
+            <StackLayout HorizontalOptions="Center">
+                <Label Text="Ingrese su DNI"
+                       FontSize="18"/>
+                <Entry Placeholder="DNI"
+                       FontAttributes="Bold"
+                       TextColor="#00935A"
+                       HorizontalTextAlignment="Center"/>
+                <Button Text="Acceder"
+                        BackgroundColor="Yellow"
+                        CornerRadius="20"
+                        FontAttributes="Bold"
+                        TextTransform="None"
+                        TextColor="Black"
+                        FontSize="20"/>
+            </StackLayout>
+        </StackLayout>
+    </Grid>
+</ContentPage>
