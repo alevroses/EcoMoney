@@ -5,6 +5,7 @@ public class MonoPackageManager_Resources {
 		"EcomoneyCliente.Android.dll",
 		"EcomoneyCliente.dll",
 		"FormsViewGroup.dll",
+		"Plugin.CurrentActivity.dll",
 		"Xamarin.AndroidX.Activity.dll",
 		"Xamarin.AndroidX.Annotation.dll",
 		"Xamarin.AndroidX.Annotation.Experimental.dll",

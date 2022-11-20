@@ -8,7 +8,7 @@ using System.Runtime.CompilerServices;
 
 namespace EcomoneyCliente.VistaModelo
 {
-    internal class BaseViewModel: INotifyPropertyChanged
+    public class BaseViewModel: INotifyPropertyChanged
     {
         public INavigation Navigation;
 

@@ -13,6 +13,8 @@ using EcomoneyCliente.VistaModelo;
 using Xamarin.Forms;
 using Plugin.CurrentActivity;
 
+[assembly:Dependency(typeof(StatusBar))]
+
 namespace EcomoneyCliente.Droid.Controles
 {
     internal class StatusBar : VMstatusbar
