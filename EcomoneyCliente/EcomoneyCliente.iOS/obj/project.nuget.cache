@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "9BIvEFy1Pi1qkCPk8u2O37PkDEd8ySJOUj3bii4es9jyxge/09ZtKjW9qFDOznKbC06Doi+11XLZrW4fUdvTEg==",
+  "success": true,
+  "projectFilePath": "D:\\1-Software\\Platzi\\B-Projects\\DMP\\EcoMoney\\EcomoneyCliente\\EcomoneyCliente.iOS\\EcomoneyCliente.iOS.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\aleVR\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",
+    "C:\\Users\\aleVR\\.nuget\\packages\\xamarin.essentials\\1.7.0\\xamarin.essentials.1.7.0.nupkg.sha512",
+    "C:\\Users\\aleVR\\.nuget\\packages\\xamarin.forms\\5.0.0.2196\\xamarin.forms.5.0.0.2196.nupkg.sha512"
+  ],
+  "logs": []
+}

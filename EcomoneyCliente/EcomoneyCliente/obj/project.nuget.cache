@@ -1,0 +1,14 @@
+{
+  "version": 2,
+  "dgSpecHash": "OVYubCKejACNZuMgskOBmobxM5Humz6C6LzCr6vWzIodiIKZV6vpiR9Sl/MRgCOj+jZdKpLUX2QdfdUDXO7C0w==",
+  "success": true,
+  "projectFilePath": "D:\\1-Software\\Platzi\\B-Projects\\DMP\\EcoMoney\\EcomoneyCliente\\EcomoneyCliente\\EcomoneyCliente.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\aleVR\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Users\\aleVR\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512",
+    "C:\\Users\\aleVR\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",
+    "C:\\Users\\aleVR\\.nuget\\packages\\xamarin.essentials\\1.7.0\\xamarin.essentials.1.7.0.nupkg.sha512",
+    "C:\\Users\\aleVR\\.nuget\\packages\\xamarin.forms\\5.0.0.2196\\xamarin.forms.5.0.0.2196.nupkg.sha512"
+  ],
+  "logs": []
+}
