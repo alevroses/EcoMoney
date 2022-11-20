@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "AdSeWm7QJCUyBipASSl+fylafmLt3lHEcBLTZOXwHAiK1jxfWY6Un/0IVe7L2H4Y9Omc+XEOzlo/3+4V5nrQVQ==",
+  "dgSpecHash": "KPjx+hJYSKki5migjp/OvqitJ2D3UkAiSlHLwNZxK5JAmzDXXQaEiqIEHKjrPNwzhsVG48jb5PsgCP8pt0/W2Q==",
   "success": true,
   "projectFilePath": "D:\\1-Software\\Platzi\\B-Projects\\DMP\\EcoMoney\\EcomoneyCliente\\EcomoneyCliente.Android\\EcomoneyCliente.Android.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\aleVR\\.nuget\\packages\\plugin.currentactivity\\2.1.0.4\\plugin.currentactivity.2.1.0.4.nupkg.sha512",
     "C:\\Users\\aleVR\\.nuget\\packages\\system.componentmodel\\4.3.0\\system.componentmodel.4.3.0.nupkg.sha512",
     "C:\\Users\\aleVR\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",
     "C:\\Users\\aleVR\\.nuget\\packages\\xamarin.androidx.activity\\1.2.4.1\\xamarin.androidx.activity.1.2.4.1.nupkg.sha512",

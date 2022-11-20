@@ -103,3 +103,4 @@ androidx.legacy.legacy-support-core-ui.aar
 androidx.legacy.legacy-support-v4.aar
 androidx.browser.browser.aar
 Xamarin.Forms.PancakeView.dll
+Plugin.CurrentActivity.dll
