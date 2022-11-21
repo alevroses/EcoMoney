@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
+using EcomoneyCliente.VistaModelo;
 
 namespace EcomoneyCliente.Vistas
 {
@@ -15,6 +16,7 @@ namespace EcomoneyCliente.Vistas
         public Menu()
         {
             InitializeComponent();
+            BindingContext = new VMmenu(Navigation);
         }
     }
 }

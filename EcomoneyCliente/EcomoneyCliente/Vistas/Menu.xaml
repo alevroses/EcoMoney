@@ -1,12 +1,27 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="EcomoneyCliente.Vistas.Menu">
-    <ContentPage.Content>
-        <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+             x:Class="EcomoneyCliente.Vistas.Menu"
+             NavigationPage.HasNavigationBar="False">
+    <Grid RowDefinitions="*,*,*,*,*,*">
+        <Grid.Background>
+            <LinearGradientBrush EndPoint="1,0">
+                <GradientStop Color="#26213d"
+                              Offset="1.0" />
+                <GradientStop Color="#191725"
+                              Offset="0.1" />
+            </LinearGradientBrush>
+        </Grid.Background>
+        <StackLayout Orientation="Horizontal"
+                     HorizontalOptions="Center"
+                     Margin="0,-60,0,0">
+            <Image Source="https://i.postimg.cc/NM9cp2qH/eco.png"
+                   HeightRequest="42" />
+            <Label Text="Money"
+                   FontSize="25"
+                   TextColor="Black"
+                   FontAttributes="Bold"
+                   VerticalTextAlignment="Center" />
         </StackLayout>
-    </ContentPage.Content>
+    </Grid>
 </ContentPage>
