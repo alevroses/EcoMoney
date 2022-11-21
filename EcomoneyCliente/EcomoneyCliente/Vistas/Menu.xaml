@@ -4,7 +4,7 @@
              x:Class="EcomoneyCliente.Vistas.Menu"
              NavigationPage.HasNavigationBar="False"
              xmlns:degradado="clr-namespace:Xamarin.Forms.PancakeView;assembly=Xamarin.Forms.PancakeView">
-    <Grid RowDefinitions="auto,auto,*,*,*,*">
+    <Grid RowDefinitions="auto,auto,auto,*,*,*">
         <Grid.Background>
             <LinearGradientBrush EndPoint="1,0">
                 <GradientStop Color="#26213d"
@@ -55,10 +55,59 @@
                     <degradado:GradientStop Color="#191725" Offset="1.0"/>
                 </degradado:GradientStopCollection>
             </degradado:PancakeView.BackgroundGradientStops>
-            <StackLayout>
-                <StackLayout Orientation="Horizontal">
-                    <Image Source="https://i.postimg.cc/JnvKGwY0/mrjet.png"
-                           WidthRequest="40"/>
+            <StackLayout Margin="10,0,10,0">
+                <StackLayout Orientation="Horizontal"
+                             HeightRequest="80">
+                    <Frame Padding="0"
+                           BackgroundColor="#191725"
+                           HasShadow="False"
+                           HeightRequest="100"
+                           WidthRequest="100"
+                           CornerRadius="50"
+                           Margin="-20,15,0,10">
+                        <Image Source="https://i.postimg.cc/JnvKGwY0/mrjet.png"/>
+                    </Frame>
+                    <Label Text="Perfil verificado"
+                           TextColor="#813fdf"
+                           FontAttributes="Bold"
+                           HorizontalOptions="EndAndExpand"
+                           VerticalOptions="Center"/>
+                </StackLayout>
+                <StackLayout Orientation="Horizontal"
+                             HeightRequest="80">
+                    <StackLayout>
+                        <Label Text="Total cobrado"
+                               TextColor="White"
+                               FontAttributes="Bold"
+                               FontSize="18"/>
+                        <Label Text="500"
+                               TextColor="White"
+                               FontAttributes="Bold"
+                               FontSize="25" />
+                    </StackLayout>
+                    <StackLayout HorizontalOptions="EndAndExpand">
+                        <Label Text="Total por cobrar"
+                               TextColor="White"
+                               FontAttributes="Bold"
+                               FontSize="18" />
+                        <Label Text="500"
+                               TextColor="White"
+                               FontAttributes="Bold"
+                               FontSize="25" />
+                    </StackLayout>
+                </StackLayout>
+                <StackLayout Orientation="Horizontal"
+                             Margin="0,0,0,10">
+                    <Button Text="Ver detalles"
+                           TextColor="White"
+                           BackgroundColor="Transparent"
+                           BorderWidth="2"
+                           BorderColor="White"
+                            CornerRadius="20"/>
+                    <Label Text="Kg reciclados: [5]"
+                           TextColor="White"
+                           FontSize="18"
+                           VerticalOptions="Center"/>
                 </StackLayout>
             </StackLayout>
         </degradado:PancakeView>
