@@ -35,7 +35,8 @@
                 <Entry Placeholder="DNI"
                        FontAttributes="Bold"
                        TextColor="White"
-                       HorizontalTextAlignment="Center"/>
+                       HorizontalTextAlignment="Center"
+                       Text="{Binding txtidentificacion}"/>
                 <Button Text="Acceder"
                         BackgroundColor="White"
                         CornerRadius="20"
