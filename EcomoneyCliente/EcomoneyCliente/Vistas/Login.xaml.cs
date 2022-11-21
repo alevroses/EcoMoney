@@ -16,7 +16,7 @@ namespace EcomoneyCliente.Vistas
         public Login()
         {
             InitializeComponent();
-            BindingContext = new VMlogin();
+            BindingContext = new VMlogin(Navigation);
         }
     }
 }

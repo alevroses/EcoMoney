@@ -43,7 +43,8 @@
                         FontAttributes="Bold"
                         TextTransform="None"
                         TextColor="Black"
-                        FontSize="20"/>
+                        FontSize="20"
+                        Command="{Binding Logincommand}"/>
             </StackLayout>
         </StackLayout>
     </Grid>

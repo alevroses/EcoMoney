@@ -15,9 +15,11 @@ namespace EcomoneyCliente.VistaModelo
         #endregion
 
         #region CONSTRUCTOR
-        public VMlogin()
+        public VMlogin(INavigation navigation)
         {
+            Navigation = navigation;
             DependencyService.Get<VMstatusbar>().TransparentarStatusbar();
+            Logincommand = new Command(async () => await validarLogin());
         }
         #endregion
 
