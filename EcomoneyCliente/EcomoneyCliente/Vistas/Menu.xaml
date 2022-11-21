@@ -2,7 +2,8 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="EcomoneyCliente.Vistas.Menu"
-             NavigationPage.HasNavigationBar="False">
+             NavigationPage.HasNavigationBar="False"
+             xmlns:degradado="clr-namespace:Xamarin.Forms.PancakeView;assembly=Xamarin.Forms.PancakeView">
     <Grid RowDefinitions="auto,auto,*,*,*,*">
         <Grid.Background>
             <LinearGradientBrush EndPoint="1,0">
@@ -45,5 +46,21 @@
                     TextTransform="None"
                     HorizontalOptions="EndAndExpand"/>
         </StackLayout>
+        <degradado:PancakeView Grid.Row="2"
+                               Margin="15"
+                               CornerRadius="15">
+            <degradado:PancakeView.BackgroundGradientStops>
+                <degradado:GradientStopCollection>
+                    <degradado:GradientStop Color="#191725" Offset="0.1"/>
+                    <degradado:GradientStop Color="#191725" Offset="1.0"/>
+                </degradado:GradientStopCollection>
+            </degradado:PancakeView.BackgroundGradientStops>
+            <StackLayout>
+                <StackLayout Orientation="Horizontal">
+                    <Image Source="https://i.postimg.cc/JnvKGwY0/mrjet.png"
+                           WidthRequest="40"/>
+                </StackLayout>
+            </StackLayout>
+        </degradado:PancakeView>
     </Grid>
 </ContentPage>
