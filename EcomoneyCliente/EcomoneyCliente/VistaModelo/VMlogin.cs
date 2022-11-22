@@ -12,6 +12,7 @@ namespace EcomoneyCliente.VistaModelo
     {
         #region VARIABLES
         public string identificacion;
+        public List<Mclientes> listaclientes = new List<Mclientes>();   
         #endregion
 
         #region CONSTRUCTOR
@@ -24,6 +25,12 @@ namespace EcomoneyCliente.VistaModelo
         #endregion
 
         #region OBJETOS
+        public List<Mclientes> Listaclientes
+        {
+            get { return listaclientes; }
+            set { SetValue(ref listaclientes, value); }
+        }
+
         public string txtidentificacion
         {
             get { return identificacion; }
@@ -37,11 +44,11 @@ namespace EcomoneyCliente.VistaModelo
             var funcion = new Dclientes();
             var parametros = new Mclientes();
             parametros.Identificacion = txtidentificacion;
-            var dt = await funcion.Validarcliente(parametros);
+            Listaclientes = await funcion.Validarcliente(parametros);
 
-            if(dt.Count > 0)
+            if(Listaclientes.Count > 0)
             {
-                await Navigation.PushAsync(new Vistas.Menu());
+                await Navigation.PushAsync(new Vistas.Menu(Listaclientes));
             }
         }
         #endregion

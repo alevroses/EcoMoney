@@ -7,16 +7,17 @@ using System.Threading.Tasks;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 using EcomoneyCliente.VistaModelo;
+using EcomoneyCliente.Modelo;
 
 namespace EcomoneyCliente.Vistas
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class Menu : ContentPage
     {
-        public Menu()
+        public Menu(List<Mclientes> clientes)
         {
             InitializeComponent();
-            BindingContext = new VMmenu(Navigation);
+            BindingContext = new VMmenu(Navigation, clientes);
         }
     }
 }
