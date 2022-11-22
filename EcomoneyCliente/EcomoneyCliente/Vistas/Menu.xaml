@@ -4,7 +4,7 @@
              x:Class="EcomoneyCliente.Vistas.Menu"
              NavigationPage.HasNavigationBar="False"
              xmlns:degradado="clr-namespace:Xamarin.Forms.PancakeView;assembly=Xamarin.Forms.PancakeView">
-    <Grid RowDefinitions="auto,auto,auto,auto,*,*">
+    <Grid RowDefinitions="auto,auto,auto,auto,*">
         <Grid.Background>
             <LinearGradientBrush EndPoint="1,0">
                 <GradientStop Color="#26213d"
@@ -32,7 +32,7 @@
                        TextColor="White"
                        FontSize="30"
                        FontAttributes="Bold" />
-                <Label Text="Usuario"
+                <Label Text="{Binding Lblnombreuser}"
                        TextColor="White"
                        FontSize="20" />
             </StackLayout>
@@ -65,7 +65,7 @@
                            WidthRequest="100"
                            CornerRadius="50"
                            Margin="-20,15,0,10">
-                        <Image Source="https://i.postimg.cc/JnvKGwY0/mrjet.png"/>
+                        <Image Source="{Binding Imagenfachada}"/>
                     </Frame>
                     <Label Text="Perfil verificado"
                            TextColor="#813fdf"
@@ -80,7 +80,7 @@
                                TextColor="White"
                                FontAttributes="Bold"
                                FontSize="18"/>
-                        <Label Text="500"
+                        <Label Text="{Binding Lbltotalcobrado}"
                                TextColor="White"
                                FontAttributes="Bold"
                                FontSize="25" />
@@ -90,7 +90,7 @@
                                TextColor="White"
                                FontAttributes="Bold"
                                FontSize="18" />
-                        <Label Text="500"
+                        <Label Text="{Binding Lbltotalporcobrar}"
                                TextColor="White"
                                FontAttributes="Bold"
                                FontSize="25" />

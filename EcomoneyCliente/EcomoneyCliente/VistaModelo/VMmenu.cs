@@ -14,6 +14,10 @@ namespace EcomoneyCliente.VistaModelo
         #region VARIABLES
         public string identificacion;
         public string idcliente;
+        public string lblnombreuser;
+        public string lbltotalcobrado;
+        public string lbltotalporcobrar;
+        public string imagenfachada;
 
         public List<Mdetallecompra> listadetallecompra = new List<Mdetallecompra>();
         public List<Mclientes> listaclientes = new List<Mclientes>();
@@ -26,13 +30,37 @@ namespace EcomoneyCliente.VistaModelo
             DependencyService.Get<VMstatusbar>().TransparentarStatusbar();
             /*Logincommand = new Command(async () => await validarLogin());*/
             Listaclientes = clientes;
-            
+
+            ObtenerIdcliente();
             MostrarDcompra();
         }
         #endregion
 
         #region OBJETOS
-        
+        public string Imagenfachada
+        {
+            get { return imagenfachada; }
+            set { SetValue(ref imagenfachada, value); }
+        }
+
+        public string Lblnombreuser
+        {
+            get { return lblnombreuser; }
+            set { SetValue(ref lblnombreuser, value); }
+        }
+
+        public string Lbltotalcobrado
+        {
+            get { return lbltotalcobrado; }
+            set { SetValue(ref lbltotalcobrado, value); }
+        }
+
+        public string Lbltotalporcobrar
+        {
+            get { return lbltotalporcobrar; }
+            set { SetValue(ref lbltotalporcobrar, value); }
+        }
+
         public string txtidentificacion
         {
             get { return identificacion; }
@@ -68,7 +96,6 @@ namespace EcomoneyCliente.VistaModelo
 
         public async Task MostrarDcompra()
         {
-            ObtenerIdcliente();
             var funcion = new Ddetallecompra();
             Listadetallecompra = await funcion.MostrarDcompra(idcliente);
         }
@@ -77,6 +104,10 @@ namespace EcomoneyCliente.VistaModelo
         {
             var data = Listaclientes.FirstOrDefault();
             idcliente = data.Idcliente;
+            Lblnombreuser = data.NombresApe;
+            Lbltotalcobrado = data.Totalcobrado;
+            Lbltotalporcobrar = data.Totalporcobrar;
+            Imagenfachada = data.FotoFachada;
         }
         #endregion
 
