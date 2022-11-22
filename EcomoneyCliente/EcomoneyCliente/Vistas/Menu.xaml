@@ -104,7 +104,7 @@
                            BorderWidth="2"
                            BorderColor="White"
                             CornerRadius="20"/>
-                    <Label Text="Kg reciclados: [5]"
+                    <Label Text="{Binding Lblkgacumulados}"
                            TextColor="White"
                            FontSize="18"
                            VerticalOptions="Center"/>
@@ -114,7 +114,9 @@
         <StackLayout Grid.Row="3"
                      Margin="15,0,15,0">
             <StackLayout Orientation="Horizontal">
-                <Label Text="Puntos acumulados: 200"
+                <Label Text="Puntos acumulados:"
+                       TextColor="White"/>
+                <Label Text="{Binding LblpuntosEti}"
                        TextColor="White"/>
                 <Label Text="Meta 1000"
                        TextColor="White"
