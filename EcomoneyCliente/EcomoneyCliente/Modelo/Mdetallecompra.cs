@@ -16,5 +16,8 @@ namespace EcomoneyCliente.Modelo
         public string Total { get; set; }
         public string Und { get; set; }
         public string Puntos { get; set; }
+        //
+        public string DescripcionPro { get; set; }
+        public string Icono { get; set; }
     }
 }

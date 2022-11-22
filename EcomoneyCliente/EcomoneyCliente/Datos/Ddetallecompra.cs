@@ -13,6 +13,7 @@ namespace EcomoneyCliente.Datos
     {
         public async Task <List<Mdetallecompra>> MostrarDcompra(string Idcliente)
         {
+            var listaDcompra = new List<Mdetallecompra>();
             var data = (await Constantes.firebase
                 .Child("Detallecompra")
                 .OrderByKey()
@@ -25,7 +26,21 @@ namespace EcomoneyCliente.Datos
                 parametros.Cantidad = item.Object.Cantidad;
                 parametros.Total = "S/. " + item.Object.Total;
                 parametros.Und = item.Object.Und;
+
+                var funcionProd = new Dproductos();
+                var parametrosProd = new Mproductos();
+                parametrosProd.Idproducto = item.Object.Idproducto;
+                var listaPro = await funcionProd.MostrarproductosXid(parametrosProd);
+
+                foreach (var itemPro in listaPro)
+                {
+                    parametros.DescripcionPro = itemPro.Descripcion;
+                    parametros.Icono = itemPro.Icono;   
+                }
+
+                listaDcompra.Add(parametros);
             }
+            return listaDcompra.ToList();
         }
     }
 }
