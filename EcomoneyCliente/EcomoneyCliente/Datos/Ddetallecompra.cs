@@ -32,11 +32,10 @@ namespace EcomoneyCliente.Datos
                 parametrosProd.Idproducto = item.Object.Idproducto;
                 var listaPro = await funcionProd.MostrarproductosXid(parametrosProd);
 
-                foreach (var itemPro in listaPro)
-                {
-                    parametros.DescripcionPro = itemPro.Descripcion;
-                    parametros.Icono = itemPro.Icono;   
-                }
+                var datos = listaPro.FirstOrDefault();
+                parametros.DescripcionPro = datos.Descripcion;
+                parametros.Icono = datos.Icono;
+                parametros.Color = datos.Color;
 
                 listaDcompra.Add(parametros);
             }

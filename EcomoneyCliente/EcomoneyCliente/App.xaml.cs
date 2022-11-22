@@ -11,7 +11,7 @@ namespace EcomoneyCliente
         {
             InitializeComponent();
 
-            MainPage = new NavigationPage(new Vistas.Menu());
+            MainPage = new NavigationPage(new Login());
         }
 
         protected override void OnStart()

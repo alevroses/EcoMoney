@@ -124,8 +124,21 @@
                          Progress="0.3"/>
         </StackLayout>
         <CollectionView Grid.Row="4"
-                        BackgroundColor="DarkSalmon">
-            
+                        BackgroundColor="#191725"
+                        ItemsSource="{Binding Listadetallecompra}">
+            <CollectionView.ItemTemplate>
+                <DataTemplate>
+                    <Grid RowDefinitions="*,1"
+                          ColumnDefinitions="50,*">
+                        <Image Source="{Binding Icono}"/>
+                        <StackLayout Orientation="Horizontal"
+                                     Grid.Column="1">
+                            <Label Text="{Binding DescripcionPro}"
+                                   TextColor="{Binding Color}"/>
+                        </StackLayout>
+                    </Grid>
+                </DataTemplate>
+            </CollectionView.ItemTemplate>
         </CollectionView>
     </Grid>
 </ContentPage>

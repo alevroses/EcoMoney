@@ -18,7 +18,8 @@ namespace EcomoneyCliente.Datos
                 .OnceAsync<Mproductos>()).Where(a => a.Key == parametrosPedir.Idproducto).Select(item => new Mproductos
                 {
                     Descripcion = item.Object.Descripcion,
-                    Icono = item.Object.Icono
+                    Icono = item.Object.Icono,
+                    Color = item.Object.Color
                 }).ToList();
         }
     }

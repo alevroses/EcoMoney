@@ -13,6 +13,8 @@ namespace EcomoneyCliente.VistaModelo
     {
         #region VARIABLES
         public string identificacion;
+        public string idcliente;
+
         public List<Mdetallecompra> listadetallecompra = new List<Mdetallecompra>();
         public List<Mclientes> listaclientes = new List<Mclientes>();
         #endregion
@@ -24,11 +26,13 @@ namespace EcomoneyCliente.VistaModelo
             DependencyService.Get<VMstatusbar>().TransparentarStatusbar();
             /*Logincommand = new Command(async () => await validarLogin());*/
             Listaclientes = clientes;
+            
+            MostrarDcompra();
         }
         #endregion
 
         #region OBJETOS
-        public Mclientes Clientes { get; set; }
+        
         public string txtidentificacion
         {
             get { return identificacion; }
@@ -66,13 +70,13 @@ namespace EcomoneyCliente.VistaModelo
         {
             ObtenerIdcliente();
             var funcion = new Ddetallecompra();
-            Listadetallecompra = await funcion.MostrarDcompra(Clientes.Idcliente);
+            Listadetallecompra = await funcion.MostrarDcompra(idcliente);
         }
 
         private void ObtenerIdcliente()
         {
             var data = Listaclientes.FirstOrDefault();
-            Clientes.Idcliente = data.Idcliente;
+            idcliente = data.Idcliente;
         }
         #endregion
 

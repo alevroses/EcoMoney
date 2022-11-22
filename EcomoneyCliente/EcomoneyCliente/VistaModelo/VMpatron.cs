@@ -41,7 +41,7 @@ namespace EcomoneyCliente.VistaModelo
 
             if (dt.Count > 0)
             {
-                await Navigation.PushAsync(new Vistas.Menu());
+                /*await Navigation.PushAsync(new Vistas.Menu());*/
             }
         }
         #endregion
