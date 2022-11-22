@@ -17,7 +17,7 @@ namespace EcomoneyCliente.Datos
                 .OnceAsync<Mclientes>()).Where(a => a.Object.Identificacion == parametrosPedir.Identificacion).Select(item => new Mclientes
                 {
                     Identificacion = item.Object.Identificacion,
-                    NombresApe = item.Object.NombresApe,
+                    NombreCom = item.Object.NombreCom, /*NombreCom - NombresApe*/
                     FotoFachada = item.Object.FotoFachada,
                     Idcliente = item.Key,
                     Totalcobrado = item.Object.Totalcobrado,

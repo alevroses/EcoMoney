@@ -18,6 +18,8 @@ namespace EcomoneyCliente.VistaModelo
         public string lbltotalcobrado;
         public string lbltotalporcobrar;
         public string imagenfachada;
+        public string lblkgacumulados;
+        public string lblpuntos;
 
         public List<Mdetallecompra> listadetallecompra = new List<Mdetallecompra>();
         public List<Mclientes> listaclientes = new List<Mclientes>();
@@ -37,6 +39,18 @@ namespace EcomoneyCliente.VistaModelo
         #endregion
 
         #region OBJETOS
+        public string Lblkgacumulados
+        {
+            get { return lblkgacumulados; }
+            set { SetValue(ref lblkgacumulados, value); }
+        }
+
+        public string Lblpuntos
+        {
+            get { return lblpuntos; }
+            set { SetValue(ref lblpuntos, value); }
+        }
+
         public string Imagenfachada
         {
             get { return imagenfachada; }
@@ -104,10 +118,11 @@ namespace EcomoneyCliente.VistaModelo
         {
             var data = Listaclientes.FirstOrDefault();
             idcliente = data.Idcliente;
-            Lblnombreuser = data.NombresApe;
+            Lblnombreuser = data.NombreCom;
             Lbltotalcobrado = data.Totalcobrado;
             Lbltotalporcobrar = data.Totalporcobrar;
             Imagenfachada = data.FotoFachada;
+            Lblpuntos = ((Convert.ToDouble(data.Puntos)/10)/1000).ToString();
         }
         #endregion
 

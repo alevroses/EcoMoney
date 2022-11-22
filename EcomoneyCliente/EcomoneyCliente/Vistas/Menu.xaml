@@ -121,7 +121,7 @@
                        HorizontalOptions="EndAndExpand"/>
             </StackLayout>
             <ProgressBar ProgressColor="#FFD340"
-                         Progress="0.3"/>
+                         Progress="{Binding Lblpuntos}"/>
         </StackLayout>
         <CollectionView Grid.Row="4"
                         BackgroundColor="#191725"

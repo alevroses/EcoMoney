@@ -15,14 +15,13 @@ namespace EcomoneyCliente.Modelo
         public string IdPro { get; set; }
         public string IdZona { get; set; }
         public string Identificacion { get; set; }
-        public string NombresApe { get; set; }
+        public string NombreCom { get; set; }
         public string Idcliente { get; set; }
 
         public string Totalcobrado { get; set; }
         public string Totalporcobrar { get; set; }
         public string Puntos { get; set; }
         public string Kgacumulados { get; set; }
-        public string Puntosacum { get; set; }
         public string Metapuntos { get; set; }
         public string ProducIcono { get; set; }
     }
