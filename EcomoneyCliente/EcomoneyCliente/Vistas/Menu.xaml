@@ -130,12 +130,27 @@
                 <DataTemplate>
                     <Grid RowDefinitions="*,1"
                           ColumnDefinitions="50,*">
-                        <Image Source="{Binding Icono}"/>
+                        <Image Source="{Binding Icono}"
+                               Margin="8"/>
                         <StackLayout Orientation="Horizontal"
-                                     Grid.Column="1">
-                            <Label Text="{Binding DescripcionPro}"
-                                   TextColor="{Binding Color}"/>
+                                     Grid.Column="1"
+                                     Margin="0,0,15,0">
+                            <StackLayout>
+                                <Label Text="{Binding DescripcionPro}"
+                                       TextColor="{Binding Color}"
+                                       FontSize="18"/>
+                                <Label Text="{Binding Preciocompra}" 
+                                       TextColor="Aqua"/>
+                            </StackLayout>
+                            <Label Text="{Binding Total}"
+                                   TextColor="White"
+                                   HorizontalOptions="EndAndExpand"
+                                   VerticalOptions="Center"
+                                   FontSize="20"/>
                         </StackLayout>
+                        <BoxView BackgroundColor="Aqua"
+                                 Grid.Row="1"
+                                 Grid.Column="1"/>
                     </Grid>
                 </DataTemplate>
             </CollectionView.ItemTemplate>
