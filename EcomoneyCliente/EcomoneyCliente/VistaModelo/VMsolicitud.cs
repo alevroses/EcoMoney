@@ -14,9 +14,9 @@ namespace EcomoneyCliente.VistaModelo
         #region VARIABLES
         bool registroinicial;
         bool registrofinal;
-        string txtturno; //idturno
+        string idturno; //idturno
+        List<Mturno> listaturnos = new List<Mturno>();
         DateTime txtfecha; //string fechaactual;
-        //List<Mturno> listaturnos = new List<Mturno>();
         #endregion
 
         #region CONSTRUCTOR
@@ -27,19 +27,33 @@ namespace EcomoneyCliente.VistaModelo
             Registroinicial = true;
             Registrofinal = false;
             DependencyService.Get<VMstatusbar>().TransparentarStatusbar();
-            /*Fechaactual = DateTime.Now.ToString("dd/MM/yyyy");
-            
             Insertarsolicitudcommand = new Command(async () => await Insertarsolicitud());
             Volvercommand = new Command(async () => await Volver());
-            Mostrarturnos();*/
+            Mostrarturnos();
+            /*Fechaactual = DateTime.Now.ToString("dd/MM/yyyy");*/
         }
         #endregion
 
         #region OBJETOS
-        public string Txtturno
+        public Mturno Selectturno
         {
-            get { return txtturno; }
-            set { SetValue(ref txtturno, value); }
+            get { return selectturno; }
+            set { SetProperty(ref selectturno, value);
+                Idturno = selectturno.Idturno;
+            }
+        }
+
+        public string Idturno
+        {
+            get { return idturno; }
+            set { SetValue(ref idturno, value); }
+        }
+
+        public List<Mturno> Listaturnos
+        {
+            get { return listaturnos; }
+            set { SetValue(ref listaturnos, value); }
+
         }
 
         public DateTime Txtfecha
@@ -61,9 +75,21 @@ namespace EcomoneyCliente.VistaModelo
         #endregion
 
         #region PROCESOS
+        private async Task Volver()
+        {
+            await Navigation.PopAsync();
+        }
+
+        private async Task Mostrarturnos()
+        {
+            var funcion = new Dturno();
+            Listaturnos = await funcion.Mostrarturnos();
+
+        }
+
         public async Task Insertarsolicitud()
         {
-            if (!string.IsNullOrEmpty(Txtturno))
+            if (!string.IsNullOrEmpty(Idturno))
             {
                 if (!string.IsNullOrEmpty(Txtfecha.ToString()))
                 {
@@ -72,7 +98,7 @@ namespace EcomoneyCliente.VistaModelo
                     parametros.Idcliente = Cliente.Idcliente;
                     parametros.Estado = "POR CONFIRMAR";
                     parametros.Fecha = Txtfecha.ToString("dd/MM/yyyy");
-                    parametros.Idturno = Txtturno;
+                    parametros.Idturno = Idturno;
                     await funcion.InsertarSolicitud(parametros);
                     Registrofinal = true;
                     Registroinicial = false;
@@ -88,12 +114,13 @@ namespace EcomoneyCliente.VistaModelo
             }
         }
 
-        //public Mturno selectturno;
+        public Mturno selectturno;
         public Mclientes Cliente { get; set; }
         #endregion
 
         #region COMANDOS
-        public Command Logincommand { get; }
+        public Command Insertarsolicitudcommand { get; }
+        public Command Volvercommand { get; }
         #endregion
     }
 }

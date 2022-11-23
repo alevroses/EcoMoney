@@ -37,18 +37,23 @@
                 <Picker HorizontalOptions="CenterAndExpand"
                         HorizontalTextAlignment="Center"
                         VerticalOptions="Center"
-                        WidthRequest="170"/>
+                        WidthRequest="170"
+                        ItemsSource="{Binding Listaturnos}"
+                        SelectedItem="{Binding Selectturno}"
+                        ItemDisplayBinding="{Binding Turno}"/>
             </StackLayout>
             <Button Text="Confirmar solicitud"
                     BackgroundColor="#191725"
                     TextColor="White"
                     FontAttributes="Bold"
                     CornerRadius="15"
-                    HorizontalOptions="Center"/>
+                    HorizontalOptions="Center"
+                    Command="{Binding Insertarsolicitudcommand}"/>
             <Button Text="Volver"
                     HorizontalOptions="Center"
                     BackgroundColor="Transparent"
-                    TextColor="#813fdf"/>
+                    TextColor="#813fdf"
+                    Command="{Binding Volvercommand}"/>
         </StackLayout>
         <StackLayout VerticalOptions="CenterAndExpand"
                      Margin="10,0,10,0"
@@ -65,7 +70,8 @@
                     BackgroundColor="Black"
                     TextColor="#813fdf"
                     CornerRadius="15"
-                    HorizontalOptions="Center"/>
+                    HorizontalOptions="Center"
+                    Command="{Binding Volvercommand}"/>
         </StackLayout>
     </Grid>
 </ContentPage>
