@@ -108,28 +108,28 @@ namespace EcomoneyCliente.VistaModelo
             {
             new Mdetallecompra
             {
-                Icono="...",
+                Icono="https://i.postimg.cc/1RMctdHx/container.png",
                 DescripcionPro="...",
                 Preciocompra="...",
                 IsBusy=true
             },
              new Mdetallecompra
             {
-                Icono="...",
+                Icono="https://i.postimg.cc/1RMctdHx/container.png",
                 DescripcionPro="...",
                 Preciocompra="...",
                 IsBusy=true
             },
               new Mdetallecompra
             {
-                Icono="...",
+                Icono="https://i.postimg.cc/1RMctdHx/container.png",
                 DescripcionPro="...",
                 Preciocompra="...",
                 IsBusy=true
             },
                new Mdetallecompra
             {
-                Icono="..",
+                Icono="https://i.postimg.cc/1RMctdHx/container.png",
                 DescripcionPro="...",
                 Preciocompra="...",
                 IsBusy=true

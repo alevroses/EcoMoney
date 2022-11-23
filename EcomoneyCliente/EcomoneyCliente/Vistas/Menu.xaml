@@ -135,28 +135,36 @@
             <CollectionView.ItemTemplate>
                 <DataTemplate>
                     <Grid RowDefinitions="*,1"
-                          ColumnDefinitions="50,*"
-                          sk:Skeleton.IsBusy="{Binding IsBusy}"
-                          sk:Skeleton.BackgroundColor="Black"
-                          sk:Skeleton.Animation="{sk:DefaultAnimation Fade}">
+                          ColumnDefinitions="50,*">
                         <Image Source="{Binding Icono}"
-                               Margin="8"/>
-                        <StackLayout Orientation="Horizontal"
-                                     Grid.Column="1"
-                                     Margin="0,0,15,0">
-                            <StackLayout>
-                                <Label Text="{Binding DescripcionPro}"
-                                       TextColor="{Binding Color}"
-                                       FontSize="18"/>
-                                <Label Text="{Binding Preciocompra}" 
-                                       TextColor="Aqua"/>
+                               Margin="8"
+                               sk:Skeleton.IsBusy="{Binding IsBusy}"
+                               sk:Skeleton.Animation="{sk:DefaultAnimation Fade}"/>
+                        <Frame Grid.Column="1"
+                               Margin="0,0,15,0"
+                               Padding="0"
+                               BackgroundColor="Transparent"
+                               CornerRadius="10"
+                               sk:Skeleton.IsBusy="{Binding IsBusy}"
+                               sk:Skeleton.BackgroundColor="Black"
+                               sk:Skeleton.Animation="{sk:DefaultAnimation Fade}">
+                            <StackLayout Orientation="Horizontal"
+                                         Grid.Column="1"
+                                         Margin="0,0,15,0">
+                                <StackLayout>
+                                    <Label Text="{Binding DescripcionPro}"
+                                           TextColor="{Binding Color}"
+                                           FontSize="18" />
+                                    <Label Text="{Binding Preciocompra}"
+                                           TextColor="Aqua" />
+                                </StackLayout>
+                                <Label Text="{Binding Total}"
+                                       TextColor="White"
+                                       HorizontalOptions="EndAndExpand"
+                                       VerticalOptions="Center"
+                                       FontSize="20" />
                             </StackLayout>
-                            <Label Text="{Binding Total}"
-                                   TextColor="White"
-                                   HorizontalOptions="EndAndExpand"
-                                   VerticalOptions="Center"
-                                   FontSize="20"/>
-                        </StackLayout>
+                        </Frame>
                         <BoxView BackgroundColor="Aqua"
                                  Grid.Row="1"
                                  Grid.Column="1"/>
