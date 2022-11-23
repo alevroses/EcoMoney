@@ -1,12 +1,50 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="EcomoneyCliente.Vistas.Solicitud">
-    <ContentPage.Content>
-        <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+             x:Class="EcomoneyCliente.Vistas.Solicitud"
+             NavigationPage.HasNavigationBar="False">
+    <Grid>
+        <Grid.Background>
+            <LinearGradientBrush EndPoint="1,0">
+                <GradientStop Color="#26213d"
+                              Offset="1.0" />
+                <GradientStop Color="#191725"
+                              Offset="0.1" />
+            </LinearGradientBrush>
+        </Grid.Background>
+        <StackLayout VerticalOptions="Center">
+            <Image Source="https://i.postimg.cc/CLN5Cy27/forest.png"/>
+            <Label Text="Seleccione una fecha y horario para que uno de nuestros agentes de recojo vaya a tu domicilio"
+                   HorizontalOptions="Center"
+                   HorizontalTextAlignment="Center"
+                   TextColor="White"/>
+            <DatePicker VerticalOptions="Center"
+                        HorizontalOptions="CenterAndExpand">
+                <DatePicker.Format>d/MM/yyyy</DatePicker.Format>
+            </DatePicker>
+            <StackLayout Orientation="Horizontal"
+                         HorizontalOptions="Center">
+                <Label Text="Entre las"
+                       FontAttributes="Bold"
+                       HorizontalOptions="Center"
+                       VerticalOptions="Center"
+                       VerticalTextAlignment="Center"
+                       TextColor="White"/>
+                <Picker HorizontalOptions="CenterAndExpand"
+                        HorizontalTextAlignment="Center"
+                        VerticalOptions="Center"
+                        WidthRequest="170"/>
+            </StackLayout>
+            <Button Text="Confirmar solicitud"
+                    BackgroundColor="#191725"
+                    TextColor="White"
+                    FontAttributes="Bold"
+                    CornerRadius="15"
+                    HorizontalOptions="Center"/>
+            <Button Text="Volver"
+                    HorizontalOptions="Center"
+                    BackgroundColor="Transparent"
+                    TextColor="#813fdf"/>
         </StackLayout>
-    </ContentPage.Content>
+    </Grid>
 </ContentPage>
