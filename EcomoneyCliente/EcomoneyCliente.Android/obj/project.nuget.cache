@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "DluAAwFkvODngw+v4/WhWVjTfKgnHuhXDQGEvWIMS3IrCumNvRTMZbMNxqgRAhsxLPPfHCt+uQW1Ebt5jMdqwg==",
+  "dgSpecHash": "WIfxV/cc127I6cqqkCKonOdBqvyA6ZSkhfZcLx74fge+2RyQGh/N1wCdpSOTYKBdwjMEEYP4QDPZ9TUHxINo/g==",
   "success": true,
   "projectFilePath": "D:\\1-Software\\Platzi\\B-Projects\\DMP\\EcoMoney\\EcomoneyCliente\\EcomoneyCliente.Android\\EcomoneyCliente.Android.csproj",
   "expectedPackageFiles": [
@@ -70,6 +70,7 @@
     "C:\\Users\\aleVR\\.nuget\\packages\\xamarin.essentials\\1.7.0\\xamarin.essentials.1.7.0.nupkg.sha512",
     "C:\\Users\\aleVR\\.nuget\\packages\\xamarin.forms\\5.0.0.2196\\xamarin.forms.5.0.0.2196.nupkg.sha512",
     "C:\\Users\\aleVR\\.nuget\\packages\\xamarin.forms.pancakeview\\2.3.0.759\\xamarin.forms.pancakeview.2.3.0.759.nupkg.sha512",
+    "C:\\Users\\aleVR\\.nuget\\packages\\xamarin.forms.skeleton\\2.0.0\\xamarin.forms.skeleton.2.0.0.nupkg.sha512",
     "C:\\Users\\aleVR\\.nuget\\packages\\xamarin.google.android.material\\1.4.0.2\\xamarin.google.android.material.1.4.0.2.nupkg.sha512",
     "C:\\Users\\aleVR\\.nuget\\packages\\xamarin.google.guava.listenablefuture\\1.0.0.2\\xamarin.google.guava.listenablefuture.1.0.0.2.nupkg.sha512"
   ],

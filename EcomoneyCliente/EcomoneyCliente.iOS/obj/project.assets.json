@@ -289,6 +289,19 @@
           }
         }
       },
+      "Xamarin.Forms.Skeleton/2.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard1.0/Xamarin.Forms.Skeleton.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard1.0/Xamarin.Forms.Skeleton.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "EcomoneyCliente/1.0.0": {
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
@@ -296,7 +309,8 @@
           "FirebaseDatabase.net": "4.1.0",
           "Xamarin.Essentials": "1.7.0",
           "Xamarin.Forms": "5.0.0.2196",
-          "Xamarin.Forms.PancakeView": "2.3.0.759"
+          "Xamarin.Forms.PancakeView": "2.3.0.759",
+          "Xamarin.Forms.Skeleton": "2.0.0"
         },
         "compile": {
           "bin/placeholder/EcomoneyCliente.dll": {}
@@ -594,6 +608,19 @@
           }
         }
       },
+      "Xamarin.Forms.Skeleton/2.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard1.0/Xamarin.Forms.Skeleton.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard1.0/Xamarin.Forms.Skeleton.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "EcomoneyCliente/1.0.0": {
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
@@ -601,7 +628,8 @@
           "FirebaseDatabase.net": "4.1.0",
           "Xamarin.Essentials": "1.7.0",
           "Xamarin.Forms": "5.0.0.2196",
-          "Xamarin.Forms.PancakeView": "2.3.0.759"
+          "Xamarin.Forms.PancakeView": "2.3.0.759",
+          "Xamarin.Forms.Skeleton": "2.0.0"
         },
         "compile": {
           "bin/placeholder/EcomoneyCliente.dll": {}
@@ -899,6 +927,19 @@
           }
         }
       },
+      "Xamarin.Forms.Skeleton/2.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard1.0/Xamarin.Forms.Skeleton.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard1.0/Xamarin.Forms.Skeleton.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "EcomoneyCliente/1.0.0": {
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
@@ -906,7 +947,8 @@
           "FirebaseDatabase.net": "4.1.0",
           "Xamarin.Essentials": "1.7.0",
           "Xamarin.Forms": "5.0.0.2196",
-          "Xamarin.Forms.PancakeView": "2.3.0.759"
+          "Xamarin.Forms.PancakeView": "2.3.0.759",
+          "Xamarin.Forms.Skeleton": "2.0.0"
         },
         "compile": {
           "bin/placeholder/EcomoneyCliente.dll": {}
@@ -1204,6 +1246,19 @@
           }
         }
       },
+      "Xamarin.Forms.Skeleton/2.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard1.0/Xamarin.Forms.Skeleton.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard1.0/Xamarin.Forms.Skeleton.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "EcomoneyCliente/1.0.0": {
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
@@ -1211,7 +1266,8 @@
           "FirebaseDatabase.net": "4.1.0",
           "Xamarin.Essentials": "1.7.0",
           "Xamarin.Forms": "5.0.0.2196",
-          "Xamarin.Forms.PancakeView": "2.3.0.759"
+          "Xamarin.Forms.PancakeView": "2.3.0.759",
+          "Xamarin.Forms.Skeleton": "2.0.0"
         },
         "compile": {
           "bin/placeholder/EcomoneyCliente.dll": {}
@@ -1897,6 +1953,19 @@
         "lib/xamarinmac20/Xamarin.Forms.PancakeView.xml",
         "xamarin.forms.pancakeview.2.3.0.759.nupkg.sha512",
         "xamarin.forms.pancakeview.nuspec"
+      ]
+    },
+    "Xamarin.Forms.Skeleton/2.0.0": {
+      "sha512": "ywhbipDN3okMhi1nPnoqf/uyrryGNGf9k4aXkkSCes5TAmT6EzRCyUGODjzCh4eGb+kUigdchAqlAMiGJXgw2w==",
+      "type": "package",
+      "path": "xamarin.forms.skeleton/2.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/netstandard1.0/Xamarin.Forms.Skeleton.dll",
+        "lib/netstandard1.0/Xamarin.Forms.Skeleton.xml",
+        "xamarin.forms.skeleton.2.0.0.nupkg.sha512",
+        "xamarin.forms.skeleton.nuspec"
       ]
     },
     "EcomoneyCliente/1.0.0": {

@@ -20,5 +20,6 @@ namespace EcomoneyCliente.Modelo
         public string DescripcionPro { get; set; }
         public string Icono { get; set; }
         public string Color { get; set; }
+        public bool IsBusy { get; set; } 
     }
 }

@@ -3,7 +3,8 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="EcomoneyCliente.Vistas.Menu"
              NavigationPage.HasNavigationBar="False"
-             xmlns:degradado="clr-namespace:Xamarin.Forms.PancakeView;assembly=Xamarin.Forms.PancakeView">
+             xmlns:degradado="clr-namespace:Xamarin.Forms.PancakeView;assembly=Xamarin.Forms.PancakeView"
+             xmlns:sk="clr-namespace:Xamarin.Forms.Skeleton;assembly=Xamarin.Forms.Skeleton">
     <Grid RowDefinitions="auto,auto,auto,auto,*">
         <Grid.Background>
             <LinearGradientBrush EndPoint="1,0">
@@ -127,11 +128,17 @@
         </StackLayout>
         <CollectionView Grid.Row="4"
                         BackgroundColor="#191725"
-                        ItemsSource="{Binding Listadetallecompra}">
+                        ItemsSource="{Binding Listadetallecompra}"
+                        sk:Skeleton.IsParent="True"
+                        sk:Skeleton.IsBusy="{Binding IsBusy}"
+                        sk:Skeleton.Animation="{sk:DefaultAnimation Fade}">
             <CollectionView.ItemTemplate>
                 <DataTemplate>
                     <Grid RowDefinitions="*,1"
-                          ColumnDefinitions="50,*">
+                          ColumnDefinitions="50,*"
+                          sk:Skeleton.IsBusy="{Binding IsBusy}"
+                          sk:Skeleton.BackgroundColor="Black"
+                          sk:Skeleton.Animation="{sk:DefaultAnimation Fade}">
                         <Image Source="{Binding Icono}"
                                Margin="8"/>
                         <StackLayout Orientation="Horizontal"

@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "7be+5shemGMiIzIlQn1MrtAITcVMpJroivQtMg7lTIbtq1Fm13iwG6LVIo8ixPchcaPUk/vKUP1jYL7xyVSXyw==",
+  "dgSpecHash": "QHgYPdqCgDQaH1XIbMSRoXlB5BXhtFyzqXADzqNwYEsrJOJfYrWQOpFogMJ+LvuvoJ7p36a1tg3H63E68mFQTw==",
   "success": true,
   "projectFilePath": "D:\\1-Software\\Platzi\\B-Projects\\DMP\\EcoMoney\\EcomoneyCliente\\EcomoneyCliente\\EcomoneyCliente.csproj",
   "expectedPackageFiles": [
@@ -23,7 +23,8 @@
     "C:\\Users\\aleVR\\.nuget\\packages\\system.threading.tasks\\4.3.0\\system.threading.tasks.4.3.0.nupkg.sha512",
     "C:\\Users\\aleVR\\.nuget\\packages\\xamarin.essentials\\1.7.0\\xamarin.essentials.1.7.0.nupkg.sha512",
     "C:\\Users\\aleVR\\.nuget\\packages\\xamarin.forms\\5.0.0.2196\\xamarin.forms.5.0.0.2196.nupkg.sha512",
-    "C:\\Users\\aleVR\\.nuget\\packages\\xamarin.forms.pancakeview\\2.3.0.759\\xamarin.forms.pancakeview.2.3.0.759.nupkg.sha512"
+    "C:\\Users\\aleVR\\.nuget\\packages\\xamarin.forms.pancakeview\\2.3.0.759\\xamarin.forms.pancakeview.2.3.0.759.nupkg.sha512",
+    "C:\\Users\\aleVR\\.nuget\\packages\\xamarin.forms.skeleton\\2.0.0\\xamarin.forms.skeleton.2.0.0.nupkg.sha512"
   ],
   "logs": []
 }

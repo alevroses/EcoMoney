@@ -66,6 +66,10 @@
             "Xamarin.Forms.PancakeView": {
               "target": "Package",
               "version": "[2.3.0.759, )"
+            },
+            "Xamarin.Forms.Skeleton": {
+              "target": "Package",
+              "version": "[2.0.0, )"
             }
           },
           "imports": [

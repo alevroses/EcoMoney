@@ -102,21 +102,43 @@ namespace EcomoneyCliente.VistaModelo
         #endregion
 
         #region PROCESOS
-        /*private async Task validarLogin()
-        {
-            var funcion = new Dclientes();
-            var parametros = new Mclientes();
-            parametros.Identificacion = txtidentificacion;
-            var dt = await funcion.Validarcliente(parametros);
-
-            if (dt.Count > 0)
-            {
-                await Navigation.PushAsync(new Vistas.Menu());
-            }
-        }*/
-
         public async Task MostrarDcompra()
         {
+            Listadetallecompra = new List<Mdetallecompra>(new List<Mdetallecompra>
+            {
+            new Mdetallecompra
+            {
+                Icono="...",
+                DescripcionPro="...",
+                Preciocompra="...",
+                IsBusy=true
+            },
+             new Mdetallecompra
+            {
+                Icono="...",
+                DescripcionPro="...",
+                Preciocompra="...",
+                IsBusy=true
+            },
+              new Mdetallecompra
+            {
+                Icono="...",
+                DescripcionPro="...",
+                Preciocompra="...",
+                IsBusy=true
+            },
+               new Mdetallecompra
+            {
+                Icono="..",
+                DescripcionPro="...",
+                Preciocompra="...",
+                IsBusy=true
+            }
+
+            });
+            IsBusy = true;
+            await Task.Delay(3000);
+            IsBusy = false;
             var funcion = new Ddetallecompra();
             Listadetallecompra = await funcion.MostrarDcompra(idcliente);
         }
@@ -129,7 +151,7 @@ namespace EcomoneyCliente.VistaModelo
             Lbltotalcobrado = data.Totalcobrado;
             Lbltotalporcobrar = data.Totalporcobrar;
             Imagenfachada = data.FotoFachada;
-            Lblpuntos = ((Convert.ToDouble(data.Puntos)/10)/1000).ToString();
+            Lblpuntos = ((Convert.ToDouble(data.Puntos) / 10) / 100).ToString();
             LblpuntosEti = data.Puntos;
             Lblkgacumulados = "Kg reciclados: [" + data.Kgacumulados + "]";
         }
