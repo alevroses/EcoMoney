@@ -11,7 +11,8 @@ namespace EcomoneyCliente.VistaModelo
     public class VMsolicitud:BaseViewModel
     {
         #region VARIABLES
-        public string identificacion;
+        public bool registroinicial;
+        public bool registrofinal;
         #endregion
 
         #region CONSTRUCTOR
@@ -19,10 +20,11 @@ namespace EcomoneyCliente.VistaModelo
         {
             Navigation = navigation;
             Cliente = cliente;
-            /*Registroinicial = true;
+            Registroinicial = true;
             Registrofinal = false;
-            Fechaactual = DateTime.Now.ToString("dd/MM/yyyy");
             DependencyService.Get<VMstatusbar>().TransparentarStatusbar();
+            /*Fechaactual = DateTime.Now.ToString("dd/MM/yyyy");
+            
             Insertarsolicitudcommand = new Command(async () => await Insertarsolicitud());
             Volvercommand = new Command(async () => await Volver());
             Mostrarturnos();*/
@@ -30,10 +32,15 @@ namespace EcomoneyCliente.VistaModelo
         #endregion
 
         #region OBJETOS
-        public string txtidentificacion
+        public bool Registroinicial
         {
-            get { return identificacion; }
-            set { SetValue(ref identificacion, value); }
+            get { return registroinicial; }
+            set { SetValue(ref registroinicial, value); }
+        }
+        public bool Registrofinal
+        {
+            get { return registrofinal; }
+            set { SetValue(ref registrofinal, value); }
         }
         #endregion
 

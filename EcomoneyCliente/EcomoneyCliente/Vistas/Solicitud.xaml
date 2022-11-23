@@ -12,8 +12,11 @@
                               Offset="0.1" />
             </LinearGradientBrush>
         </Grid.Background>
-        <StackLayout VerticalOptions="Center">
-            <Image Source="https://i.postimg.cc/CLN5Cy27/forest.png"/>
+        <StackLayout VerticalOptions="Center"
+                     Margin="10,0,10,0"
+                     IsVisible="{Binding Registroinicial}">
+            <Image Source="https://i.postimg.cc/CLN5Cy27/forest.png"
+                   />
             <Label Text="Seleccione una fecha y horario para que uno de nuestros agentes de recojo vaya a tu domicilio"
                    HorizontalOptions="Center"
                    HorizontalTextAlignment="Center"
@@ -24,11 +27,12 @@
             </DatePicker>
             <StackLayout Orientation="Horizontal"
                          HorizontalOptions="Center">
-                <Label Text="Entre las"
+                <Label Text="Entre a las"
                        FontAttributes="Bold"
                        HorizontalOptions="Center"
                        VerticalOptions="Center"
                        VerticalTextAlignment="Center"
+                       FontSize="17"
                        TextColor="White"/>
                 <Picker HorizontalOptions="CenterAndExpand"
                         HorizontalTextAlignment="Center"
@@ -45,6 +49,23 @@
                     HorizontalOptions="Center"
                     BackgroundColor="Transparent"
                     TextColor="#813fdf"/>
+        </StackLayout>
+        <StackLayout VerticalOptions="CenterAndExpand"
+                     Margin="10,0,10,0"
+                     IsVisible="{Binding Registrofinal}">
+            <Image Source="https://i.postimg.cc/wTK3GfvP/ecco.png"
+                   VerticalOptions="Center"
+                   HeightRequest="200"/>
+            <Label Text="Solicitud enviada ¡Gracias! por cuidar nuestro planeta Tierra"
+                   HorizontalTextAlignment="Center"
+                   FontSize="25"
+                   TextColor="White"/>
+            <Button Text="Aceptar"
+                    FontAttributes="Bold"
+                    BackgroundColor="Black"
+                    TextColor="#813fdf"
+                    CornerRadius="15"
+                    HorizontalOptions="Center"/>
         </StackLayout>
     </Grid>
 </ContentPage>
