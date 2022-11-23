@@ -5,14 +5,18 @@ using System.Threading.Tasks;
 using Xamarin.Forms;
 using EcomoneyCliente.Datos;
 using EcomoneyCliente.Modelo;
+using System.ComponentModel;
 
 namespace EcomoneyCliente.VistaModelo
 {
     public class VMsolicitud:BaseViewModel
     {
         #region VARIABLES
-        public bool registroinicial;
-        public bool registrofinal;
+        bool registroinicial;
+        bool registrofinal;
+        string txtturno; //idturno
+        DateTime txtfecha; //string fechaactual;
+        //List<Mturno> listaturnos = new List<Mturno>();
         #endregion
 
         #region CONSTRUCTOR
@@ -32,6 +36,18 @@ namespace EcomoneyCliente.VistaModelo
         #endregion
 
         #region OBJETOS
+        public string Txtturno
+        {
+            get { return txtturno; }
+            set { SetValue(ref txtturno, value); }
+        }
+
+        public DateTime Txtfecha
+        {
+            get { return txtfecha; }
+            set { SetValue(ref txtfecha, value); }
+        }
+
         public bool Registroinicial
         {
             get { return registroinicial; }
@@ -45,6 +61,34 @@ namespace EcomoneyCliente.VistaModelo
         #endregion
 
         #region PROCESOS
+        public async Task Insertarsolicitud()
+        {
+            if (!string.IsNullOrEmpty(Txtturno))
+            {
+                if (!string.IsNullOrEmpty(Txtfecha.ToString()))
+                {
+                    var funcion = new Dsolicitudesrecojo();
+                    var parametros = new Msolicitud();
+                    parametros.Idcliente = Cliente.Idcliente;
+                    parametros.Estado = "POR CONFIRMAR";
+                    parametros.Fecha = Txtfecha.ToString("dd/MM/yyyy");
+                    parametros.Idturno = Txtturno;
+                    await funcion.InsertarSolicitud(parametros);
+                    Registrofinal = true;
+                    Registroinicial = false;
+                }
+                else
+                {
+                    await Application.Current.MainPage.DisplayAlert("Datos incompletos", "Seleccine una fecha", "OK");
+                }
+            }
+            else
+            {
+                await Application.Current.MainPage.DisplayAlert("Datos incompletos", "Seleccine un turno", "OK");
+            }
+        }
+
+        //public Mturno selectturno;
         public Mclientes Cliente { get; set; }
         #endregion
 
