@@ -6,6 +6,7 @@ using Xamarin.Forms;
 using EcomoneyCliente.Datos;
 using EcomoneyCliente.Modelo;
 using System.Linq;
+using EcomoneyCliente.Vistas;
 
 namespace EcomoneyCliente.VistaModelo
 {
@@ -30,13 +31,14 @@ namespace EcomoneyCliente.VistaModelo
         public VMmenu(INavigation navigation, List<Mclientes> clientes)
         {
             Navigation = navigation;
+            Solicitudcommand = new Command(async () => await Solitudrecojo());
             DependencyService.Get<VMstatusbar>().TransparentarStatusbar();
-            /*Logincommand = new Command(async () => await validarLogin());*/
             Listaclientes = clientes;
 
             ObtenerIdcliente();
             MostrarDcompra();
         }
+
         #endregion
 
         #region OBJETOS
@@ -155,10 +157,18 @@ namespace EcomoneyCliente.VistaModelo
             LblpuntosEti = data.Puntos;
             Lblkgacumulados = "Kg reciclados: [" + data.Kgacumulados + "]";
         }
+
+        private async Task Solitudrecojo()
+        {
+            var parametros = new Mclientes();
+            parametros.Idcliente = idcliente;
+            await Navigation.PushAsync(new Solicitud(parametros));
+        }
         #endregion
 
         #region COMANDOS
         public Command Logincommand { get; }
+        public Command Solicitudcommand { get; }
         #endregion
     }
 }

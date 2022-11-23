@@ -45,7 +45,8 @@
                     TextColor="Black"
                     FontAttributes="Bold"
                     TextTransform="None"
-                    HorizontalOptions="EndAndExpand"/>
+                    HorizontalOptions="EndAndExpand"
+                    Command="{Binding Solicitudcommand}"/>
         </StackLayout>
         <degradado:PancakeView Grid.Row="2"
                                Margin="15"
