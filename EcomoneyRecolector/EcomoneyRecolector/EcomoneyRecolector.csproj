@@ -19,7 +19,12 @@
     <Folder Include="Conexiones\" />
     <Folder Include="Datos\" />
     <Folder Include="Modelo\" />
-    <Folder Include="Vista\" />
     <Folder Include="VistaModelo\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Update="Vista\Login.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
   </ItemGroup>
 </Project>

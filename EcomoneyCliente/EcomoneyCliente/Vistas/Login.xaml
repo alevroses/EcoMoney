@@ -26,6 +26,8 @@
                 <Label Text="Money"
                        FontSize="60"
                        TextColor="Black"
+                       VerticalOptions="Center"
+                       HorizontalOptions="Center"
                        FontAttributes="Bold"
                        VerticalTextAlignment="Center"/>
             </StackLayout>

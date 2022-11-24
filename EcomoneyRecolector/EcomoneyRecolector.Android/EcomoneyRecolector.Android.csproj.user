@@ -4,5 +4,6 @@
     <SelectedDevice>Samsung SM-G9550</SelectedDevice>
     <SelectedPlatformGroup>PhysicalDevice</SelectedPlatformGroup>
     <ActiveDebugProfile>Samsung SM-G9550 %28Android 7.1 - API 25%29</ActiveDebugProfile>
+    <DefaultDevice>pixel_5_-_api_31</DefaultDevice>
   </PropertyGroup>
 </Project>
