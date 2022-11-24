@@ -11,19 +11,22 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="Sharpnado.Shadows" Version="1.2.1" />
     <PackageReference Include="Xamarin.Forms" Version="5.0.0.2196" />
     <PackageReference Include="Xamarin.Essentials" Version="1.7.0" />
+    <PackageReference Include="Xamarin.Forms.PancakeView" Version="2.3.0.759" />
   </ItemGroup>
 
   <ItemGroup>
     <Folder Include="Conexiones\" />
     <Folder Include="Datos\" />
-    <Folder Include="Modelo\" />
-    <Folder Include="VistaModelo\" />
   </ItemGroup>
 
   <ItemGroup>
     <EmbeddedResource Update="Vista\Login.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Vista\Menuprincipal.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
   </ItemGroup>

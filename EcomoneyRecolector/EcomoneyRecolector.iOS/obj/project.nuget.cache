@@ -1,12 +1,16 @@
 {
   "version": 2,
-  "dgSpecHash": "s7vAmRKiOhWiVzKGmc1VHNLqs1pnr97e0rzK/Bz3rlLENhprq2ZahImdpH9CUt1zefNj3hbArb6hhbQKWezhdg==",
+  "dgSpecHash": "j3jPwLsvvmW90SY9weFlHaS2WxwLLNBSU+Vpmp7fLJc+LXzWTG0obm7X+ZmhkkPy/JWSi4NZ5xVUUdiG1/A4aQ==",
   "success": true,
   "projectFilePath": "D:\\1-Software\\Platzi\\B-Projects\\DMP\\EcoMoney\\EcomoneyRecolector\\EcomoneyRecolector.iOS\\EcomoneyRecolector.iOS.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\aleVR\\.nuget\\packages\\sharpnado.shadows\\1.2.1\\sharpnado.shadows.1.2.1.nupkg.sha512",
+    "C:\\Users\\aleVR\\.nuget\\packages\\system.componentmodel\\4.3.0\\system.componentmodel.4.3.0.nupkg.sha512",
     "C:\\Users\\aleVR\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",
+    "C:\\Users\\aleVR\\.nuget\\packages\\thomaslevesque.weakevent\\4.1.0\\thomaslevesque.weakevent.4.1.0.nupkg.sha512",
     "C:\\Users\\aleVR\\.nuget\\packages\\xamarin.essentials\\1.7.0\\xamarin.essentials.1.7.0.nupkg.sha512",
-    "C:\\Users\\aleVR\\.nuget\\packages\\xamarin.forms\\5.0.0.2196\\xamarin.forms.5.0.0.2196.nupkg.sha512"
+    "C:\\Users\\aleVR\\.nuget\\packages\\xamarin.forms\\5.0.0.2196\\xamarin.forms.5.0.0.2196.nupkg.sha512",
+    "C:\\Users\\aleVR\\.nuget\\packages\\xamarin.forms.pancakeview\\2.3.0.759\\xamarin.forms.pancakeview.2.3.0.759.nupkg.sha512"
   ],
   "logs": []
 }
