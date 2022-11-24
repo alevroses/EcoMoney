@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "s7vAmRKiOhWiVzKGmc1VHNLqs1pnr97e0rzK/Bz3rlLENhprq2ZahImdpH9CUt1zefNj3hbArb6hhbQKWezhdg==",
+  "success": true,
+  "projectFilePath": "D:\\1-Software\\Platzi\\B-Projects\\DMP\\EcoMoney\\EcomoneyRecolector\\EcomoneyRecolector.iOS\\EcomoneyRecolector.iOS.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\aleVR\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",
+    "C:\\Users\\aleVR\\.nuget\\packages\\xamarin.essentials\\1.7.0\\xamarin.essentials.1.7.0.nupkg.sha512",
+    "C:\\Users\\aleVR\\.nuget\\packages\\xamarin.forms\\5.0.0.2196\\xamarin.forms.5.0.0.2196.nupkg.sha512"
+  ],
+  "logs": []
+}
