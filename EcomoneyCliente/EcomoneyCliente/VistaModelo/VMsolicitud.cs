@@ -15,6 +15,7 @@ namespace EcomoneyCliente.VistaModelo
         bool registroinicial;
         bool registrofinal;
         string idturno; //idturno
+        string fechaactual;
         List<Mturno> listaturnos = new List<Mturno>();
         DateTime txtfecha; //string fechaactual;
         #endregion
@@ -26,6 +27,7 @@ namespace EcomoneyCliente.VistaModelo
             Cliente = cliente;
             Registroinicial = true;
             Registrofinal = false;
+            Fechaactual = DateTime.Now.ToString("dd/MM/yyyy");
             DependencyService.Get<VMstatusbar>().TransparentarStatusbar();
             Insertarsolicitudcommand = new Command(async () => await Insertarsolicitud());
             Volvercommand = new Command(async () => await Volver());
@@ -35,6 +37,12 @@ namespace EcomoneyCliente.VistaModelo
         #endregion
 
         #region OBJETOS
+        public string Fechaactual
+        {
+            get { return fechaactual; }
+            set { SetValue(ref fechaactual, value); }
+        }
+
         public Mturno Selectturno
         {
             get { return selectturno; }
@@ -58,8 +66,12 @@ namespace EcomoneyCliente.VistaModelo
 
         public DateTime Txtfecha
         {
-            get { return txtfecha; }
-            set { SetValue(ref txtfecha, value); }
+            get => txtfecha;
+            set
+            {
+                txtfecha = value;
+                PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(Txtfecha)));
+            }
         }
 
         public bool Registroinicial
@@ -75,6 +87,8 @@ namespace EcomoneyCliente.VistaModelo
         #endregion
 
         #region PROCESOS
+        public event PropertyChangedEventHandler PropertyChanged;
+
         private async Task Volver()
         {
             await Navigation.PopAsync();

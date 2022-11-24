@@ -22,8 +22,10 @@
                    HorizontalTextAlignment="Center"
                    TextColor="White"/>
             <DatePicker VerticalOptions="Center"
-                        HorizontalOptions="CenterAndExpand">
-                <DatePicker.Format>d/MM/yyyy</DatePicker.Format>
+                        HorizontalOptions="CenterAndExpand"
+                        MinimumDate="{Binding Fechaactual}"
+                        Date="{Binding Txtfecha}">
+                <DatePicker.Format>dd/MM/yyyy</DatePicker.Format>
             </DatePicker>
             <StackLayout Orientation="Horizontal"
                          HorizontalOptions="Center">
