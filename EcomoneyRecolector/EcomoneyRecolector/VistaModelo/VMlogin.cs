@@ -7,40 +7,60 @@ using Xamarin.Forms;
 using EcomoneyRecolector.Vista;
 using EcomoneyRecolector.Datos;
 using EcomoneyRecolector.Modelo;
+using EcomoneyRecolector.Conexiones;
+using Newtonsoft.Json;
+using Xamarin.Essentials;
+using Acr.UserDialogs;
+using Firebase.Auth;
 
 namespace EcomoneyRecolector.VistaModelo
 {
     public class VMlogin:BaseViewModel
     {
         #region VARIABLES
-        string _Texto;
+        string txtcorreo;
+        string txtpass;
         #endregion
 
         #region CONSTRUCTOR
         public VMlogin(INavigation navigation)
         {
             Navigation = navigation;
-            Logincomamd = new Command(async () => await proceso());
+            //Logincomamd = new Command(async () => await proceso());
         }
         #endregion
 
         #region OBJETOS
-        public string Texto
+        public string Txtcorreo
         {
-            get { return _Texto; }
-            set { SetValue(ref _Texto, value); }
+            get { return txtcorreo; }
+            set { SetValue(ref txtcorreo, value); }
         }
-        #endregion
+        public string Txtpass
+        {
+            get { return txtpass; }
+            set { SetValue(ref txtpass, value); }
+        }
+        #endregion 
 
         #region PROCESOS
-        public async Task proceso()
+        private async Task<bool> Iniciarsesion()
         {
-
-        }
-
-        public void ProcesoSimple()
-        {
-
+            try
+            {
+                UserDialogs.Instance.ShowLoading("Validando datos...");
+                var authProvider = new FirebaseAuthProvider(new FirebaseConfig(Constantes.WebapyFirebase));
+                var auth = await authProvider.SignInWithEmailAndPasswordAsync(Txtcorreo, Txtpass);
+                var serializarToken = JsonConvert.SerializeObject(auth);
+                Preferences.Set("MyFirebaseRefreshToken", serializarToken);
+                return true;
+            }
+            catch (Exception)
+            {
+                UserDialogs.Instance.HideLoading();
+                await App.Current.MainPage.DisplayAlert("Error", "Datos incorrectos", "OK");
+                return false;
+            }
         }
         #endregion
 
