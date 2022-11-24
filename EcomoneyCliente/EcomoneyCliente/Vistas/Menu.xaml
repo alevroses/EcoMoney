@@ -105,7 +105,8 @@
                            BackgroundColor="Transparent"
                            BorderWidth="2"
                            BorderColor="White"
-                            CornerRadius="20"/>
+                           CornerRadius="20"
+                            Command="{Binding Detallecommand}"/>
                     <Label Text="{Binding Lblkgacumulados}"
                            TextColor="White"
                            FontSize="18"

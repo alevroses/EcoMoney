@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="EcomoneyCliente.Vistas.Detallecompra"
+             NavigationPage.HasNavigationBar="False"
+             xmlns:sk="clr-namespace:Xamarin.Forms.Skeleton;assembly=Xamarin.Forms.Skeleton">
+    <ContentPage.Content>
+        <StackLayout BackgroundColor="#191725">
+            <ImageButton Source="https://i.postimg.cc/pXMTtWNJ/arrowleft.png"
+                         BackgroundColor="Transparent"
+                         HorizontalOptions="StartAndExpand"
+                         Margin="10,30,0,0"
+                         HeightRequest="30"
+                         Command="{Binding Volvercommand}"/>
+            <CollectionView
+                            BackgroundColor="#191725"
+                            ItemsSource="{Binding Listadetallecompra}"
+                            sk:Skeleton.IsParent="True"
+                            sk:Skeleton.IsBusy="{Binding IsBusy}"
+                            sk:Skeleton.Animation="{sk:DefaultAnimation Fade}">
+                <CollectionView.ItemTemplate>
+                    <DataTemplate>
+                        <Grid RowDefinitions="*,1"
+                              ColumnDefinitions="50,*">
+                            <Image Source="{Binding Icono}"
+                                   Margin="8"
+                                   sk:Skeleton.IsBusy="{Binding IsBusy}"
+                                   sk:Skeleton.Animation="{sk:DefaultAnimation Fade}" />
+                            <Frame Grid.Column="1"
+                                   Margin="0,0,15,0"
+                                   Padding="0"
+                                   BackgroundColor="Transparent"
+                                   CornerRadius="10"
+                                   sk:Skeleton.IsBusy="{Binding IsBusy}"
+                                   sk:Skeleton.BackgroundColor="Black"
+                                   sk:Skeleton.Animation="{sk:DefaultAnimation Fade}">
+                                <StackLayout Orientation="Horizontal"
+                                             Grid.Column="1"
+                                             Margin="0,0,15,0">
+                                    <StackLayout>
+                                        <Label Text="{Binding DescripcionPro}"
+                                               TextColor="{Binding Color}"
+                                               FontSize="18" />
+                                        <Label Text="{Binding Preciocompra}"
+                                               TextColor="Aqua" />
+                                        <Label Text="{Binding Fecha}"
+                                               TextColor="White" />
+                                    </StackLayout>
+                                    <Label Text="{Binding Total}"
+                                           TextColor="White"
+                                           HorizontalOptions="EndAndExpand"
+                                           VerticalOptions="Center"
+                                           FontSize="20" />
+                                </StackLayout>
+                            </Frame>
+                            <BoxView BackgroundColor="Aqua"
+                                     Grid.Row="1"
+                                     Grid.Column="1" />
+                        </Grid>
+                    </DataTemplate>
+                </CollectionView.ItemTemplate>
+            </CollectionView>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

@@ -32,6 +32,8 @@ namespace EcomoneyCliente.VistaModelo
         {
             Navigation = navigation;
             Solicitudcommand = new Command(async () => await Solitudrecojo());
+            Detallecommand = new Command(async () => await IrDetallecompra());
+            Volvercommand = new Command(async () => await Volver());
             DependencyService.Get<VMstatusbar>().TransparentarStatusbar();
             Listaclientes = clientes;
 
@@ -104,6 +106,11 @@ namespace EcomoneyCliente.VistaModelo
         #endregion
 
         #region PROCESOS
+        private async Task Volver()
+        {
+            await Navigation.PopAsync();
+        }
+
         public async Task MostrarDcompra()
         {
             Listadetallecompra = new List<Mdetallecompra>(new List<Mdetallecompra>
@@ -164,11 +171,18 @@ namespace EcomoneyCliente.VistaModelo
             parametros.Idcliente = idcliente;
             await Navigation.PushAsync(new Solicitud(parametros));
         }
+
+        private async Task IrDetallecompra()
+        {
+            await Navigation.PushAsync(new Detallecompra(Listaclientes));
+        }
         #endregion
 
         #region COMANDOS
         public Command Logincommand { get; }
         public Command Solicitudcommand { get; }
+        public Command Detallecommand { get; }
+        public Command Volvercommand { get; }
         #endregion
     }
 }

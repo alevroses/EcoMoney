@@ -26,6 +26,7 @@ namespace EcomoneyCliente.Datos
                 parametros.Cantidad = item.Object.Cantidad;
                 parametros.Total = "S/. " + item.Object.Total;
                 parametros.Und = item.Object.Und;
+                parametros.Fecha = item.Object.Fecha;
 
                 var funcionProd = new Dproductos();
                 var parametrosProd = new Mproductos();
