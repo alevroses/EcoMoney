@@ -28,6 +28,39 @@
                        VerticalTextAlignment="Center"
                        FontAttributes="Bold"/>
             </StackLayout>
+            <StackLayout Orientation="Horizontal"
+                         HorizontalOptions="Center">
+                <Image Source="https://i.postimg.cc/bvR6LmJM/mail.png"
+                       HeightRequest="22"/>
+                <Entry Placeholder="Correo"
+                       PlaceholderColor="Gray"
+                       HorizontalOptions="Start"
+                       WidthRequest="240"
+                       TextColor="White"
+                       FontAttributes="Bold"/>
+            </StackLayout>
+            <StackLayout Orientation="Horizontal"
+                         HorizontalOptions="Center">
+                <Image Source="https://i.postimg.cc/jjGjg4FH/password.png"
+                       HeightRequest="22" />
+                <Entry Placeholder="Contraseña"
+                       PlaceholderColor="Gray"
+                       HorizontalOptions="Start"
+                       WidthRequest="240"
+                       TextColor="White"
+                       FontAttributes="Bold"
+                       IsPassword="True"/>
+            </StackLayout>
+            <Button Text="Acceder"
+                    FontSize="18"
+                    WidthRequest="100"
+                    CornerRadius="20"
+                    FontAttributes="Bold"
+                    BackgroundColor="Black"
+                    TextColor="White"
+                    TextTransform="None"
+                    HorizontalOptions="Center"
+                    Margin="0,15,0,0"/>
         </StackLayout>
         
     </Grid>
