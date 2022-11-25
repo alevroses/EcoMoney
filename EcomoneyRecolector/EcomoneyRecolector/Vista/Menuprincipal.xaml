@@ -21,7 +21,7 @@
                     </LinearGradientBrush>
                 </Frame.Background>
                 <StackLayout>
-                    <Label Text="Recolector"
+                    <Label Text="{Binding Txtnombre}"
                            FontSize="25"
                            TextColor="Black"
                            FontAttributes="Bold"
@@ -83,7 +83,7 @@
                                Margin="10"
                                x:Name="btnconfig" />
                     </Frame>
-                    <Label Text="AFILIAR"
+                    <Label Text="{Binding Afiliarcommand}"
                            HorizontalOptions="Center"
                            TextColor="White"
                            FontSize="12"

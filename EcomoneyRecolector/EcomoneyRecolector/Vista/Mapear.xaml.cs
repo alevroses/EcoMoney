@@ -6,17 +6,15 @@ using System.Threading.Tasks;
 
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
-using EcomoneyRecolector.VistaModelo;
 
 namespace EcomoneyRecolector.Vista
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class Menuprincipal : ContentPage
+    public partial class Mapear : ContentPage
     {
-        public Menuprincipal()
+        public Mapear()
         {
             InitializeComponent();
-            BindingContext = new VMmenuprincipal(Navigation);
         }
     }
 }
