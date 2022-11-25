@@ -1,4 +1,8 @@
+Acr.UserDialogs.dll
+AndHUD.dll
 FormsViewGroup.dll
+Plugin.CurrentActivity.dll
+Plugin.SharedTransitions.dll
 Sharpnado.Shadows.Android.dll
 Xamarin.AndroidX.Activity.dll
 Xamarin.AndroidX.Annotation.dll
@@ -104,7 +108,3 @@ androidx.asynclayoutinflater.asynclayoutinflater.aar
 androidx.legacy.legacy-support-core-ui.aar
 androidx.legacy.legacy-support-v4.aar
 androidx.browser.browser.aar
-Acr.UserDialogs.dll
-AndHUD.dll
-Plugin.SharedTransitions.dll
-Plugin.CurrentActivity.dll

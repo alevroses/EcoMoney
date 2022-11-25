@@ -3,11 +3,16 @@ public class MonoPackageManager_Resources {
 	public static String[] Assemblies = new String[]{
 		/* We need to ensure that "EcomoneyRecolector.Android.dll" comes first in this list. */
 		"EcomoneyRecolector.Android.dll",
+		"Acr.UserDialogs.dll",
+		"AndHUD.dll",
 		"EcomoneyRecolector.dll",
+		"Firebase.Auth.dll",
 		"Firebase.dll",
 		"FormsViewGroup.dll",
 		"LiteDB.dll",
 		"Newtonsoft.Json.dll",
+		"Plugin.CurrentActivity.dll",
+		"Plugin.SharedTransitions.dll",
 		"Sharpnado.Shadows.Android.dll",
 		"Sharpnado.Shadows.dll",
 		"System.Reactive.dll",

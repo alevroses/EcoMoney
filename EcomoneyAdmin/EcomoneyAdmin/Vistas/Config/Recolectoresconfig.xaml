@@ -77,6 +77,7 @@
                                Placeholder="Ingrese la contraseña"
                                HorizontalOptions="FillAndExpand"
                                TextColor="#7c7b7c"
+                               IsPassword="True"
                                Text="{Binding Txtcontraseña}"/>
                     </StackLayout>
                     <Button Text="Guardar"
