@@ -12,6 +12,7 @@ using Newtonsoft.Json;
 using Xamarin.Essentials;
 using Acr.UserDialogs;
 using Firebase.Auth;
+using Plugin.SharedTransitions;
 
 namespace EcomoneyRecolector.VistaModelo
 {
@@ -23,10 +24,10 @@ namespace EcomoneyRecolector.VistaModelo
         #endregion
 
         #region CONSTRUCTOR
-        public VMlogin(INavigation navigation)
+        public VMlogin()
         {
-            Navigation = navigation;
-            //Logincomamd = new Command(async () => await proceso());
+            DependencyService.Get<VMstatusbar>().TransparentarStatusbar();
+            Logincomamd = new Command(async () => await ValidarSesion());
         }
         #endregion
 
@@ -44,6 +45,16 @@ namespace EcomoneyRecolector.VistaModelo
         #endregion 
 
         #region PROCESOS
+        private async Task ValidarSesion()
+        {
+            bool estado = await Iniciarsesion();
+            if (estado == true)
+            {
+                Application.Current.MainPage = new NavigationPage(new Menuprincipal());
+                UserDialogs.Instance.HideLoading();
+            }
+        }
+
         private async Task<bool> Iniciarsesion()
         {
             try

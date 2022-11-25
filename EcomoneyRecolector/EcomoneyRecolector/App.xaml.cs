@@ -2,6 +2,7 @@
 using System;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
+using Plugin.SharedTransitions;
 
 namespace EcomoneyRecolector
 {
@@ -11,7 +12,7 @@ namespace EcomoneyRecolector
         {
             InitializeComponent();
 
-            MainPage = new Login();
+            MainPage = new NavigationPage(new Login());
         }
 
         protected override void OnStart()

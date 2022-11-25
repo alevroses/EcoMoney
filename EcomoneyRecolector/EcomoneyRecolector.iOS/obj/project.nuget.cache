@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "DVaugMbbG3VFHKpAnwvMUyUSda1orxQ+k0U6po073sJErqT2CuMVxSpQDS7NCK6TA9yUcw7jfyhBBeZYvNN12g==",
+  "dgSpecHash": "6dfLHBnrHwBxPdIh7sp4ppxEM6ineFaAVSG9Kwtln59ZbNJ/6z/3+dbw5dbjn5KZBiISp6qVRxhRbKB7dwi3pg==",
   "success": true,
   "projectFilePath": "D:\\1-Software\\Platzi\\B-Projects\\DMP\\EcoMoney\\EcomoneyRecolector\\EcomoneyRecolector.iOS\\EcomoneyRecolector.iOS.csproj",
   "expectedPackageFiles": [
@@ -64,7 +64,8 @@
     "C:\\Users\\aleVR\\.nuget\\packages\\thomaslevesque.weakevent\\4.1.0\\thomaslevesque.weakevent.4.1.0.nupkg.sha512",
     "C:\\Users\\aleVR\\.nuget\\packages\\xamarin.essentials\\1.7.0\\xamarin.essentials.1.7.0.nupkg.sha512",
     "C:\\Users\\aleVR\\.nuget\\packages\\xamarin.forms\\5.0.0.2196\\xamarin.forms.5.0.0.2196.nupkg.sha512",
-    "C:\\Users\\aleVR\\.nuget\\packages\\xamarin.forms.pancakeview\\2.3.0.759\\xamarin.forms.pancakeview.2.3.0.759.nupkg.sha512"
+    "C:\\Users\\aleVR\\.nuget\\packages\\xamarin.forms.pancakeview\\2.3.0.759\\xamarin.forms.pancakeview.2.3.0.759.nupkg.sha512",
+    "C:\\Users\\aleVR\\.nuget\\packages\\xamarin.plugin.sharedtransitions\\2.4.0\\xamarin.plugin.sharedtransitions.2.4.0.nupkg.sha512"
   ],
   "logs": []
 }

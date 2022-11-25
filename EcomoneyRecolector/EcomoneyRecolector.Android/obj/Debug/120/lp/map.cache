@@ -106,3 +106,5 @@ androidx.legacy.legacy-support-v4.aar
 androidx.browser.browser.aar
 Acr.UserDialogs.dll
 AndHUD.dll
+Plugin.SharedTransitions.dll
+Plugin.CurrentActivity.dll
