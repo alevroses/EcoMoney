@@ -46,9 +46,19 @@
                                         TextColor="#26213d"
                                         FontSize="20" />
                             </StackLayout>
+                            <StackLayout>
+                                <Label Text="Asignaciones"
+                                       FontAttributes="Bold"
+                                       FontSize="11"
+                                       TextColor="White"/>
+                                <Label Text="0"
+                                       FontAttributes="Bold"
+                                       FontSize="15"
+                                       TextColor="White"/>
+                            </StackLayout>
                         </StackLayout>
                         <Image Grid.Column="1"
-                               Source="https://i.postimg.cc/CLN5Cy27/forest.png" />
+                               Source="https://i.postimg.cc/CLN5Cy27/forest.png"/>
                     </Grid>
                 </StackLayout>
             </Frame>
