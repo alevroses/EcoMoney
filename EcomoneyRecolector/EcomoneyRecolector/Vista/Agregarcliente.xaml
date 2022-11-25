@@ -14,7 +14,9 @@
                 </LinearGradientBrush>
             </Grid.Background>
             <ScrollView Grid.Row="1">
-                <StackLayout Grid.Row="1"
+                <StackLayout x:Name="Panelregistro"
+                             IsVisible="false"
+                             Grid.Row="1"
                              Margin="10">
                     <Frame BackgroundColor="#191725"
                            CornerRadius="15">
@@ -28,7 +30,8 @@
                                 <Entry Placeholder="Ingrese identificación"
                                        PlaceholderColor="gray"
                                        HorizontalOptions="FillAndExpand"
-                                       TextColor="White"/>
+                                       TextColor="White"
+                                       FontSize="14"/>
                             </StackLayout>
                             <StackLayout Orientation="Horizontal">
                                 <Label Text="Nombres y Apellidos:"
@@ -39,7 +42,8 @@
                                 <Entry Placeholder="Ingrese nombre completo"
                                        PlaceholderColor="gray"
                                        HorizontalOptions="FillAndExpand"
-                                       TextColor="White" />
+                                       TextColor="White"
+                                       FontSize="14"/>
                             </StackLayout>
                             <StackLayout Orientation="Horizontal">
                                 <Label Text="Dirección:"
@@ -50,13 +54,94 @@
                                 <Entry Placeholder="Ingrese dirección"
                                        PlaceholderColor="gray"
                                        HorizontalOptions="FillAndExpand"
-                                       TextColor="White" />
+                                       TextColor="White"
+                                       FontSize="14"/>
                             </StackLayout>
                         </StackLayout>
                     </Frame>
+                    <StackLayout Orientation="Horizontal">
+                        <Label Text="Pais:"
+                               FontAttributes="Bold"
+                               VerticalOptions="Center"
+                               TextColor="White"/>
+                        <Picker HorizontalOptions="FillAndExpand"
+                                />
+                    </StackLayout>
+                    <StackLayout Orientation="Horizontal">
+                        <Label Text="Departamento:"
+                               FontAttributes="Bold"
+                               VerticalOptions="Center"
+                               TextColor="White" />
+                        <Picker HorizontalOptions="FillAndExpand" />
+                    </StackLayout>
+                    <StackLayout Orientation="Horizontal">
+                        <Label Text="Provincia:"
+                               FontAttributes="Bold"
+                               VerticalOptions="Center"
+                               TextColor="White" />
+                        <Picker HorizontalOptions="FillAndExpand" />
+                    </StackLayout>
+                    <StackLayout Orientation="Horizontal">
+                        <Label Text="Distrito:"
+                               FontAttributes="Bold"
+                               VerticalOptions="Center"
+                               TextColor="White" />
+                        <Picker HorizontalOptions="FillAndExpand" />
+                    </StackLayout>
+                    <StackLayout Orientation="Horizontal">
+                        <Label Text="Zona:"
+                               FontAttributes="Bold"
+                               VerticalOptions="Center"
+                               TextColor="White" />
+                        <Picker HorizontalOptions="FillAndExpand" />
+                    </StackLayout>
+                    <StackLayout Orientation="Horizontal">
+                        <Label Text="Foto fachada:"
+                               FontAttributes="Bold"
+                               VerticalOptions="Center"
+                               TextColor="White" />
+                        <ImageButton Source="https://i.postimg.cc/85G3fsF2/camera.png"
+                                     BackgroundColor="Transparent"
+                                     HeightRequest="40"/>
+                        <Image HeightRequest="80"/>
+                    </StackLayout>
+                    <Button Text="Siguiente"
+                            CornerRadius="15"
+                            BackgroundColor="#191725"
+                            TextColor="White"
+                            HorizontalOptions="Center"/>
                 </StackLayout>
             </ScrollView>
-            
+            <StackLayout x:Name="Panelgeolocalizacion"
+                         Grid.Row="1"
+                         VerticalOptions="Center">
+                <Label Text="Geolocalizar"
+                       FontSize="30"
+                       TextColor="Black"
+                       FontAttributes="Bold"
+                       HorizontalOptions="Center"/>
+                <ImageButton Source="https://i.postimg.cc/HkcLsW70/geo.png"
+                             BackgroundColor="Black"
+                             HorizontalOptions="Center"
+                             CornerRadius="20"
+                             Padding="10"
+                             HeightRequest="80"
+                             BorderColor="Black"
+                             BorderWidth="4"/>
+                <Button Text="Guardar"
+                        HorizontalOptions="Center"
+                        CornerRadius="10"
+                        TextColor="White"
+                        BackgroundColor="Black"
+                        Margin="0,10,0,0"
+                        FontAttributes="Bold"/>
+                <Button Text="Volver"
+                        HorizontalOptions="Center"
+                        CornerRadius="10"
+                        TextColor="White"
+                        BackgroundColor="Transparent"
+                        FontAttributes="Bold" />
+            </StackLayout>
         </Grid>
     </ContentPage.Content>
 </ContentPage>
