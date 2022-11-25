@@ -126,6 +126,9 @@
     <PackageReference Include="Acr.UserDialogs">
       <Version>7.1.0.514</Version>
     </PackageReference>
+    <PackageReference Include="Com.Airbnb.Xamarin.Forms.Lottie">
+      <Version>4.0.10</Version>
+    </PackageReference>
     <PackageReference Include="FirebaseAuthentication.net">
       <Version>3.7.2</Version>
     </PackageReference>

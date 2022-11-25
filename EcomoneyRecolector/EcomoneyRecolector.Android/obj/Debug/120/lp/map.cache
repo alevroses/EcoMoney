@@ -1,9 +1,12 @@
 Acr.UserDialogs.dll
 AndHUD.dll
 FormsViewGroup.dll
+Lottie.Android.dll
+Lottie.Forms.dll
 Plugin.CurrentActivity.dll
 Plugin.SharedTransitions.dll
 Sharpnado.Shadows.Android.dll
+Square.OkIO.dll
 Xamarin.AndroidX.Activity.dll
 Xamarin.AndroidX.Annotation.dll
 Xamarin.AndroidX.Annotation.Experimental.dll

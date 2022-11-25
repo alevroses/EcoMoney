@@ -2,7 +2,8 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="EcomoneyRecolector.Vista.Agregarcliente"
-             NavigationPage.HasNavigationBar="False">
+             NavigationPage.HasNavigationBar="False"
+             xmlns:lottie="clr-namespace:Lottie.Forms;assembly=Lottie.Forms">
     <ContentPage.Content>
         <Grid RowDefinitions="80,*">
             <Grid.Background>
@@ -114,7 +115,8 @@
             </ScrollView>
             <StackLayout x:Name="Panelgeolocalizacion"
                          Grid.Row="1"
-                         VerticalOptions="Center">
+                         VerticalOptions="Center"
+                         IsVisible="false">
                 <Label Text="Geolocalizar"
                        FontSize="30"
                        TextColor="Black"
@@ -141,6 +143,29 @@
                         TextColor="White"
                         BackgroundColor="Transparent"
                         FontAttributes="Bold" />
+            </StackLayout>
+            <StackLayout x:Name="Panelregistrado"
+                         Grid.Row="1"
+                         VerticalOptions="Center"
+                         IsVisible="false">
+                <lottie:AnimationView Animation="ok.json"
+                                      AutoPlay="True"
+                                      WidthRequest="300"
+                                      HeightRequest="250"
+                                      RepeatMode="Infinite"
+                                      VerticalOptions="Center" />
+                <Label Text="Cliente registrado"
+                       HorizontalOptions="Center"
+                       FontSize="30"
+                       TextColor="Black"
+                       FontAttributes="Bold" />
+                <Button Text="Aceptar"
+                        TextColor="White"
+                        BackgroundColor="Black"
+                        CornerRadius="10"
+                        FontAttributes="Bold"
+                        HorizontalOptions="Center"
+                        />
             </StackLayout>
         </Grid>
     </ContentPage.Content>

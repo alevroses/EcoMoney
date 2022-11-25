@@ -1,10 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "7LhhVcXtjdq6QzVnUX9LttkxaS6KnpjIy8J3q38KGbYo3ysvbtlCGXdG34cZOsVV8Ym1KTRjmWvPjMwP24IjUQ==",
+  "dgSpecHash": "msIIbVXUqvHIuWAaQ7JuoYDcIZBKKKJ65Wa9Gcc4N2BHqb3UFfLjwQHlLQqJRJsU73o0RxpZI6yM8/XTU2tfLA==",
   "success": true,
   "projectFilePath": "D:\\1-Software\\Platzi\\B-Projects\\DMP\\EcoMoney\\EcomoneyRecolector\\EcomoneyRecolector\\EcomoneyRecolector.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\aleVR\\.nuget\\packages\\acr.userdialogs\\7.1.0.514\\acr.userdialogs.7.1.0.514.nupkg.sha512",
+    "C:\\Users\\aleVR\\.nuget\\packages\\com.airbnb.xamarin.forms.lottie\\4.0.10\\com.airbnb.xamarin.forms.lottie.4.0.10.nupkg.sha512",
     "C:\\Users\\aleVR\\.nuget\\packages\\firebaseauthentication.net\\3.7.2\\firebaseauthentication.net.3.7.2.nupkg.sha512",
     "C:\\Users\\aleVR\\.nuget\\packages\\firebasedatabase.net\\4.1.0\\firebasedatabase.net.4.1.0.nupkg.sha512",
     "C:\\Users\\aleVR\\.nuget\\packages\\litedb\\4.1.4\\litedb.4.1.4.nupkg.sha512",
