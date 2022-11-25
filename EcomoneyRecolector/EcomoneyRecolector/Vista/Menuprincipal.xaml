@@ -4,7 +4,7 @@
              x:Class="EcomoneyRecolector.Vista.Menuprincipal"
              NavigationPage.HasNavigationBar="False"
              xmlns:degradado="clr-namespace:Xamarin.Forms.PancakeView;assembly=Xamarin.Forms.PancakeView">
-    <Grid RowDefinitions="*,*,*"
+    <Grid RowDefinitions="300,130,*"
           BackgroundColor="#26213d">
         <degradado:PancakeView Grid.Row="0"
                                BackgroundColor="#191725"
@@ -26,11 +26,12 @@
                            TextColor="Black"
                            FontAttributes="Bold"
                            HorizontalOptions="Center"
-                           HorizontalTextAlignment="Center"/>
+                           HorizontalTextAlignment="Center" />
                     <Grid ColumnDefinitions="*,*">
                         <StackLayout VerticalOptions="Center">
                             <Image Source="https://i.postimg.cc/Hk4gwHL5/collector.png"
                                    HeightRequest="30"
+                                   Margin="6,0,0,0"
                                    HorizontalOptions="Start" />
                             <StackLayout Orientation="Horizontal">
                                 <Label Text="Eco"
@@ -50,18 +51,69 @@
                                 <Label Text="Asignaciones"
                                        FontAttributes="Bold"
                                        FontSize="11"
-                                       TextColor="White"/>
+                                       TextColor="White" />
                                 <Label Text="0"
                                        FontAttributes="Bold"
                                        FontSize="15"
-                                       TextColor="White"/>
+                                       TextColor="White" />
                             </StackLayout>
                         </StackLayout>
                         <Image Grid.Column="1"
-                               Source="https://i.postimg.cc/CLN5Cy27/forest.png"/>
+                               Source="https://i.postimg.cc/CLN5Cy27/forest.png" />
                     </Grid>
                 </StackLayout>
             </Frame>
         </degradado:PancakeView>
+        <Frame Grid.Row="1"
+               CornerRadius="20"
+               HasShadow="False"
+               Margin="15, 15, 15, 0"
+               Padding="10"
+               BackgroundColor="#191725">
+            <Grid ColumnDefinitions="*,*"
+                  VerticalOptions="Center">
+                <StackLayout Grid.Column="0">
+                    <Frame HasShadow="False"
+                           Padding="0"
+                           BackgroundColor="#EEF1FD"
+                           CornerRadius="50"
+                           HorizontalOptions="Center">
+                        <Image Source="https://i.postimg.cc/0Nj5xbcK/hero.png"
+                               HeightRequest="35"
+                               Margin="10"
+                               x:Name="btnconfig" />
+                    </Frame>
+                    <Label Text="AFILIAR"
+                           HorizontalOptions="Center"
+                           TextColor="White"
+                           FontSize="12"
+                           FontAttributes="Bold"
+                           CharacterSpacing="2" />
+                    <StackLayout.GestureRecognizers>
+                        <TapGestureRecognizer Command="{Binding Navegarmenuconfigcomamd}" />
+                    </StackLayout.GestureRecognizers>
+                </StackLayout>
+                <StackLayout Grid.Column="1">
+                    <Frame HasShadow="False"
+                           Padding="0"
+                           BackgroundColor="#EBFAF9"
+                           CornerRadius="50"
+                           HorizontalOptions="Center">
+                        <Image Source="https://i.postimg.cc/k4fxGjSX/assign.png"
+                               HeightRequest="35"
+                               Margin="10" />
+                    </Frame>
+                    <Label Text="MAPEAR"
+                           HorizontalOptions="Center"
+                           TextColor="White"
+                           FontSize="12"
+                           FontAttributes="Bold"
+                           CharacterSpacing="2" />
+                </StackLayout>
+            </Grid>
+        </Frame>
+        <Image Source="https://i.postimg.cc/qMXnJSk1/plant.png"
+               Grid.Row="2"
+               Margin="0,200,0,-20"/>
     </Grid>
 </ContentPage>
