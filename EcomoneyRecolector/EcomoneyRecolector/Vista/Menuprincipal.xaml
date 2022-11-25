@@ -52,7 +52,7 @@
                                        FontAttributes="Bold"
                                        FontSize="11"
                                        TextColor="White" />
-                                <Label Text="0"
+                                <Label Text="{Binding Txtcontadorasig}"
                                        FontAttributes="Bold"
                                        FontSize="15"
                                        TextColor="White" />
@@ -78,12 +78,12 @@
                            BackgroundColor="#EEF1FD"
                            CornerRadius="50"
                            HorizontalOptions="Center">
-                        <Image Source="https://i.postimg.cc/0Nj5xbcK/hero.png"
+                        <ImageButton Source="https://i.postimg.cc/0Nj5xbcK/hero.png"
                                HeightRequest="35"
                                Margin="10"
-                               x:Name="btnconfig" />
+                                     Command="{Binding Afiliarcommand}" />
                     </Frame>
-                    <Label Text="{Binding Afiliarcommand}"
+                    <Label Text="AFILIAR"
                            HorizontalOptions="Center"
                            TextColor="White"
                            FontSize="12"
@@ -99,9 +99,10 @@
                            BackgroundColor="#EBFAF9"
                            CornerRadius="50"
                            HorizontalOptions="Center">
-                        <Image Source="https://i.postimg.cc/k4fxGjSX/assign.png"
+                        <ImageButton Source="https://i.postimg.cc/k4fxGjSX/assign.png"
                                HeightRequest="35"
-                               Margin="10" />
+                               Margin="10"
+                               Command="{Binding Mapearcommand}"/>
                     </Frame>
                     <Label Text="MAPEAR"
                            HorizontalOptions="Center"

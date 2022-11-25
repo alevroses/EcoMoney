@@ -43,11 +43,11 @@ namespace EcomoneyRecolector.VistaModelo
             get { return idrecolector; }
             set { SetValue(ref idrecolector, value); }
         }
-        /*public string Txtcontadorasig
+        public string Txtcontadorasig
         {
             get { return txtcontadorasig; }
             set { SetValue(ref txtcontadorasig, value); }
-        }*/
+        }
         #endregion
 
         #region PROCESOS
@@ -70,7 +70,7 @@ namespace EcomoneyRecolector.VistaModelo
                     Idrecolector = item.Idrecolector;
                     break;
                 }
-                //await Contarasignaciones();
+                await Contarasignaciones();
                 //return Txtcontadorasig;
             }
             catch (Exception)
@@ -97,6 +97,15 @@ namespace EcomoneyRecolector.VistaModelo
                 await DisplayAlert("Sin asignaciones", "No tienes clientes asignados", "OK");
             }
             */
+        }
+
+        private async Task Contarasignaciones()
+        {
+            var funcion = new Dasignaciones();
+            var parametros = new Masignaciones();
+            parametros.idrecolector = Idrecolector;
+            var data = await funcion.Mostrarasignaciones(parametros);
+            Txtcontadorasig = data.Count.ToString();
         }
         #endregion
 

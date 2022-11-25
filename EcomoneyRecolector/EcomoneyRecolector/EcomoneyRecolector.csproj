@@ -23,7 +23,6 @@
 
   <ItemGroup>
     <Folder Include="Conexiones\" />
-    <Folder Include="Datos\" />
   </ItemGroup>
 
   <ItemGroup>
