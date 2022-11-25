@@ -1,12 +1,62 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="EcomoneyRecolector.Vista.Agregarcliente">
+             x:Class="EcomoneyRecolector.Vista.Agregarcliente"
+             NavigationPage.HasNavigationBar="False">
     <ContentPage.Content>
-        <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
-        </StackLayout>
+        <Grid RowDefinitions="80,*">
+            <Grid.Background>
+                <LinearGradientBrush>
+                    <GradientStop Color="#26213d"
+                                  Offset="0.0" />
+                    <GradientStop Color="#191725"
+                                  Offset="0.9" />
+                </LinearGradientBrush>
+            </Grid.Background>
+            <ScrollView Grid.Row="1">
+                <StackLayout Grid.Row="1"
+                             Margin="10">
+                    <Frame BackgroundColor="#191725"
+                           CornerRadius="15">
+                        <StackLayout>
+                            <StackLayout Orientation="Horizontal">
+                                <Label Text="Identificación:"
+                                       TextColor="White"
+                                       FontSize="18"
+                                       FontAttributes="Bold"
+                                       VerticalOptions="Center"/>
+                                <Entry Placeholder="Ingrese identificación"
+                                       PlaceholderColor="gray"
+                                       HorizontalOptions="FillAndExpand"
+                                       TextColor="White"/>
+                            </StackLayout>
+                            <StackLayout Orientation="Horizontal">
+                                <Label Text="Nombres y Apellidos:"
+                                       TextColor="White"
+                                       FontSize="18"
+                                       FontAttributes="Bold"
+                                       VerticalOptions="Center" />
+                                <Entry Placeholder="Ingrese nombre completo"
+                                       PlaceholderColor="gray"
+                                       HorizontalOptions="FillAndExpand"
+                                       TextColor="White" />
+                            </StackLayout>
+                            <StackLayout Orientation="Horizontal">
+                                <Label Text="Dirección:"
+                                       TextColor="White"
+                                       FontSize="18"
+                                       FontAttributes="Bold"
+                                       VerticalOptions="Center" />
+                                <Entry Placeholder="Ingrese dirección"
+                                       PlaceholderColor="gray"
+                                       HorizontalOptions="FillAndExpand"
+                                       TextColor="White" />
+                            </StackLayout>
+                        </StackLayout>
+                    </Frame>
+                </StackLayout>
+            </ScrollView>
+            
+        </Grid>
     </ContentPage.Content>
 </ContentPage>

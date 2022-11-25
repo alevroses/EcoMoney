@@ -59,7 +59,7 @@
                             </StackLayout>
                         </StackLayout>
                         <Image Grid.Column="1"
-                               Source="https://i.postimg.cc/CLN5Cy27/forest.png" />
+                               Source="https://i.postimg.cc/CLN5Cy27/forest.png"/>
                     </Grid>
                 </StackLayout>
             </Frame>
@@ -79,8 +79,9 @@
                            CornerRadius="50"
                            HorizontalOptions="Center">
                         <ImageButton Source="https://i.postimg.cc/0Nj5xbcK/hero.png"
-                               HeightRequest="35"
-                               Margin="10"
+                                     BackgroundColor="Transparent"
+                                     HeightRequest="35"
+                                     Margin="10"
                                      Command="{Binding Afiliarcommand}" />
                     </Frame>
                     <Label Text="AFILIAR"
@@ -100,9 +101,10 @@
                            CornerRadius="50"
                            HorizontalOptions="Center">
                         <ImageButton Source="https://i.postimg.cc/k4fxGjSX/assign.png"
-                               HeightRequest="35"
-                               Margin="10"
-                               Command="{Binding Mapearcommand}"/>
+                                     BackgroundColor="Transparent"
+                                     HeightRequest="35"
+                                     Margin="10"
+                                     Command="{Binding Mapearcommand}"/>
                     </Frame>
                     <Label Text="MAPEAR"
                            HorizontalOptions="Center"
