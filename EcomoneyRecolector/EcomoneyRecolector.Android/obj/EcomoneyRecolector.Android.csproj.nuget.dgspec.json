@@ -58,6 +58,10 @@
               "target": "Package",
               "version": "[4.1.0, )"
             },
+            "FirebaseStorage.net": {
+              "target": "Package",
+              "version": "[1.0.3, )"
+            },
             "Plugin.CurrentActivity": {
               "target": "Package",
               "version": "[2.1.0.4, )"
@@ -142,6 +146,10 @@
             "FirebaseDatabase.net": {
               "target": "Package",
               "version": "[4.1.0, )"
+            },
+            "FirebaseStorage.net": {
+              "target": "Package",
+              "version": "[1.0.3, )"
             },
             "NETStandard.Library": {
               "suppressParent": "All",
