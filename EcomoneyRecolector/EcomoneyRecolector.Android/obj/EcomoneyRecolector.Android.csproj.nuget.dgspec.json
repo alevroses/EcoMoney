@@ -70,6 +70,10 @@
               "target": "Package",
               "version": "[1.2.1, )"
             },
+            "Xam.Plugin.Media": {
+              "target": "Package",
+              "version": "[5.0.1, )"
+            },
             "Xamarin.Essentials": {
               "target": "Package",
               "version": "[1.7.0, )"
@@ -160,6 +164,10 @@
             "Sharpnado.Shadows": {
               "target": "Package",
               "version": "[1.2.1, )"
+            },
+            "Xam.Plugin.Media": {
+              "target": "Package",
+              "version": "[5.0.1, )"
             },
             "Xamarin.Essentials": {
               "target": "Package",
