@@ -6,17 +6,15 @@ using System.Threading.Tasks;
 
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
-using EcomoneyRecolector.VistaModelo;
 
 namespace EcomoneyRecolector.Vista
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class Agregarcliente : ContentPage
+    public partial class Paglocalizar : ContentPage
     {
-        public Agregarcliente()
+        public Paglocalizar()
         {
             InitializeComponent();
-            BindingContext = new VMclientes(Navigation);
         }
     }
 }

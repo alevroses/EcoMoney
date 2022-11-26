@@ -54,11 +54,11 @@ namespace EcomoneyRecolector.VistaModelo
             DependencyService.Get<VMstatusbar>().TransparentarStatusbar();
             VolverdeLocalizarcomman = new Command(async () => await VolverdeLocalizar());
             Volvercomman = new Command(async () => await Volver());
-            /*NavegarPagLocalicommand = new Command(async () => await EjecutarNavLocali());
+            NavegarPagLocalicommand = new Command(async () => await EjecutarNavLocali());
             MostrarpanelGeoCommand = new Command(EjecutarMostrarpanelGeo);
             MostrarpanelRegistrocommand = new Command(EjecutarMostrarpanelReg);
             Agregarclientecommand = new Command(async () => await Agregarcliente());
-            Capturarcommand = new Command(Tomarfoto);*/
+            Capturarcommand = new Command(Tomarfoto);
 
             Panelregistro = true;
             PanelGeolocalizacion = false;
@@ -303,7 +303,7 @@ namespace EcomoneyRecolector.VistaModelo
         }
         private async Task EjecutarNavLocali()
         {
-            //await Navigation.PushAsync(new Paglocalizar());
+            await Navigation.PushAsync(new Paglocalizar());
         }
         private void EjecutarMostrarpanelGeo()
         {
