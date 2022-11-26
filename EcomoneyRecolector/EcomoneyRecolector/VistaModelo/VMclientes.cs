@@ -8,6 +8,7 @@ using EcomoneyRecolector.Vista;
 using EcomoneyRecolector.Datos;
 using EcomoneyRecolector.Modelo;
 using Plugin.Media.Abstractions;
+using Acr.UserDialogs;
 
 namespace EcomoneyRecolector.VistaModelo
 {
@@ -50,7 +51,24 @@ namespace EcomoneyRecolector.VistaModelo
         public VMclientes(INavigation navigation)
         {
             Navigation = navigation;
-            //Logincomamd = new Command(async () => await proceso());
+            DependencyService.Get<VMstatusbar>().TransparentarStatusbar();
+            VolverdeLocalizarcomman = new Command(async () => await VolverdeLocalizar());
+            Volvercomman = new Command(async () => await Volver());
+            /*NavegarPagLocalicommand = new Command(async () => await EjecutarNavLocali());
+            MostrarpanelGeoCommand = new Command(EjecutarMostrarpanelGeo);
+            MostrarpanelRegistrocommand = new Command(EjecutarMostrarpanelReg);
+            Agregarclientecommand = new Command(async () => await Agregarcliente());
+            Capturarcommand = new Command(Tomarfoto);*/
+
+            Panelregistro = true;
+            PanelGeolocalizacion = false;
+            PanelRegistrado = false;
+            Mostrarpais();
+            MostrarDepa();
+            MostrarDist();
+            MostrarProv();
+            MostrarZonas();
+
         }
         #endregion
 
@@ -64,7 +82,6 @@ namespace EcomoneyRecolector.VistaModelo
                 Idpais = selectPais.Idpais;
             }
         }
-
         public Mubicaciones SelectDepa
         {
             get { return selectDepa; }
@@ -168,6 +185,7 @@ namespace EcomoneyRecolector.VistaModelo
                 SetValue(ref this.panelRegistrado, value);
             }
         }
+
         public string Direcciontxt
         {
             get
@@ -229,11 +247,84 @@ namespace EcomoneyRecolector.VistaModelo
             var funcion = new Dubicaciones();
             this.ListZona = await funcion.MostrarZona();
         }
+        public async Task Agregarcliente()
+        {
+            UserDialogs.Instance.ShowLoading("Guardando datos...");
+            await Subirfoto();
+            var funcion = new Dclientes();
+            var parametros = new Mclientes();
+            parametros.Direccion = Direcciontxt;
+            parametros.FotoFachada = rutafoto;
+            parametros.Geo = Geolocalizacion;
+            parametros.IdDepa = Iddepa;
+            parametros.IdDis = Iddist;
+            parametros.IdPais = Idpais;
+            parametros.IdPro = Idprov;
+            parametros.IdZona = Idzona;
+            parametros.Identificacion = Identificaciontxt;
+            parametros.NombresApe = NombresApellidtxt;
+            parametros.Kgacumulados = "0";
+            parametros.Puntos = "0";
+            parametros.Totalcobrado = "0";
+            parametros.Totalporcobrar = "0";
+            await funcion.Insertarclientes(parametros);
+            UserDialogs.Instance.HideLoading();
+            Panelregistro = false;
+            PanelGeolocalizacion = false;
+            PanelRegistrado = true;
+        }
+        public async Task Subirfoto()
+        {
+            var funcion = new Dclientes();
+            rutafoto = await funcion.Subirfotofachada(foto.GetStream(), Identificaciontxt);
+        }
+        private async void Tomarfoto()
+        {
+            var camara = new StoreCameraMediaOptions();
+            camara.PhotoSize = PhotoSize.Medium;
+            camara.SaveToAlbum = true;
+            foto = await Plugin.Media.CrossMedia.Current.TakePhotoAsync(camara);
+            if (foto != null)
+            {
+                Foto = ImageSource.FromStream(() =>
+                {
+                    return foto.GetStream();
+                });
+            }
+        }
+
+        private async Task VolverdeLocalizar()
+        {
+            await Navigation.PopAsync();
+        }
+        private async Task Volver()
+        {
+            await Navigation.PopAsync();
+        }
+        private async Task EjecutarNavLocali()
+        {
+            //await Navigation.PushAsync(new Paglocalizar());
+        }
+        private void EjecutarMostrarpanelGeo()
+        {
+            PanelGeolocalizacion = true;
+            Panelregistro = false;
+        }
+        private void EjecutarMostrarpanelReg()
+        {
+            PanelGeolocalizacion = false;
+            Panelregistro = true;
+        }
         #endregion
 
         #region COMANDOS
-        public Command Logincomamd { get; }
-        //public ICommand ProcesoSimpcommand => new Command(ProcesoSimple);
+        public Command Capturarcommand { get; set; }
+        public Command NavegarPagLocalicommand { get; }
+        public Command MostrarpanelGeoCommand { get; }
+        public Command MostrarpanelRegistrocommand { get; }
+        public Command Volvercomman { get; }
+        public Command VolverdeLocalizarcomman { get; }
+        public Command Agregarclientecommand { get; }
         #endregion
     }
 }
