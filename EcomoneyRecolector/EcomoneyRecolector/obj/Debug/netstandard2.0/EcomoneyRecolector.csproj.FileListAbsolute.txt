@@ -16,3 +16,4 @@ D:\1-Software\Platzi\B-Projects\DMP\EcoMoney\EcomoneyRecolector\EcomoneyRecolect
 D:\1-Software\Platzi\B-Projects\DMP\EcoMoney\EcomoneyRecolector\EcomoneyRecolector\obj\Debug\netstandard2.0\Vista\Menuprincipal.xaml.g.cs
 D:\1-Software\Platzi\B-Projects\DMP\EcoMoney\EcomoneyRecolector\EcomoneyRecolector\obj\Debug\netstandard2.0\Vista\Agregarcliente.xaml.g.cs
 D:\1-Software\Platzi\B-Projects\DMP\EcoMoney\EcomoneyRecolector\EcomoneyRecolector\obj\Debug\netstandard2.0\Vista\Mapear.xaml.g.cs
+D:\1-Software\Platzi\B-Projects\DMP\EcoMoney\EcomoneyRecolector\EcomoneyRecolector\obj\Debug\netstandard2.0\Vista\Paglocalizar.xaml.g.cs

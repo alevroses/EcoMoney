@@ -4,6 +4,7 @@ FormsViewGroup.dll
 Lottie.Android.dll
 Lottie.Forms.dll
 Plugin.CurrentActivity.dll
+Plugin.Media.dll
 Plugin.SharedTransitions.dll
 Sharpnado.Shadows.Android.dll
 Square.OkIO.dll
@@ -111,4 +112,3 @@ androidx.asynclayoutinflater.asynclayoutinflater.aar
 androidx.legacy.legacy-support-core-ui.aar
 androidx.legacy.legacy-support-v4.aar
 androidx.browser.browser.aar
-Plugin.Media.dll
