@@ -784,7 +784,7 @@
             "related": ".pdb;.xml"
           },
           "lib/MonoAndroid10/Plugin.ExternalMaps.dll": {
-            "related": ".Abstractions.pdb;.Abstractions.xml;.dll.mdb;.pdb;.xml"
+            "related": ".Abstractions.pdb;.Abstractions.xml;.pdb;.xml"
           }
         },
         "runtime": {
@@ -792,7 +792,7 @@
             "related": ".pdb;.xml"
           },
           "lib/MonoAndroid10/Plugin.ExternalMaps.dll": {
-            "related": ".Abstractions.pdb;.Abstractions.xml;.dll.mdb;.pdb;.xml"
+            "related": ".Abstractions.pdb;.Abstractions.xml;.pdb;.xml"
           }
         }
       },
@@ -5851,7 +5851,6 @@
         "lib/MonoAndroid10/Plugin.ExternalMaps.Abstractions.pdb",
         "lib/MonoAndroid10/Plugin.ExternalMaps.Abstractions.xml",
         "lib/MonoAndroid10/Plugin.ExternalMaps.dll",
-        "lib/MonoAndroid10/Plugin.ExternalMaps.dll.mdb",
         "lib/MonoAndroid10/Plugin.ExternalMaps.pdb",
         "lib/MonoAndroid10/Plugin.ExternalMaps.xml",
         "lib/UAP10/Plugin.ExternalMaps.Abstractions.dll",
@@ -7547,6 +7546,7 @@
       "FirebaseStorage.net >= 1.0.3",
       "Plugin.CurrentActivity >= 2.1.0.4",
       "Sharpnado.Shadows >= 1.2.1",
+      "Xam.Plugin.ExternalMaps >= 4.0.1",
       "Xam.Plugin.Media >= 5.0.1",
       "Xamarin.Essentials >= 1.7.0",
       "Xamarin.Forms >= 5.0.0.2196",
@@ -7599,9 +7599,21 @@
             "target": "Package",
             "version": "[7.1.0.514, )"
           },
+          "Acr.UserDialogs": {
+            "target": "Package",
+            "version": "[7.1.0.514, )"
+          },
           "Com.Airbnb.Xamarin.Forms.Lottie": {
             "target": "Package",
             "version": "[4.0.10, )"
+          },
+          "Com.Airbnb.Xamarin.Forms.Lottie": {
+            "target": "Package",
+            "version": "[4.0.10, )"
+          },
+          "FirebaseAuthentication.net": {
+            "target": "Package",
+            "version": "[3.7.2, )"
           },
           "FirebaseAuthentication.net": {
             "target": "Package",
@@ -7611,9 +7623,21 @@
             "target": "Package",
             "version": "[4.1.0, )"
           },
+          "FirebaseDatabase.net": {
+            "target": "Package",
+            "version": "[4.1.0, )"
+          },
           "FirebaseStorage.net": {
             "target": "Package",
             "version": "[1.0.3, )"
+          },
+          "FirebaseStorage.net": {
+            "target": "Package",
+            "version": "[1.0.3, )"
+          },
+          "Plugin.CurrentActivity": {
+            "target": "Package",
+            "version": "[2.1.0.4, )"
           },
           "Plugin.CurrentActivity": {
             "target": "Package",
@@ -7623,9 +7647,29 @@
             "target": "Package",
             "version": "[1.2.1, )"
           },
+          "Sharpnado.Shadows": {
+            "target": "Package",
+            "version": "[1.2.1, )"
+          },
+          "Xam.Plugin.ExternalMaps": {
+            "target": "Package",
+            "version": "[4.0.1, )"
+          },
+          "Xam.Plugin.ExternalMaps": {
+            "target": "Package",
+            "version": "[4.0.1, )"
+          },
           "Xam.Plugin.Media": {
             "target": "Package",
             "version": "[5.0.1, )"
+          },
+          "Xam.Plugin.Media": {
+            "target": "Package",
+            "version": "[5.0.1, )"
+          },
+          "Xamarin.Essentials": {
+            "target": "Package",
+            "version": "[1.7.0, )"
           },
           "Xamarin.Essentials": {
             "target": "Package",
@@ -7635,9 +7679,21 @@
             "target": "Package",
             "version": "[5.0.0.2196, )"
           },
+          "Xamarin.Forms": {
+            "target": "Package",
+            "version": "[5.0.0.2196, )"
+          },
           "Xamarin.Forms.PancakeView": {
             "target": "Package",
             "version": "[2.3.0.759, )"
+          },
+          "Xamarin.Forms.PancakeView": {
+            "target": "Package",
+            "version": "[2.3.0.759, )"
+          },
+          "Xamarin.Plugin.SharedTransitions": {
+            "target": "Package",
+            "version": "[2.4.0, )"
           },
           "Xamarin.Plugin.SharedTransitions": {
             "target": "Package",
