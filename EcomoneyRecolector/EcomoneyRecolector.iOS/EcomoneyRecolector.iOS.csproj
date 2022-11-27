@@ -141,6 +141,9 @@
     <PackageReference Include="Sharpnado.Shadows">
       <Version>1.2.1</Version>
     </PackageReference>
+    <PackageReference Include="Xam.Plugin.ExternalMaps">
+      <Version>4.0.1</Version>
+    </PackageReference>
     <PackageReference Include="Xam.Plugin.Media">
       <Version>5.0.1</Version>
     </PackageReference>

@@ -16,6 +16,7 @@
           "FirebaseStorage.net": "1.0.3",
           "NETStandard.Library": "2.0.3",
           "Sharpnado.Shadows": "1.2.1",
+          "Xam.Plugin.ExternalMaps": "4.0.1",
           "Xam.Plugin.Media": "5.0.1",
           "Xamarin.Essentials": "1.7.0",
           "Xamarin.Forms": "5.0.0.2196",
@@ -224,6 +225,21 @@
           "lib/netstandard2.0/WeakEvent.dll": {
             "assemblyVersion": "4.0.0.0",
             "fileVersion": "4.1.0.0"
+          }
+        }
+      },
+      "Xam.Plugin.ExternalMaps/4.0.1": {
+        "dependencies": {
+          "NETStandard.Library": "2.0.3"
+        },
+        "runtime": {
+          "lib/netstandard1.0/Plugin.ExternalMaps.Abstractions.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          },
+          "lib/netstandard1.0/Plugin.ExternalMaps.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
           }
         }
       },
@@ -456,6 +472,13 @@
       "sha512": "sha512-mcp8UoYXWvPmud7UJmREULQLxLmX6SYet2pyZUHpcmIiku3JoqEilPUu9QeUZrV7fOCp0Pfva/VDhG+n3afGyg==",
       "path": "thomaslevesque.weakevent/4.1.0",
       "hashPath": "thomaslevesque.weakevent.4.1.0.nupkg.sha512"
+    },
+    "Xam.Plugin.ExternalMaps/4.0.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-FeZWVG56+x+N9/CuYVK44/TgG2TSDmmtz13u3+iC1RdUtb2TYvcxULpQ+YpCW3ICGGxa05uoMvRMk2M2Jd4e7w==",
+      "path": "xam.plugin.externalmaps/4.0.1",
+      "hashPath": "xam.plugin.externalmaps.4.0.1.nupkg.sha512"
     },
     "Xam.Plugin.Media/5.0.1": {
       "type": "package",

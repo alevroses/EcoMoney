@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "iSI3omefVMw5ihT1eqOdvdtCVc47cg1q3zxhC2mgYWiPiFM4ijbM71MWgntNe8A8RApmKRkhUZpOV/2ubLB/kQ==",
+  "dgSpecHash": "ldot7tvL4uOKqr43liWVOISe5HyjIBuMdUmREzzPDUVXUBg1JaPphJGps7pa2ZplBrKGffsOuxLkD81mLOQUXw==",
   "success": true,
   "projectFilePath": "D:\\1-Software\\Platzi\\B-Projects\\DMP\\EcoMoney\\EcomoneyRecolector\\EcomoneyRecolector.Android\\EcomoneyRecolector.Android.csproj",
   "expectedPackageFiles": [
@@ -67,6 +67,7 @@
     "C:\\Users\\aleVR\\.nuget\\packages\\system.xml.readerwriter\\4.3.0\\system.xml.readerwriter.4.3.0.nupkg.sha512",
     "C:\\Users\\aleVR\\.nuget\\packages\\system.xml.xdocument\\4.3.0\\system.xml.xdocument.4.3.0.nupkg.sha512",
     "C:\\Users\\aleVR\\.nuget\\packages\\thomaslevesque.weakevent\\4.1.0\\thomaslevesque.weakevent.4.1.0.nupkg.sha512",
+    "C:\\Users\\aleVR\\.nuget\\packages\\xam.plugin.externalmaps\\4.0.1\\xam.plugin.externalmaps.4.0.1.nupkg.sha512",
     "C:\\Users\\aleVR\\.nuget\\packages\\xam.plugin.media\\5.0.1\\xam.plugin.media.5.0.1.nupkg.sha512",
     "C:\\Users\\aleVR\\.nuget\\packages\\xamarin.androidx.activity\\1.2.4.1\\xamarin.androidx.activity.1.2.4.1.nupkg.sha512",
     "C:\\Users\\aleVR\\.nuget\\packages\\xamarin.androidx.annotation\\1.2.0.1\\xamarin.androidx.annotation.1.2.0.1.nupkg.sha512",

@@ -25,7 +25,6 @@
           "netstandard2.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
@@ -74,6 +73,10 @@
             "Sharpnado.Shadows": {
               "target": "Package",
               "version": "[1.2.1, )"
+            },
+            "Xam.Plugin.ExternalMaps": {
+              "target": "Package",
+              "version": "[4.0.1, )"
             },
             "Xam.Plugin.Media": {
               "target": "Package",

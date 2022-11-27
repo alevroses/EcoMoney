@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "MCJRkidk7Y6BiEuCNrUoytD1Ao/XA2O7GTubRmWANGE+tWipJMSiRP5/xApmVuVLC4wXlIK8mKeh989eG44dnw==",
+  "dgSpecHash": "UCxyh4PM//VNt6haKu88qNvUxJdhL0CbV8VpaLLRwdwe23S5xEiUQsyf2eWTrv6x1SkFIn5dAMljgrZiNltY2A==",
   "success": true,
   "projectFilePath": "D:\\1-Software\\Platzi\\B-Projects\\DMP\\EcoMoney\\EcomoneyRecolector\\EcomoneyRecolector\\EcomoneyRecolector.csproj",
   "expectedPackageFiles": [
@@ -27,6 +27,7 @@
     "C:\\Users\\aleVR\\.nuget\\packages\\system.text.encoding\\4.3.0\\system.text.encoding.4.3.0.nupkg.sha512",
     "C:\\Users\\aleVR\\.nuget\\packages\\system.threading.tasks\\4.3.0\\system.threading.tasks.4.3.0.nupkg.sha512",
     "C:\\Users\\aleVR\\.nuget\\packages\\thomaslevesque.weakevent\\4.1.0\\thomaslevesque.weakevent.4.1.0.nupkg.sha512",
+    "C:\\Users\\aleVR\\.nuget\\packages\\xam.plugin.externalmaps\\4.0.1\\xam.plugin.externalmaps.4.0.1.nupkg.sha512",
     "C:\\Users\\aleVR\\.nuget\\packages\\xam.plugin.media\\5.0.1\\xam.plugin.media.5.0.1.nupkg.sha512",
     "C:\\Users\\aleVR\\.nuget\\packages\\xamarin.essentials\\1.7.0\\xamarin.essentials.1.7.0.nupkg.sha512",
     "C:\\Users\\aleVR\\.nuget\\packages\\xamarin.forms\\5.0.0.2196\\xamarin.forms.5.0.0.2196.nupkg.sha512",

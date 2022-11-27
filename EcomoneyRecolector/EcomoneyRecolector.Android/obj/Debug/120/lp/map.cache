@@ -4,6 +4,7 @@ FormsViewGroup.dll
 Lottie.Android.dll
 Lottie.Forms.dll
 Plugin.CurrentActivity.dll
+Plugin.ExternalMaps.dll
 Plugin.Media.dll
 Plugin.SharedTransitions.dll
 Sharpnado.Shadows.Android.dll
@@ -61,11 +62,16 @@ Xamarin.AndroidX.VersionedParcelable.dll
 Xamarin.AndroidX.ViewPager.dll
 Xamarin.AndroidX.ViewPager2.dll
 Xamarin.Essentials.dll
+Xamarin.Forms.GoogleMaps.Android.dll
 Xamarin.Forms.PancakeView.dll
 Xamarin.Forms.Platform.Android.dll
 Xamarin.Forms.Platform.dll
 Xamarin.Google.Android.Material.dll
 Xamarin.Google.Guava.ListenableFuture.dll
+Xamarin.GooglePlayServices.Base.dll
+Xamarin.GooglePlayServices.Basement.dll
+Xamarin.GooglePlayServices.Maps.dll
+Xamarin.GooglePlayServices.Tasks.dll
 androidx.versionedparcelable.versionedparcelable.aar
 androidx.arch.core.core-runtime.aar
 androidx.lifecycle.lifecycle-runtime.aar
@@ -112,3 +118,11 @@ androidx.asynclayoutinflater.asynclayoutinflater.aar
 androidx.legacy.legacy-support-core-ui.aar
 androidx.legacy.legacy-support-v4.aar
 androidx.browser.browser.aar
+Xamarin.AndroidX.Core.Core.Ktx.dll
+Xamarin.Jetbrains.Annotations.dll
+Xamarin.Kotlin.StdLib.dll
+androidx.core.core-ktx.aar
+playservicesbasement-18.0.2.aar
+playservicestasks-18.0.1.aar
+playservicesbase-18.0.1.aar
+playservicesmaps-18.0.2.aar

@@ -742,6 +742,25 @@
           }
         }
       },
+      "Xam.Plugin.ExternalMaps/4.0.1": {
+        "type": "package",
+        "compile": {
+          "lib/Xamarin.iOS10/Plugin.ExternalMaps.Abstractions.dll": {
+            "related": ".pdb;.xml"
+          },
+          "lib/Xamarin.iOS10/Plugin.ExternalMaps.dll": {
+            "related": ".Abstractions.pdb;.Abstractions.xml;.xml"
+          }
+        },
+        "runtime": {
+          "lib/Xamarin.iOS10/Plugin.ExternalMaps.Abstractions.dll": {
+            "related": ".pdb;.xml"
+          },
+          "lib/Xamarin.iOS10/Plugin.ExternalMaps.dll": {
+            "related": ".Abstractions.pdb;.Abstractions.xml;.xml"
+          }
+        }
+      },
       "Xam.Plugin.Media/5.0.1": {
         "type": "package",
         "dependencies": {
@@ -964,6 +983,7 @@
           "FirebaseDatabase.net": "4.1.0",
           "FirebaseStorage.net": "1.0.3",
           "Sharpnado.Shadows": "1.2.1",
+          "Xam.Plugin.ExternalMaps": "4.0.1",
           "Xam.Plugin.Media": "5.0.1",
           "Xamarin.Essentials": "1.7.0",
           "Xamarin.Forms": "5.0.0.2196",
@@ -1655,6 +1675,25 @@
           }
         }
       },
+      "Xam.Plugin.ExternalMaps/4.0.1": {
+        "type": "package",
+        "compile": {
+          "lib/Xamarin.iOS10/Plugin.ExternalMaps.Abstractions.dll": {
+            "related": ".pdb;.xml"
+          },
+          "lib/Xamarin.iOS10/Plugin.ExternalMaps.dll": {
+            "related": ".Abstractions.pdb;.Abstractions.xml;.xml"
+          }
+        },
+        "runtime": {
+          "lib/Xamarin.iOS10/Plugin.ExternalMaps.Abstractions.dll": {
+            "related": ".pdb;.xml"
+          },
+          "lib/Xamarin.iOS10/Plugin.ExternalMaps.dll": {
+            "related": ".Abstractions.pdb;.Abstractions.xml;.xml"
+          }
+        }
+      },
       "Xam.Plugin.Media/5.0.1": {
         "type": "package",
         "dependencies": {
@@ -1877,6 +1916,7 @@
           "FirebaseDatabase.net": "4.1.0",
           "FirebaseStorage.net": "1.0.3",
           "Sharpnado.Shadows": "1.2.1",
+          "Xam.Plugin.ExternalMaps": "4.0.1",
           "Xam.Plugin.Media": "5.0.1",
           "Xamarin.Essentials": "1.7.0",
           "Xamarin.Forms": "5.0.0.2196",
@@ -2568,6 +2608,25 @@
           }
         }
       },
+      "Xam.Plugin.ExternalMaps/4.0.1": {
+        "type": "package",
+        "compile": {
+          "lib/Xamarin.iOS10/Plugin.ExternalMaps.Abstractions.dll": {
+            "related": ".pdb;.xml"
+          },
+          "lib/Xamarin.iOS10/Plugin.ExternalMaps.dll": {
+            "related": ".Abstractions.pdb;.Abstractions.xml;.xml"
+          }
+        },
+        "runtime": {
+          "lib/Xamarin.iOS10/Plugin.ExternalMaps.Abstractions.dll": {
+            "related": ".pdb;.xml"
+          },
+          "lib/Xamarin.iOS10/Plugin.ExternalMaps.dll": {
+            "related": ".Abstractions.pdb;.Abstractions.xml;.xml"
+          }
+        }
+      },
       "Xam.Plugin.Media/5.0.1": {
         "type": "package",
         "dependencies": {
@@ -2790,6 +2849,7 @@
           "FirebaseDatabase.net": "4.1.0",
           "FirebaseStorage.net": "1.0.3",
           "Sharpnado.Shadows": "1.2.1",
+          "Xam.Plugin.ExternalMaps": "4.0.1",
           "Xam.Plugin.Media": "5.0.1",
           "Xamarin.Essentials": "1.7.0",
           "Xamarin.Forms": "5.0.0.2196",
@@ -3481,6 +3541,25 @@
           }
         }
       },
+      "Xam.Plugin.ExternalMaps/4.0.1": {
+        "type": "package",
+        "compile": {
+          "lib/Xamarin.iOS10/Plugin.ExternalMaps.Abstractions.dll": {
+            "related": ".pdb;.xml"
+          },
+          "lib/Xamarin.iOS10/Plugin.ExternalMaps.dll": {
+            "related": ".Abstractions.pdb;.Abstractions.xml;.xml"
+          }
+        },
+        "runtime": {
+          "lib/Xamarin.iOS10/Plugin.ExternalMaps.Abstractions.dll": {
+            "related": ".pdb;.xml"
+          },
+          "lib/Xamarin.iOS10/Plugin.ExternalMaps.dll": {
+            "related": ".Abstractions.pdb;.Abstractions.xml;.xml"
+          }
+        }
+      },
       "Xam.Plugin.Media/5.0.1": {
         "type": "package",
         "dependencies": {
@@ -3703,6 +3782,7 @@
           "FirebaseDatabase.net": "4.1.0",
           "FirebaseStorage.net": "1.0.3",
           "Sharpnado.Shadows": "1.2.1",
+          "Xam.Plugin.ExternalMaps": "4.0.1",
           "Xam.Plugin.Media": "5.0.1",
           "Xamarin.Essentials": "1.7.0",
           "Xamarin.Forms": "5.0.0.2196",
@@ -6892,6 +6972,48 @@
         "thomaslevesque.weakevent.nuspec"
       ]
     },
+    "Xam.Plugin.ExternalMaps/4.0.1": {
+      "sha512": "FeZWVG56+x+N9/CuYVK44/TgG2TSDmmtz13u3+iC1RdUtb2TYvcxULpQ+YpCW3ICGGxa05uoMvRMk2M2Jd4e7w==",
+      "type": "package",
+      "path": "xam.plugin.externalmaps/4.0.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/MonoAndroid10/Plugin.ExternalMaps.Abstractions.dll",
+        "lib/MonoAndroid10/Plugin.ExternalMaps.Abstractions.pdb",
+        "lib/MonoAndroid10/Plugin.ExternalMaps.Abstractions.xml",
+        "lib/MonoAndroid10/Plugin.ExternalMaps.dll",
+        "lib/MonoAndroid10/Plugin.ExternalMaps.dll.mdb",
+        "lib/MonoAndroid10/Plugin.ExternalMaps.pdb",
+        "lib/MonoAndroid10/Plugin.ExternalMaps.xml",
+        "lib/UAP10/Plugin.ExternalMaps.Abstractions.dll",
+        "lib/UAP10/Plugin.ExternalMaps.Abstractions.pdb",
+        "lib/UAP10/Plugin.ExternalMaps.Abstractions.xml",
+        "lib/UAP10/Plugin.ExternalMaps.XML",
+        "lib/UAP10/Plugin.ExternalMaps.dll",
+        "lib/UAP10/Plugin.ExternalMaps.pdb",
+        "lib/UAP10/Plugin.ExternalMaps.pri",
+        "lib/Xamarin.Mac20/Plugin.ExternalMaps.Abstractions.dll",
+        "lib/Xamarin.Mac20/Plugin.ExternalMaps.Abstractions.pdb",
+        "lib/Xamarin.Mac20/Plugin.ExternalMaps.Abstractions.xml",
+        "lib/Xamarin.Mac20/Plugin.ExternalMaps.XML",
+        "lib/Xamarin.Mac20/Plugin.ExternalMaps.dll",
+        "lib/Xamarin.iOS10/Plugin.ExternalMaps.Abstractions.dll",
+        "lib/Xamarin.iOS10/Plugin.ExternalMaps.Abstractions.pdb",
+        "lib/Xamarin.iOS10/Plugin.ExternalMaps.Abstractions.xml",
+        "lib/Xamarin.iOS10/Plugin.ExternalMaps.dll",
+        "lib/Xamarin.iOS10/Plugin.ExternalMaps.xml",
+        "lib/netstandard1.0/Plugin.ExternalMaps.Abstractions.dll",
+        "lib/netstandard1.0/Plugin.ExternalMaps.Abstractions.pdb",
+        "lib/netstandard1.0/Plugin.ExternalMaps.Abstractions.xml",
+        "lib/netstandard1.0/Plugin.ExternalMaps.deps.json",
+        "lib/netstandard1.0/Plugin.ExternalMaps.dll",
+        "lib/netstandard1.0/Plugin.ExternalMaps.pdb",
+        "lib/netstandard1.0/Plugin.ExternalMaps.xml",
+        "xam.plugin.externalmaps.4.0.1.nupkg.sha512",
+        "xam.plugin.externalmaps.nuspec"
+      ]
+    },
     "Xam.Plugin.Media/5.0.1": {
       "sha512": "UUR31EEnhDVa4IXgVfQIAL3u9v6YAyppsb5UlO9MNJ4quGGkfcWX++JexjB1nMGqvCzsjAT2t32drKDIXoW4SQ==",
       "type": "package",
@@ -7260,6 +7382,7 @@
       "FirebaseDatabase.net >= 4.1.0",
       "FirebaseStorage.net >= 1.0.3",
       "Sharpnado.Shadows >= 1.2.1",
+      "Xam.Plugin.ExternalMaps >= 4.0.1",
       "Xam.Plugin.Media >= 5.0.1",
       "Xamarin.Essentials >= 1.7.0",
       "Xamarin.Forms >= 5.0.0.2196",
@@ -7293,7 +7416,6 @@
         "xamarinios10"
       ],
       "sources": {
-        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -7332,6 +7454,10 @@
           "Sharpnado.Shadows": {
             "target": "Package",
             "version": "[1.2.1, )"
+          },
+          "Xam.Plugin.ExternalMaps": {
+            "target": "Package",
+            "version": "[4.0.1, )"
           },
           "Xam.Plugin.Media": {
             "target": "Package",

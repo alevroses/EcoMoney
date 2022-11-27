@@ -69,12 +69,12 @@
                                VerticalOptions="Center"
                                TextColor="White"/>
                         <Picker HorizontalOptions="FillAndExpand"
-                                FontSize="14"
-                                TitleColor="Gray"
                                 ItemsSource="{Binding Listpais}"
                                 ItemDisplayBinding="{Binding Pais}"
                                 SelectedItem="{Binding SelectPais}"
-                                Title="Seleccionar pais"/>
+                                Title="Seleccionar pais"
+                                FontSize="14"
+                                TitleColor="Gray"/>
                     </StackLayout>
                     <StackLayout Orientation="Horizontal">
                         <Label Text="Departamento:"
@@ -82,12 +82,12 @@
                                VerticalOptions="Center"
                                TextColor="White" />
                         <Picker HorizontalOptions="FillAndExpand"
-                                FontSize="14"
-                                TitleColor="Gray"
                                 ItemsSource="{Binding ListDepa}"
                                 ItemDisplayBinding="{Binding Departamento}"
                                 SelectedItem="{Binding SelectDepa}"
-                                Title="Seleccionar departamento"/>
+                                Title="Seleccionar departamento"
+                                FontSize="14"
+                                TitleColor="Gray"/>
                     </StackLayout>
                     <StackLayout Orientation="Horizontal">
                         <Label Text="Provincia:"
@@ -95,12 +95,12 @@
                                VerticalOptions="Center"
                                TextColor="White" />
                         <Picker HorizontalOptions="FillAndExpand"
-                                FontSize="14"
-                                TitleColor="Gray"
                                 ItemsSource="{Binding ListProv}"
                                 ItemDisplayBinding="{Binding Provincia}"
                                 SelectedItem="{Binding SelectProv}"
-                                Title="Seleccionar provincia"/>
+                                Title="Seleccionar provincia"
+                                FontSize="14"
+                                TitleColor="Gray"/>
                     </StackLayout>
                     <StackLayout Orientation="Horizontal">
                         <Label Text="Distrito:"
@@ -108,12 +108,12 @@
                                VerticalOptions="Center"
                                TextColor="White" />
                         <Picker HorizontalOptions="FillAndExpand"
-                                FontSize="14"
-                                TitleColor="Gray"
                                 ItemsSource="{Binding ListDistr}"
                                 ItemDisplayBinding="{Binding Distrito}"
                                 SelectedItem="{Binding SelectDist}"
-                                Title="Seleccionar distrito"/>
+                                Title="Seleccionar distrito"
+                                FontSize="14"
+                                TitleColor="Gray"/>
                     </StackLayout>
                     <StackLayout Orientation="Horizontal">
                         <Label Text="Zona:"
@@ -121,12 +121,12 @@
                                VerticalOptions="Center"
                                TextColor="White" />
                         <Picker HorizontalOptions="FillAndExpand"
-                                FontSize="14"
-                                TitleColor="Gray"
                                 ItemsSource="{Binding ListZona}"
                                 ItemDisplayBinding="{Binding Zona}"
                                 SelectedItem="{Binding SelectZona}"
-                                Title="Seleccionar zona"/>
+                                Title="Seleccionar zona"
+                                FontSize="14"
+                                TitleColor="Gray"/>
                     </StackLayout>
                     <StackLayout Orientation="Horizontal">
                         <Label Text="Foto fachada:"
@@ -142,7 +142,7 @@
                     </StackLayout>
                     <Button Text="Siguiente"
                             CornerRadius="15"
-                            BackgroundColor="#191725"
+                            BackgroundColor="Black"
                             TextColor="White"
                             HorizontalOptions="Center"
                             Command="{Binding MostrarpanelGeoCommand}"/>
