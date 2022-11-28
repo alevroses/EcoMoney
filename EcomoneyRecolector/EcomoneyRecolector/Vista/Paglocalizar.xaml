@@ -1,12 +1,20 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="EcomoneyRecolector.Vista.Paglocalizar">
-    <ContentPage.Content>
-        <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+             x:Class="EcomoneyRecolector.Vista.Paglocalizar"
+             NavigationPage.HasNavigationBar="False">
+    <Grid BackgroundColor="#26213d"
+          RowDefinitions="90,*">
+        <StackLayout Margin="0,30,10,0"
+                     VerticalOptions="Center">
+            <Button Text="Confirmar"
+                    TextTransform="None"
+                    HorizontalOptions="EndAndExpand"
+                    BackgroundColor="White"
+                    CornerRadius="10"
+                    FontAttributes="Bold"
+                    />
         </StackLayout>
-    </ContentPage.Content>
+        
+    </Grid>
 </ContentPage>
