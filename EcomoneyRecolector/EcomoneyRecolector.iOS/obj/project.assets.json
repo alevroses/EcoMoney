@@ -780,7 +780,14 @@
           }
         }
       },
-      "Xamarin.Essentials/1.7.0": {
+      "Xamarin.Build.Download/0.11.0": {
+        "type": "package",
+        "build": {
+          "buildTransitive/Xamarin.Build.Download.props": {},
+          "buildTransitive/Xamarin.Build.Download.targets": {}
+        }
+      },
+      "Xamarin.Essentials/1.7.3": {
         "type": "package",
         "dependencies": {
           "System.Numerics.Vectors": "4.5.0"
@@ -801,7 +808,7 @@
           }
         }
       },
-      "Xamarin.Forms/5.0.0.2196": {
+      "Xamarin.Forms/5.0.0.2515": {
         "type": "package",
         "compile": {
           "lib/Xamarin.iOS10/Xamarin.Forms.Core.dll": {
@@ -940,6 +947,20 @@
           "buildTransitive/Xamarin.Forms.targets": {}
         }
       },
+      "Xamarin.Forms.GoogleMaps/5.0.0": {
+        "type": "package",
+        "dependencies": {
+          "Xamarin.Google.iOS.Maps": "6.0.1.1"
+        },
+        "compile": {
+          "lib/Xamarin.iOS10/Xamarin.Forms.GoogleMaps.dll": {},
+          "lib/Xamarin.iOS10/Xamarin.Forms.GoogleMaps.iOS.dll": {}
+        },
+        "runtime": {
+          "lib/Xamarin.iOS10/Xamarin.Forms.GoogleMaps.dll": {},
+          "lib/Xamarin.iOS10/Xamarin.Forms.GoogleMaps.iOS.dll": {}
+        }
+      },
       "Xamarin.Forms.PancakeView/2.3.0.759": {
         "type": "package",
         "dependencies": {
@@ -955,6 +976,30 @@
           "lib/xamarinios10/Xamarin.Forms.PancakeView.dll": {
             "related": ".xml"
           }
+        }
+      },
+      "Xamarin.Google.iOS.Maps/6.0.1.1": {
+        "type": "package",
+        "dependencies": {
+          "Xamarin.Build.Download": "0.11.0"
+        },
+        "frameworkAssemblies": [
+          "System",
+          "System.Core",
+          "System.Numerics",
+          "System.Numerics.Vectors",
+          "System.Xml",
+          "Xamarin.iOS",
+          "mscorlib"
+        ],
+        "compile": {
+          "lib/xamarinios10/Google.Maps.dll": {}
+        },
+        "runtime": {
+          "lib/xamarinios10/Google.Maps.dll": {}
+        },
+        "build": {
+          "buildTransitive/Xamarin.Google.iOS.Maps.targets": {}
         }
       },
       "Xamarin.Plugin.SharedTransitions/2.4.0": {
@@ -985,8 +1030,9 @@
           "Sharpnado.Shadows": "1.2.1",
           "Xam.Plugin.ExternalMaps": "4.0.1",
           "Xam.Plugin.Media": "5.0.1",
-          "Xamarin.Essentials": "1.7.0",
-          "Xamarin.Forms": "5.0.0.2196",
+          "Xamarin.Essentials": "1.7.3",
+          "Xamarin.Forms": "5.0.0.2515",
+          "Xamarin.Forms.GoogleMaps": "5.0.0",
           "Xamarin.Forms.PancakeView": "2.3.0.759",
           "Xamarin.Plugin.SharedTransitions": "2.4.0"
         },
@@ -1713,7 +1759,14 @@
           }
         }
       },
-      "Xamarin.Essentials/1.7.0": {
+      "Xamarin.Build.Download/0.11.0": {
+        "type": "package",
+        "build": {
+          "buildTransitive/Xamarin.Build.Download.props": {},
+          "buildTransitive/Xamarin.Build.Download.targets": {}
+        }
+      },
+      "Xamarin.Essentials/1.7.3": {
         "type": "package",
         "dependencies": {
           "System.Numerics.Vectors": "4.5.0"
@@ -1734,7 +1787,7 @@
           }
         }
       },
-      "Xamarin.Forms/5.0.0.2196": {
+      "Xamarin.Forms/5.0.0.2515": {
         "type": "package",
         "compile": {
           "lib/Xamarin.iOS10/Xamarin.Forms.Core.dll": {
@@ -1873,6 +1926,20 @@
           "buildTransitive/Xamarin.Forms.targets": {}
         }
       },
+      "Xamarin.Forms.GoogleMaps/5.0.0": {
+        "type": "package",
+        "dependencies": {
+          "Xamarin.Google.iOS.Maps": "6.0.1.1"
+        },
+        "compile": {
+          "lib/Xamarin.iOS10/Xamarin.Forms.GoogleMaps.dll": {},
+          "lib/Xamarin.iOS10/Xamarin.Forms.GoogleMaps.iOS.dll": {}
+        },
+        "runtime": {
+          "lib/Xamarin.iOS10/Xamarin.Forms.GoogleMaps.dll": {},
+          "lib/Xamarin.iOS10/Xamarin.Forms.GoogleMaps.iOS.dll": {}
+        }
+      },
       "Xamarin.Forms.PancakeView/2.3.0.759": {
         "type": "package",
         "dependencies": {
@@ -1888,6 +1955,30 @@
           "lib/xamarinios10/Xamarin.Forms.PancakeView.dll": {
             "related": ".xml"
           }
+        }
+      },
+      "Xamarin.Google.iOS.Maps/6.0.1.1": {
+        "type": "package",
+        "dependencies": {
+          "Xamarin.Build.Download": "0.11.0"
+        },
+        "frameworkAssemblies": [
+          "System",
+          "System.Core",
+          "System.Numerics",
+          "System.Numerics.Vectors",
+          "System.Xml",
+          "Xamarin.iOS",
+          "mscorlib"
+        ],
+        "compile": {
+          "lib/xamarinios10/Google.Maps.dll": {}
+        },
+        "runtime": {
+          "lib/xamarinios10/Google.Maps.dll": {}
+        },
+        "build": {
+          "buildTransitive/Xamarin.Google.iOS.Maps.targets": {}
         }
       },
       "Xamarin.Plugin.SharedTransitions/2.4.0": {
@@ -1918,8 +2009,9 @@
           "Sharpnado.Shadows": "1.2.1",
           "Xam.Plugin.ExternalMaps": "4.0.1",
           "Xam.Plugin.Media": "5.0.1",
-          "Xamarin.Essentials": "1.7.0",
-          "Xamarin.Forms": "5.0.0.2196",
+          "Xamarin.Essentials": "1.7.3",
+          "Xamarin.Forms": "5.0.0.2515",
+          "Xamarin.Forms.GoogleMaps": "5.0.0",
           "Xamarin.Forms.PancakeView": "2.3.0.759",
           "Xamarin.Plugin.SharedTransitions": "2.4.0"
         },
@@ -2646,7 +2738,14 @@
           }
         }
       },
-      "Xamarin.Essentials/1.7.0": {
+      "Xamarin.Build.Download/0.11.0": {
+        "type": "package",
+        "build": {
+          "buildTransitive/Xamarin.Build.Download.props": {},
+          "buildTransitive/Xamarin.Build.Download.targets": {}
+        }
+      },
+      "Xamarin.Essentials/1.7.3": {
         "type": "package",
         "dependencies": {
           "System.Numerics.Vectors": "4.5.0"
@@ -2667,7 +2766,7 @@
           }
         }
       },
-      "Xamarin.Forms/5.0.0.2196": {
+      "Xamarin.Forms/5.0.0.2515": {
         "type": "package",
         "compile": {
           "lib/Xamarin.iOS10/Xamarin.Forms.Core.dll": {
@@ -2806,6 +2905,20 @@
           "buildTransitive/Xamarin.Forms.targets": {}
         }
       },
+      "Xamarin.Forms.GoogleMaps/5.0.0": {
+        "type": "package",
+        "dependencies": {
+          "Xamarin.Google.iOS.Maps": "6.0.1.1"
+        },
+        "compile": {
+          "lib/Xamarin.iOS10/Xamarin.Forms.GoogleMaps.dll": {},
+          "lib/Xamarin.iOS10/Xamarin.Forms.GoogleMaps.iOS.dll": {}
+        },
+        "runtime": {
+          "lib/Xamarin.iOS10/Xamarin.Forms.GoogleMaps.dll": {},
+          "lib/Xamarin.iOS10/Xamarin.Forms.GoogleMaps.iOS.dll": {}
+        }
+      },
       "Xamarin.Forms.PancakeView/2.3.0.759": {
         "type": "package",
         "dependencies": {
@@ -2821,6 +2934,30 @@
           "lib/xamarinios10/Xamarin.Forms.PancakeView.dll": {
             "related": ".xml"
           }
+        }
+      },
+      "Xamarin.Google.iOS.Maps/6.0.1.1": {
+        "type": "package",
+        "dependencies": {
+          "Xamarin.Build.Download": "0.11.0"
+        },
+        "frameworkAssemblies": [
+          "System",
+          "System.Core",
+          "System.Numerics",
+          "System.Numerics.Vectors",
+          "System.Xml",
+          "Xamarin.iOS",
+          "mscorlib"
+        ],
+        "compile": {
+          "lib/xamarinios10/Google.Maps.dll": {}
+        },
+        "runtime": {
+          "lib/xamarinios10/Google.Maps.dll": {}
+        },
+        "build": {
+          "buildTransitive/Xamarin.Google.iOS.Maps.targets": {}
         }
       },
       "Xamarin.Plugin.SharedTransitions/2.4.0": {
@@ -2851,8 +2988,9 @@
           "Sharpnado.Shadows": "1.2.1",
           "Xam.Plugin.ExternalMaps": "4.0.1",
           "Xam.Plugin.Media": "5.0.1",
-          "Xamarin.Essentials": "1.7.0",
-          "Xamarin.Forms": "5.0.0.2196",
+          "Xamarin.Essentials": "1.7.3",
+          "Xamarin.Forms": "5.0.0.2515",
+          "Xamarin.Forms.GoogleMaps": "5.0.0",
           "Xamarin.Forms.PancakeView": "2.3.0.759",
           "Xamarin.Plugin.SharedTransitions": "2.4.0"
         },
@@ -3579,7 +3717,14 @@
           }
         }
       },
-      "Xamarin.Essentials/1.7.0": {
+      "Xamarin.Build.Download/0.11.0": {
+        "type": "package",
+        "build": {
+          "buildTransitive/Xamarin.Build.Download.props": {},
+          "buildTransitive/Xamarin.Build.Download.targets": {}
+        }
+      },
+      "Xamarin.Essentials/1.7.3": {
         "type": "package",
         "dependencies": {
           "System.Numerics.Vectors": "4.5.0"
@@ -3600,7 +3745,7 @@
           }
         }
       },
-      "Xamarin.Forms/5.0.0.2196": {
+      "Xamarin.Forms/5.0.0.2515": {
         "type": "package",
         "compile": {
           "lib/Xamarin.iOS10/Xamarin.Forms.Core.dll": {
@@ -3739,6 +3884,20 @@
           "buildTransitive/Xamarin.Forms.targets": {}
         }
       },
+      "Xamarin.Forms.GoogleMaps/5.0.0": {
+        "type": "package",
+        "dependencies": {
+          "Xamarin.Google.iOS.Maps": "6.0.1.1"
+        },
+        "compile": {
+          "lib/Xamarin.iOS10/Xamarin.Forms.GoogleMaps.dll": {},
+          "lib/Xamarin.iOS10/Xamarin.Forms.GoogleMaps.iOS.dll": {}
+        },
+        "runtime": {
+          "lib/Xamarin.iOS10/Xamarin.Forms.GoogleMaps.dll": {},
+          "lib/Xamarin.iOS10/Xamarin.Forms.GoogleMaps.iOS.dll": {}
+        }
+      },
       "Xamarin.Forms.PancakeView/2.3.0.759": {
         "type": "package",
         "dependencies": {
@@ -3754,6 +3913,30 @@
           "lib/xamarinios10/Xamarin.Forms.PancakeView.dll": {
             "related": ".xml"
           }
+        }
+      },
+      "Xamarin.Google.iOS.Maps/6.0.1.1": {
+        "type": "package",
+        "dependencies": {
+          "Xamarin.Build.Download": "0.11.0"
+        },
+        "frameworkAssemblies": [
+          "System",
+          "System.Core",
+          "System.Numerics",
+          "System.Numerics.Vectors",
+          "System.Xml",
+          "Xamarin.iOS",
+          "mscorlib"
+        ],
+        "compile": {
+          "lib/xamarinios10/Google.Maps.dll": {}
+        },
+        "runtime": {
+          "lib/xamarinios10/Google.Maps.dll": {}
+        },
+        "build": {
+          "buildTransitive/Xamarin.Google.iOS.Maps.targets": {}
         }
       },
       "Xamarin.Plugin.SharedTransitions/2.4.0": {
@@ -3784,8 +3967,9 @@
           "Sharpnado.Shadows": "1.2.1",
           "Xam.Plugin.ExternalMaps": "4.0.1",
           "Xam.Plugin.Media": "5.0.1",
-          "Xamarin.Essentials": "1.7.0",
-          "Xamarin.Forms": "5.0.0.2196",
+          "Xamarin.Essentials": "1.7.3",
+          "Xamarin.Forms": "5.0.0.2515",
+          "Xamarin.Forms.GoogleMaps": "5.0.0",
           "Xamarin.Forms.PancakeView": "2.3.0.759",
           "Xamarin.Plugin.SharedTransitions": "2.4.0"
         },
@@ -7054,10 +7238,32 @@
         "xam.plugin.media.nuspec"
       ]
     },
-    "Xamarin.Essentials/1.7.0": {
-      "sha512": "xfUJNxtfMC05VBej7fVUg6Zd9VwM2kqW9LH0tcrSA6IsBTl0EsIGkYUOz1BoKT2rseWW8o3kTi5WH/yZV4GgJw==",
+    "Xamarin.Build.Download/0.11.0": {
+      "sha512": "35/X1Lz4KNoD0VjmDRO/Ap8U823odTUVWGnAmdoweFvjbE3CJ+B8zzOAp+MzvheuEBYlGfX5P4gjvLRZhVTCDg==",
       "type": "package",
-      "path": "xamarin.essentials/1.7.0",
+      "path": "xamarin.build.download/0.11.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "THIRD-PARTY-NOTICE.txt",
+        "build/Microsoft.Win32.Registry.dll",
+        "build/Newtonsoft.Json.dll",
+        "build/Xamarin.Build.Download.dll",
+        "build/Xamarin.Build.Download.props",
+        "build/Xamarin.Build.Download.targets",
+        "buildTransitive/Microsoft.Win32.Registry.dll",
+        "buildTransitive/Newtonsoft.Json.dll",
+        "buildTransitive/Xamarin.Build.Download.dll",
+        "buildTransitive/Xamarin.Build.Download.props",
+        "buildTransitive/Xamarin.Build.Download.targets",
+        "xamarin.build.download.0.11.0.nupkg.sha512",
+        "xamarin.build.download.nuspec"
+      ]
+    },
+    "Xamarin.Essentials/1.7.3": {
+      "sha512": "b6NfxOfkmMGN54a4OcV/D7KXclWWqFwgixMPzlAku3kfKgUBGW4vBdNaujIBmk57NbGpWB2IS78ek0gDHNKwoQ==",
+      "type": "package",
+      "path": "xamarin.essentials/1.7.3",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -7092,14 +7298,14 @@
         "lib/xamarinwatchos10/Xamarin.Essentials.pdb",
         "lib/xamarinwatchos10/Xamarin.Essentials.xml",
         "readme.txt",
-        "xamarin.essentials.1.7.0.nupkg.sha512",
+        "xamarin.essentials.1.7.3.nupkg.sha512",
         "xamarin.essentials.nuspec"
       ]
     },
-    "Xamarin.Forms/5.0.0.2196": {
-      "sha512": "zSXDiZukojtEBmZKUUG1yYBwlB9tI8JLPkc6n+Sm1PAX01QyzErWE9AaFJgP7usyoGHn92l4HnQF7A+/MPI6VA==",
+    "Xamarin.Forms/5.0.0.2515": {
+      "sha512": "n/Y/xk1idWRkxk7xItwvNwwda7CHpIk7JxD6tXkGXmTqiVGV1xRkepf5aKXFkQLM9KIQhXXYBxPsdyJysPpktw==",
       "type": "package",
-      "path": "xamarin.forms/5.0.0.2196",
+      "path": "xamarin.forms/5.0.0.2515",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -7308,8 +7514,25 @@
         "lib/uap10.0.16299/Xamarin.Forms.Xaml.dll",
         "lib/uap10.0.16299/Xamarin.Forms.Xaml.pdb",
         "lib/uap10.0.16299/Xamarin.Forms.Xaml.xml",
-        "xamarin.forms.5.0.0.2196.nupkg.sha512",
+        "xamarin.forms.5.0.0.2515.nupkg.sha512",
         "xamarin.forms.nuspec"
+      ]
+    },
+    "Xamarin.Forms.GoogleMaps/5.0.0": {
+      "sha512": "+1QJx2C7Sa87rPnTsAHnmRc0q4RunQMGc5/P3emIyNunM/qXUC9sTn+s/vJEUpvheXf8STBR51xctRAdNM9rFA==",
+      "type": "package",
+      "path": "xamarin.forms.googlemaps/5.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.txt",
+        "lib/MonoAndroid10.0/Xamarin.Forms.GoogleMaps.Android.dll",
+        "lib/MonoAndroid10.0/Xamarin.Forms.GoogleMaps.dll",
+        "lib/Xamarin.iOS10/Xamarin.Forms.GoogleMaps.dll",
+        "lib/Xamarin.iOS10/Xamarin.Forms.GoogleMaps.iOS.dll",
+        "lib/netstandard2.0/Xamarin.Forms.GoogleMaps.dll",
+        "xamarin.forms.googlemaps.5.0.0.nupkg.sha512",
+        "xamarin.forms.googlemaps.nuspec"
       ]
     },
     "Xamarin.Forms.PancakeView/2.3.0.759": {
@@ -7348,6 +7571,23 @@
         "xamarin.forms.pancakeview.nuspec"
       ]
     },
+    "Xamarin.Google.iOS.Maps/6.0.1.1": {
+      "sha512": "Rbujx2MO4XdsJ+UOJwvGpGbwI//6ZZcsVdiVqClq+zSOHjilQC+XWR4KM7RyKeSHU94vOmaoFtmeSmRyt52wsQ==",
+      "type": "package",
+      "path": "xamarin.google.ios.maps/6.0.1.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "License.md",
+        "build/Xamarin.Google.iOS.Maps.targets",
+        "buildTransitive/Xamarin.Google.iOS.Maps.targets",
+        "googleiosmaps_128x128.png",
+        "lib/net6.0-ios15.4/Google.Maps.dll",
+        "lib/xamarinios10/Google.Maps.dll",
+        "xamarin.google.ios.maps.6.0.1.1.nupkg.sha512",
+        "xamarin.google.ios.maps.nuspec"
+      ]
+    },
     "Xamarin.Plugin.SharedTransitions/2.4.0": {
       "sha512": "upju4Pst1knGfdLQWWjT4ASuKQk2s7RhK8B4Yw6TILRerPZmhPmqJ/fV8NIR6HuLIsX8CxOg8fR+tNjOC6YwFA==",
       "type": "package",
@@ -7384,8 +7624,9 @@
       "Sharpnado.Shadows >= 1.2.1",
       "Xam.Plugin.ExternalMaps >= 4.0.1",
       "Xam.Plugin.Media >= 5.0.1",
-      "Xamarin.Essentials >= 1.7.0",
-      "Xamarin.Forms >= 5.0.0.2196",
+      "Xamarin.Essentials >= 1.7.3",
+      "Xamarin.Forms >= 5.0.0.2515",
+      "Xamarin.Forms.GoogleMaps >= 5.0.0",
       "Xamarin.Forms.PancakeView >= 2.3.0.759",
       "Xamarin.Plugin.SharedTransitions >= 2.4.0"
     ]
@@ -7465,11 +7706,15 @@
           },
           "Xamarin.Essentials": {
             "target": "Package",
-            "version": "[1.7.0, )"
+            "version": "[1.7.3, )"
           },
           "Xamarin.Forms": {
             "target": "Package",
-            "version": "[5.0.0.2196, )"
+            "version": "[5.0.0.2515, )"
+          },
+          "Xamarin.Forms.GoogleMaps": {
+            "target": "Package",
+            "version": "[5.0.0, )"
           },
           "Xamarin.Forms.PancakeView": {
             "target": "Package",

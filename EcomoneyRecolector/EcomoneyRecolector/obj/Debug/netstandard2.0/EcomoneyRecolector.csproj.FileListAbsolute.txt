@@ -4,7 +4,11 @@ D:\1-Software\Platzi\B-Projects\DMP\EcoMoney\EcomoneyRecolector\EcomoneyRecolect
 D:\1-Software\Platzi\B-Projects\DMP\EcoMoney\EcomoneyRecolector\EcomoneyRecolector\obj\Debug\netstandard2.0\EcomoneyRecolector.csproj.AssemblyReference.cache
 D:\1-Software\Platzi\B-Projects\DMP\EcoMoney\EcomoneyRecolector\EcomoneyRecolector\obj\Debug\netstandard2.0\EcomoneyRecolector.GeneratedMSBuildEditorConfig.editorconfig
 D:\1-Software\Platzi\B-Projects\DMP\EcoMoney\EcomoneyRecolector\EcomoneyRecolector\obj\Debug\netstandard2.0\App.xaml.g.cs
+D:\1-Software\Platzi\B-Projects\DMP\EcoMoney\EcomoneyRecolector\EcomoneyRecolector\obj\Debug\netstandard2.0\Vista\Agregarcliente.xaml.g.cs
 D:\1-Software\Platzi\B-Projects\DMP\EcoMoney\EcomoneyRecolector\EcomoneyRecolector\obj\Debug\netstandard2.0\Vista\Login.xaml.g.cs
+D:\1-Software\Platzi\B-Projects\DMP\EcoMoney\EcomoneyRecolector\EcomoneyRecolector\obj\Debug\netstandard2.0\Vista\Mapear.xaml.g.cs
+D:\1-Software\Platzi\B-Projects\DMP\EcoMoney\EcomoneyRecolector\EcomoneyRecolector\obj\Debug\netstandard2.0\Vista\Menuprincipal.xaml.g.cs
+D:\1-Software\Platzi\B-Projects\DMP\EcoMoney\EcomoneyRecolector\EcomoneyRecolector\obj\Debug\netstandard2.0\Vista\Paglocalizar.xaml.g.cs
 D:\1-Software\Platzi\B-Projects\DMP\EcoMoney\EcomoneyRecolector\EcomoneyRecolector\obj\Debug\netstandard2.0\EcomoneyRecolector.AssemblyInfoInputs.cache
 D:\1-Software\Platzi\B-Projects\DMP\EcoMoney\EcomoneyRecolector\EcomoneyRecolector\obj\Debug\netstandard2.0\EcomoneyRecolector.AssemblyInfo.cs
 D:\1-Software\Platzi\B-Projects\DMP\EcoMoney\EcomoneyRecolector\EcomoneyRecolector\obj\Debug\netstandard2.0\EcomoneyRecolector.csproj.CoreCompileInputs.cache
@@ -13,7 +17,3 @@ D:\1-Software\Platzi\B-Projects\DMP\EcoMoney\EcomoneyRecolector\EcomoneyRecolect
 D:\1-Software\Platzi\B-Projects\DMP\EcoMoney\EcomoneyRecolector\EcomoneyRecolector\obj\Debug\netstandard2.0\refint\EcomoneyRecolector.dll
 D:\1-Software\Platzi\B-Projects\DMP\EcoMoney\EcomoneyRecolector\EcomoneyRecolector\obj\Debug\netstandard2.0\EcomoneyRecolector.pdb
 D:\1-Software\Platzi\B-Projects\DMP\EcoMoney\EcomoneyRecolector\EcomoneyRecolector\obj\Debug\netstandard2.0\ref\EcomoneyRecolector.dll
-D:\1-Software\Platzi\B-Projects\DMP\EcoMoney\EcomoneyRecolector\EcomoneyRecolector\obj\Debug\netstandard2.0\Vista\Menuprincipal.xaml.g.cs
-D:\1-Software\Platzi\B-Projects\DMP\EcoMoney\EcomoneyRecolector\EcomoneyRecolector\obj\Debug\netstandard2.0\Vista\Agregarcliente.xaml.g.cs
-D:\1-Software\Platzi\B-Projects\DMP\EcoMoney\EcomoneyRecolector\EcomoneyRecolector\obj\Debug\netstandard2.0\Vista\Mapear.xaml.g.cs
-D:\1-Software\Platzi\B-Projects\DMP\EcoMoney\EcomoneyRecolector\EcomoneyRecolector\obj\Debug\netstandard2.0\Vista\Paglocalizar.xaml.g.cs
