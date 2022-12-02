@@ -87,16 +87,15 @@ namespace EcomoneyRecolector.VistaModelo
         private async Task EjecutarMapear()
         {
             await Navigation.PushAsync(new Mapear());
-            /*if (Txtcontadorasig != "0")
+            if (Txtcontadorasig != "0")
             {
-                //Mapear.IdRecolector = Idrecolector;
+                Mapear.IdRecolector = Idrecolector;
                 await Navigation.PushAsync(new Mapear());
             }
             else
             {
                 await DisplayAlert("Sin asignaciones", "No tienes clientes asignados", "OK");
             }
-            */
         }
 
         private async Task Contarasignaciones()

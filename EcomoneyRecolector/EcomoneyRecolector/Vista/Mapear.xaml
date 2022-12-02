@@ -2,10 +2,19 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="EcomoneyRecolector.Vista.Mapear"
+             NavigationPage.HasNavigationBar="False"
              xmlns:maps ="clr-namespace:Xamarin.Forms.GoogleMaps;assembly=Xamarin.Forms.GoogleMaps">
-    <ContentPage.Content>
-        <StackLayout>
-            <maps:Map />
-        </StackLayout>
-    </ContentPage.Content>
+    <Grid BackgroundColor="#26213d" RowDefinitions="90,*">
+        <Grid Margin="0,30,0,0">
+            <StackLayout>
+                <Button Text="Ver"
+                        TextColor="Black"
+                        BackgroundColor="White"
+                        HorizontalOptions="EndAndExpand"
+                        Margin="0,5,10,5"
+                        CornerRadius="10"
+                        FontAttributes="Bold"/>
+            </StackLayout>
+        </Grid>
+    </Grid>
 </ContentPage>
