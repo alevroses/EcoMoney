@@ -14,7 +14,9 @@
                         HorizontalOptions="EndAndExpand"
                         Margin="0,5,10,5"
                         CornerRadius="10"
-                        FontAttributes="Bold"/>
+                        FontAttributes="Bold"
+                        x:Name="btnver"
+                        Clicked="btnver_Clicked"/>
                 <Button Text="Comprar"
                         TextColor="Black"
                         BackgroundColor="White"

@@ -39,7 +39,7 @@ namespace EcomoneyRecolector.Vista
             {
                 Label = "Tu ubicación",
                 Type = PinType.Place,
-                Icon = (Device.RuntimePlatform == Device.Android) ? BitmapDescriptorFactory.FromBundle("camion.png") : BitmapDescriptorFactory.FromView(new Image() { Source = "camion.png", WidthRequest = 64, HeightRequest = 64 }),
+                Icon = (Device.RuntimePlatform == Device.Android) ? BitmapDescriptorFactory.FromBundle("truck.png") : BitmapDescriptorFactory.FromView(new Image() { Source = "truck.png", WidthRequest = 64, HeightRequest = 64 }),
                 Position = new Position(0, 0),
                 IsDraggable = true
             };
@@ -110,7 +110,9 @@ namespace EcomoneyRecolector.Vista
 
         }
 
-        /*private async void btnver_Clicked(object sender, EventArgs e)
+        
+
+        private async void btnver_Clicked(object sender, EventArgs e)
         {
             try
             {
@@ -121,6 +123,7 @@ namespace EcomoneyRecolector.Vista
                 var parametros = new Mclientes();
                 parametros.Idcliente = idcliente;
                 var lista = await funcion.MostrarclientesXid(parametros);
+                
                 foreach (var data in lista)
                 {
                     nombre = data.NombresApe;
@@ -129,6 +132,7 @@ namespace EcomoneyRecolector.Vista
                     foto = data.FotoFachada;
                     break;
                 }
+
                 Vercliente.nombre = nombre;
                 Vercliente.direccion = direccion;
                 Vercliente.dni = dni;
@@ -141,7 +145,7 @@ namespace EcomoneyRecolector.Vista
             }
         }
 
-        private async void btnir_Clicked(object sender, EventArgs e)
+        /*private async void btnir_Clicked(object sender, EventArgs e)
         {
             try
             {
