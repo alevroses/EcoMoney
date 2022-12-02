@@ -55,15 +55,17 @@ namespace EcomoneyRecolector.Datos
                     Idturno = itemsoli.Idturno;
                     pclientes.Idcliente = itemsoli.Idcliente;
                 }
-                //var fturno = new Dturnosrecojos();
+                var fturno = new Dturnosrecojo(); //Dturnosrecojos
                 var pturno = new Mturnosrecojo();
                 pturno.Idturno = Idturno;
                 var listaturnos = await fturno.Mostrarturnosrecojo(pturno);
+                
                 foreach (var itemturno in listaturnos)
                 {
                     Turno = itemturno.Turno;
                 }
                 var listaclientes = await fclientes.MostrarclientesXid(pclientes);
+                
                 foreach (var datacliente in listaclientes)
                 {
                     Geolocalizacion = datacliente.Geo;
@@ -82,17 +84,18 @@ namespace EcomoneyRecolector.Datos
             }
             return Listasolicitudes;
         }
-        public async Task Eliminarasignacion(Masignaciones parametros)
-        {
-            var dataEliminar = (await Constantes.firebase
-                .Child("Asignaciones")
-                .OnceAsync<Masignaciones>())
-                .Where(a => a.Object.idsolicitud == parametros.idsolicitud)
-                .FirstOrDefault();
-            await Constantes.firebase
-                .Child("Asignaciones")
-                .Child(dataEliminar.Key)
-                .DeleteAsync();
-        }
+
+        //public async Task Eliminarasignacion(Masignaciones parametros)
+        //{
+        //    var dataEliminar = (await Constantes.firebase
+        //        .Child("Asignaciones")
+        //        .OnceAsync<Masignaciones>())
+        //        .Where(a => a.Object.idsolicitud == parametros.idsolicitud)
+        //        .FirstOrDefault();
+        //    await Constantes.firebase
+        //        .Child("Asignaciones")
+        //        .Child(dataEliminar.Key)
+        //        .DeleteAsync();
+        //}
     }
 }
