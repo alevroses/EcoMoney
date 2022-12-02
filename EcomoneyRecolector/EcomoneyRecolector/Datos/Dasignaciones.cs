@@ -21,5 +21,7 @@ namespace EcomoneyRecolector.Datos
                     idsolicitud = item.Object.idsolicitud
                 }).ToList();
         }
+
+
     }
 }

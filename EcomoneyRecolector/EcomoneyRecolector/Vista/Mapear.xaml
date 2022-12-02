@@ -6,7 +6,8 @@
              xmlns:maps ="clr-namespace:Xamarin.Forms.GoogleMaps;assembly=Xamarin.Forms.GoogleMaps">
     <Grid BackgroundColor="#26213d" RowDefinitions="90,*">
         <Grid Margin="0,30,0,0">
-            <StackLayout>
+            <StackLayout Orientation="Horizontal"
+                         Margin="0,0,0,0">
                 <Button Text="Ver"
                         TextColor="Black"
                         BackgroundColor="White"
@@ -14,7 +15,25 @@
                         Margin="0,5,10,5"
                         CornerRadius="10"
                         FontAttributes="Bold"/>
+                <Button Text="Comprar"
+                        TextColor="Black"
+                        BackgroundColor="White"
+                        HorizontalOptions="EndAndExpand"
+                        Margin="0,5,10,5"
+                        CornerRadius="10"
+                        FontAttributes="Bold" />
+                <Button Text="Ir"
+                        TextColor="Black"
+                        BackgroundColor="White"
+                        HorizontalOptions="EndAndExpand"
+                        Margin="0,5,10,5"
+                        CornerRadius="10"
+                        FontAttributes="Bold" />
             </StackLayout>
+            
         </Grid>
+        <maps:Map Grid.Row="1" 
+                  x:Name="map"
+                  HasZoomEnabled="True"/>
     </Grid>
 </ContentPage>

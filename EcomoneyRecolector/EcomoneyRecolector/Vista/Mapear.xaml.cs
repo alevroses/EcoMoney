@@ -33,7 +33,7 @@ namespace EcomoneyRecolector.Vista
             InitializeComponent();
         }
 
-        /*protected override async void OnAppearing()
+        protected override async void OnAppearing()
         {
             punto = new Pin()
             {
@@ -45,7 +45,7 @@ namespace EcomoneyRecolector.Vista
             };
             map.Pins.Add(punto);
             await LocalizacionActual();
-            await MapearSolicitudes();
+            //await MapearSolicitudes();
         }
         public async Task LocalizacionActual()
         {
@@ -80,7 +80,8 @@ namespace EcomoneyRecolector.Vista
                 await DisplayAlert("Alerta", "Sin acceso al GPS", "OK");
             }
         }
-        private async Task MapearSolicitudes()
+
+        /*private async Task MapearSolicitudes()
         {
             var funcion = new Dasignaciones();
             var parametros = new Masignaciones();
