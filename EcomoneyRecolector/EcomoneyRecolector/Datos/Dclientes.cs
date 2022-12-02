@@ -46,5 +46,21 @@ namespace EcomoneyRecolector.Datos
             rutafoto = stroageImage;
             return rutafoto;
         }
+
+        public async Task<List<Mclientes>> MostrarclientesXid(Mclientes parametrosPedir)
+        {
+            return (await Constantes.firebase
+              .Child("Clientes")
+              .OnceAsync<Mclientes>()).Where(a => a.Key == parametrosPedir.Idcliente).Select(item => new Mclientes
+              {
+                  Identificacion = item.Object.Identificacion,
+                  NombresApe = item.Object.NombresApe,
+                  FotoFachada = item.Object.FotoFachada,
+                  Idcliente = item.Key,
+                  Geo = item.Object.Geo,
+                  Direccion = item.Object.Direccion
+
+              }).ToList();
+        }
     }
 }
