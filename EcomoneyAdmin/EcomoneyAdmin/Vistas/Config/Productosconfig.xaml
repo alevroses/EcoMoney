@@ -14,6 +14,7 @@
                 </LinearGradientBrush>
             </Grid.Background>
             <ImageButton Source="https://i.postimg.cc/0yyLwbqv/leftarrow.png"
+                         WidthRequest="30"
                          BackgroundColor="Transparent"
                          HorizontalOptions="Start"
                          Margin="10,30,0,0"
@@ -28,11 +29,11 @@
                         <Image Source="https://i.postimg.cc/28jbtgrd/description.png"
                                HeightRequest="30" />
                         <Label Text="Descripción"
-                               FontSize="18"
+                               FontSize="16"
                                FontAttributes="Bold"
                                VerticalOptions="Center"
                                TextColor="White" />
-                        <Entry FontSize="18"
+                        <Entry FontSize="14"
                                Placeholder="Ingrese la descripción"
                                HorizontalOptions="FillAndExpand"
                                TextColor="#7c7b7c"
@@ -42,11 +43,11 @@
                         <Image Source="https://i.postimg.cc/4xgW9fgv/sale.png"
                                HeightRequest="30" />
                         <Label Text="Precio venta"
-                               FontSize="18"
+                               FontSize="16"
                                FontAttributes="Bold"
                                VerticalOptions="Center"
                                TextColor="White" />
-                        <Entry FontSize="18"
+                        <Entry FontSize="14"
                                Placeholder="Ingrese precio de venta"
                                HorizontalOptions="FillAndExpand"
                                TextColor="#7c7b7c"
@@ -57,11 +58,11 @@
                         <Image Source="https://i.postimg.cc/3w22hp62/purchase.png"
                                HeightRequest="28" />
                         <Label Text="Precio compra"
-                               FontSize="18"
+                               FontSize="16"
                                FontAttributes="Bold"
                                VerticalOptions="Center"
                                TextColor="White" />
-                        <Entry FontSize="18"
+                        <Entry FontSize="14"
                                Placeholder="Ingrese precio de compra"
                                HorizontalOptions="FillAndExpand"
                                TextColor="#7c7b7c"
@@ -72,11 +73,11 @@
                         <Image Source="https://i.postimg.cc/qq7zYCyc/measure.png"
                                HeightRequest="28" />
                         <Label Text="Und"
-                               FontSize="18"
+                               FontSize="16"
                                FontAttributes="Bold"
                                VerticalOptions="Center"
                                TextColor="White" />
-                        <Entry FontSize="18"
+                        <Entry FontSize="14"
                                Placeholder="Ingrese la und de medida"
                                HorizontalOptions="FillAndExpand"
                                TextColor="#7c7b7c"
@@ -86,11 +87,11 @@
                         <Image Source="https://i.postimg.cc/GpsNFMfG/color.png"
                                HeightRequest="28" />
                         <Label Text="Color"
-                               FontSize="18"
+                               FontSize="16"
                                FontAttributes="Bold"
                                VerticalOptions="Center"
                                TextColor="White" />
-                        <Entry FontSize="18"
+                        <Entry FontSize="14"
                                Placeholder="Ingrese el color"
                                HorizontalOptions="FillAndExpand"
                                TextColor="#7c7b7c"
@@ -99,6 +100,7 @@
                     <Button Text="Guardar"
                             HorizontalOptions="Center"
                             CornerRadius="15"
+                            TextColor="Black"
                             BackgroundColor="White"
                             FontAttributes="Bold"
                             VerticalOptions="EndAndExpand"

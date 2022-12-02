@@ -35,7 +35,7 @@
                                    HorizontalOptions="Start" />
                             <StackLayout Orientation="Horizontal">
                                 <Label Text="Eco"
-                                       CharacterSpacing="10"
+                                       CharacterSpacing="4"
                                        FontSize="18"
                                        TextColor="Black"
                                        FontAttributes="Bold"
@@ -117,6 +117,6 @@
         </Frame>
         <Image Source="https://i.postimg.cc/qMXnJSk1/plant.png"
                Grid.Row="2"
-               Margin="0,200,0,-20"/>
+               Margin="0,180,0,-20"/>
     </Grid>
 </ContentPage>

@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "qoL4YQ9mUbCbLrw5KnVCmXK4wSgqvf/4debM8FF8cXQUgz59mUK7JQFBGiUcUv+kBKwddwiRoKp/rb1G6T8IiQ==",
+  "dgSpecHash": "uDDSmmbwu+V8x1dX2tO6rhqzCQovp9U1oVLDC6WuUI17raKRWWyLCicP3wRnnJtXWYRDUFbOmGynL/wXziEI8g==",
   "success": true,
   "projectFilePath": "D:\\1-Software\\Platzi\\B-Projects\\DMP\\EcoMoney\\EcomoneyRecolector\\EcomoneyRecolector.Android\\EcomoneyRecolector.Android.csproj",
   "expectedPackageFiles": [
@@ -130,10 +130,10 @@
     "C:\\Users\\aleVR\\.nuget\\packages\\xamarin.forms.pancakeview\\2.3.0.759\\xamarin.forms.pancakeview.2.3.0.759.nupkg.sha512",
     "C:\\Users\\aleVR\\.nuget\\packages\\xamarin.google.android.material\\1.4.0.2\\xamarin.google.android.material.1.4.0.2.nupkg.sha512",
     "C:\\Users\\aleVR\\.nuget\\packages\\xamarin.google.guava.listenablefuture\\1.0.0.5\\xamarin.google.guava.listenablefuture.1.0.0.5.nupkg.sha512",
-    "C:\\Users\\aleVR\\.nuget\\packages\\xamarin.googleplayservices.base\\118.0.1.2\\xamarin.googleplayservices.base.118.0.1.2.nupkg.sha512",
-    "C:\\Users\\aleVR\\.nuget\\packages\\xamarin.googleplayservices.basement\\118.0.2.2\\xamarin.googleplayservices.basement.118.0.2.2.nupkg.sha512",
-    "C:\\Users\\aleVR\\.nuget\\packages\\xamarin.googleplayservices.maps\\118.0.2.2\\xamarin.googleplayservices.maps.118.0.2.2.nupkg.sha512",
-    "C:\\Users\\aleVR\\.nuget\\packages\\xamarin.googleplayservices.tasks\\118.0.1.2\\xamarin.googleplayservices.tasks.118.0.1.2.nupkg.sha512",
+    "C:\\Users\\aleVR\\.nuget\\packages\\xamarin.googleplayservices.base\\118.1.0\\xamarin.googleplayservices.base.118.1.0.nupkg.sha512",
+    "C:\\Users\\aleVR\\.nuget\\packages\\xamarin.googleplayservices.basement\\118.1.0\\xamarin.googleplayservices.basement.118.1.0.nupkg.sha512",
+    "C:\\Users\\aleVR\\.nuget\\packages\\xamarin.googleplayservices.maps\\118.1.0\\xamarin.googleplayservices.maps.118.1.0.nupkg.sha512",
+    "C:\\Users\\aleVR\\.nuget\\packages\\xamarin.googleplayservices.tasks\\118.0.2\\xamarin.googleplayservices.tasks.118.0.2.nupkg.sha512",
     "C:\\Users\\aleVR\\.nuget\\packages\\xamarin.jetbrains.annotations\\23.0.0.3\\xamarin.jetbrains.annotations.23.0.0.3.nupkg.sha512",
     "C:\\Users\\aleVR\\.nuget\\packages\\xamarin.kotlin.stdlib\\1.6.20.1\\xamarin.kotlin.stdlib.1.6.20.1.nupkg.sha512",
     "C:\\Users\\aleVR\\.nuget\\packages\\xamarin.kotlin.stdlib.common\\1.6.20.1\\xamarin.kotlin.stdlib.common.1.6.20.1.nupkg.sha512",

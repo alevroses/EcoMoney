@@ -16,7 +16,7 @@
         </Grid.Background>
         <StackLayout Orientation="Horizontal"
                      HorizontalOptions="Center"
-                     Margin="0,10,0,0">
+                     Margin="0,25,0,0">
             <Image Source="https://i.postimg.cc/NM9cp2qH/eco.png"
                    HeightRequest="42" />
             <Label Text="Money"

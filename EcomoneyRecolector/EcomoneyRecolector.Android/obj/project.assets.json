@@ -2670,15 +2670,15 @@
           "buildTransitive/monoandroid90/Xamarin.Google.Guava.ListenableFuture.targets": {}
         }
       },
-      "Xamarin.GooglePlayServices.Base/118.0.1.2": {
+      "Xamarin.GooglePlayServices.Base/118.1.0": {
         "type": "package",
         "dependencies": {
           "Xamarin.AndroidX.Collection": "1.2.0.3",
           "Xamarin.AndroidX.Core": "1.7.0.2",
           "Xamarin.AndroidX.Fragment": "1.4.1.1",
           "Xamarin.Build.Download": "0.11.3",
-          "Xamarin.GooglePlayServices.Basement": "118.0.2.2",
-          "Xamarin.GooglePlayServices.Tasks": "118.0.1.2"
+          "Xamarin.GooglePlayServices.Basement": "118.1.0",
+          "Xamarin.GooglePlayServices.Tasks": "118.0.2"
         },
         "frameworkAssemblies": [
           "Java.Interop",
@@ -2705,7 +2705,7 @@
           "buildTransitive/MonoAndroid12.0/Xamarin.GooglePlayServices.Base.targets": {}
         }
       },
-      "Xamarin.GooglePlayServices.Basement/118.0.2.2": {
+      "Xamarin.GooglePlayServices.Basement/118.1.0": {
         "type": "package",
         "dependencies": {
           "Xamarin.AndroidX.Collection": "1.2.0.3",
@@ -2738,13 +2738,13 @@
           "buildTransitive/MonoAndroid12.0/Xamarin.GooglePlayServices.Basement.targets": {}
         }
       },
-      "Xamarin.GooglePlayServices.Maps/118.0.2.2": {
+      "Xamarin.GooglePlayServices.Maps/118.1.0": {
         "type": "package",
         "dependencies": {
           "Xamarin.AndroidX.Fragment": "1.4.1.1",
           "Xamarin.Build.Download": "0.11.3",
-          "Xamarin.GooglePlayServices.Base": "118.0.1.2",
-          "Xamarin.GooglePlayServices.Basement": "118.0.2.2"
+          "Xamarin.GooglePlayServices.Base": "118.1.0",
+          "Xamarin.GooglePlayServices.Basement": "118.1.0"
         },
         "frameworkAssemblies": [
           "Java.Interop",
@@ -2771,11 +2771,11 @@
           "buildTransitive/MonoAndroid12.0/Xamarin.GooglePlayServices.Maps.targets": {}
         }
       },
-      "Xamarin.GooglePlayServices.Tasks/118.0.1.2": {
+      "Xamarin.GooglePlayServices.Tasks/118.0.2": {
         "type": "package",
         "dependencies": {
           "Xamarin.Build.Download": "0.11.3",
-          "Xamarin.GooglePlayServices.Basement": "118.0.2.2"
+          "Xamarin.GooglePlayServices.Basement": "118.1.0"
         },
         "frameworkAssemblies": [
           "Java.Interop",
@@ -7860,10 +7860,10 @@
         "xamarin.google.guava.listenablefuture.nuspec"
       ]
     },
-    "Xamarin.GooglePlayServices.Base/118.0.1.2": {
-      "sha512": "lmOsb6/3/Y6Ql4HIpiR/T6uyYIgTqlrZKVFdRbdfEh5cMEciPIR82SQuGDtInpy4V9xob6ZXZ8brHEbGH5h0fQ==",
+    "Xamarin.GooglePlayServices.Base/118.1.0": {
+      "sha512": "UeCLNGDQMd1Br24Jjtk5ApthoerOSSIglzJZQa6yXdtxIUy7kVIa/4L8y6FzYPwU2q5h5WJsp/Hrf2+FYD5Xjw==",
       "type": "package",
-      "path": "xamarin.googleplayservices.base/118.0.1.2",
+      "path": "xamarin.googleplayservices.base/118.1.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -7879,14 +7879,14 @@
         "lib/net6.0-android31.0/Xamarin.GooglePlayServices.Base.xml",
         "lib/net6.0-android31.0/play-services-base.aar",
         "proguard/proguard.txt",
-        "xamarin.googleplayservices.base.118.0.1.2.nupkg.sha512",
+        "xamarin.googleplayservices.base.118.1.0.nupkg.sha512",
         "xamarin.googleplayservices.base.nuspec"
       ]
     },
-    "Xamarin.GooglePlayServices.Basement/118.0.2.2": {
-      "sha512": "2K/S+knkgQZ+CFjFWPwRKoLCi0wXEngWte6MZvhUHPKsx4yBc189++C5Pn/Ab1dlRpgymtR31XrRN1k7HFfPJQ==",
+    "Xamarin.GooglePlayServices.Basement/118.1.0": {
+      "sha512": "73G+/t6BwOJLH/G9xxsGxQ6t9PQseNMkHBpZqObb5kMV7ZmJUUTWxRhGn1IGFMY03gDomgjhGYLiBMcG6C3b4g==",
       "type": "package",
-      "path": "xamarin.googleplayservices.basement/118.0.2.2",
+      "path": "xamarin.googleplayservices.basement/118.1.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -7906,14 +7906,14 @@
         "lib/net6.0-android31.0/Xamarin.GooglePlayServices.Basement.xml",
         "lib/net6.0-android31.0/play-services-basement.aar",
         "proguard/proguard.txt",
-        "xamarin.googleplayservices.basement.118.0.2.2.nupkg.sha512",
+        "xamarin.googleplayservices.basement.118.1.0.nupkg.sha512",
         "xamarin.googleplayservices.basement.nuspec"
       ]
     },
-    "Xamarin.GooglePlayServices.Maps/118.0.2.2": {
-      "sha512": "egfSYQwl32yxg5v3Ghm2Q1tJrscJC2hZK/ydb7wJREMUw++1Um9jxvyHE9kcflJDKCXO0QGfPEJXjFSymLA5Bg==",
+    "Xamarin.GooglePlayServices.Maps/118.1.0": {
+      "sha512": "xs7r/HfCdMOGARstJwV3Sdea+fXZnaNZZmtSRAGyXVhUXh8JyyKYpuS1ZHexUruYSU48aIAqSvoDkBNmQ2fBbQ==",
       "type": "package",
-      "path": "xamarin.googleplayservices.maps/118.0.2.2",
+      "path": "xamarin.googleplayservices.maps/118.1.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -7928,14 +7928,14 @@
         "lib/net6.0-android31.0/Xamarin.GooglePlayServices.Maps.pdb",
         "lib/net6.0-android31.0/Xamarin.GooglePlayServices.Maps.xml",
         "lib/net6.0-android31.0/play-services-maps.aar",
-        "xamarin.googleplayservices.maps.118.0.2.2.nupkg.sha512",
+        "xamarin.googleplayservices.maps.118.1.0.nupkg.sha512",
         "xamarin.googleplayservices.maps.nuspec"
       ]
     },
-    "Xamarin.GooglePlayServices.Tasks/118.0.1.2": {
-      "sha512": "lAUcp0i5zxuc4k9MimZ6LUDjigTR1YD7m/Hc5SajD7Sif4wO9StvKzt8NpEJbDcRVxjdIVJnBbiRuWKr9o0hwA==",
+    "Xamarin.GooglePlayServices.Tasks/118.0.2": {
+      "sha512": "Et4KHnRz7B13Tvqpuk0sUGD000mMNkXXPNdN1osTKGfMy5b/AVG19eJlDYsV7K4eaCvQ/VJLx7LRcWUL4ExWtA==",
       "type": "package",
-      "path": "xamarin.googleplayservices.tasks/118.0.1.2",
+      "path": "xamarin.googleplayservices.tasks/118.0.2",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -7951,7 +7951,7 @@
         "lib/net6.0-android31.0/Xamarin.GooglePlayServices.Tasks.xml",
         "lib/net6.0-android31.0/play-services-tasks.aar",
         "proguard/proguard.txt",
-        "xamarin.googleplayservices.tasks.118.0.1.2.nupkg.sha512",
+        "xamarin.googleplayservices.tasks.118.0.2.nupkg.sha512",
         "xamarin.googleplayservices.tasks.nuspec"
       ]
     },
@@ -8058,6 +8058,7 @@
       "Xamarin.Forms >= 5.0.0.2515",
       "Xamarin.Forms.GoogleMaps >= 5.0.0",
       "Xamarin.Forms.PancakeView >= 2.3.0.759",
+      "Xamarin.GooglePlayServices.Maps >= 118.1.0",
       "Xamarin.Plugin.SharedTransitions >= 2.4.0"
     ]
   },
@@ -8149,6 +8150,10 @@
           "Xamarin.Forms.PancakeView": {
             "target": "Package",
             "version": "[2.3.0.759, )"
+          },
+          "Xamarin.GooglePlayServices.Maps": {
+            "target": "Package",
+            "version": "[118.1.0, )"
           },
           "Xamarin.Plugin.SharedTransitions": {
             "target": "Package",

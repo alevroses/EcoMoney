@@ -89,6 +89,10 @@
               "target": "Package",
               "version": "[2.3.0.759, )"
             },
+            "Xamarin.GooglePlayServices.Maps": {
+              "target": "Package",
+              "version": "[118.1.0, )"
+            },
             "Xamarin.Plugin.SharedTransitions": {
               "target": "Package",
               "version": "[2.4.0, )"

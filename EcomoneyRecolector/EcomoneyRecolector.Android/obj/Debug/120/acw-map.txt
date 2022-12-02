@@ -2608,6 +2608,27 @@ com.google.android.gms.common.SignInButton$ColorScheme;com.google.android.gms.co
 Android.Gms.Common.Server.Response.FastJsonResponse+IFieldConverter, Xamarin.GooglePlayServices.Base;com.google.android.gms.common.server.response.FastJsonResponse$FieldConverter
 Android.Gms.Common.Server.Response.FastJsonResponse.IFieldConverter;com.google.android.gms.common.server.response.FastJsonResponse$FieldConverter
 com.google.android.gms.common.server.response.FastJsonResponse$FieldConverter;com.google.android.gms.common.server.response.FastJsonResponse$FieldConverter
+Android.Gms.Common.ModuleInstall.IInstallStatusListener, Xamarin.GooglePlayServices.Base;com.google.android.gms.common.moduleinstall.InstallStatusListener
+Android.Gms.Common.ModuleInstall.IInstallStatusListener;com.google.android.gms.common.moduleinstall.InstallStatusListener
+com.google.android.gms.common.moduleinstall.InstallStatusListener;com.google.android.gms.common.moduleinstall.InstallStatusListener
+Android.Gms.Common.ModuleInstall.IInstallStatusListenerImplementor, Xamarin.GooglePlayServices.Base;mono.com.google.android.gms.common.moduleinstall.InstallStatusListenerImplementor
+Android.Gms.Common.ModuleInstall.IInstallStatusListenerImplementor;mono.com.google.android.gms.common.moduleinstall.InstallStatusListenerImplementor
+mono.com.google.android.gms.common.moduleinstall.InstallStatusListenerImplementor;mono.com.google.android.gms.common.moduleinstall.InstallStatusListenerImplementor
+Android.Gms.Common.ModuleInstall.IModuleInstallClient, Xamarin.GooglePlayServices.Base;com.google.android.gms.common.moduleinstall.ModuleInstallClient
+Android.Gms.Common.ModuleInstall.IModuleInstallClient;com.google.android.gms.common.moduleinstall.ModuleInstallClient
+com.google.android.gms.common.moduleinstall.ModuleInstallClient;com.google.android.gms.common.moduleinstall.ModuleInstallClient
+Android.Gms.Common.ModuleInstall.ModuleAvailabilityResponse+IAvailabilityStatus, Xamarin.GooglePlayServices.Base;com.google.android.gms.common.moduleinstall.ModuleAvailabilityResponse$AvailabilityStatus
+Android.Gms.Common.ModuleInstall.ModuleAvailabilityResponse.IAvailabilityStatus;com.google.android.gms.common.moduleinstall.ModuleAvailabilityResponse$AvailabilityStatus
+com.google.android.gms.common.moduleinstall.ModuleAvailabilityResponse$AvailabilityStatus;com.google.android.gms.common.moduleinstall.ModuleAvailabilityResponse$AvailabilityStatus
+Android.Gms.Common.ModuleInstall.ModuleInstallStatusUpdate+IInstallState, Xamarin.GooglePlayServices.Base;com.google.android.gms.common.moduleinstall.ModuleInstallStatusUpdate$InstallState
+Android.Gms.Common.ModuleInstall.ModuleInstallStatusUpdate.IInstallState;com.google.android.gms.common.moduleinstall.ModuleInstallStatusUpdate$InstallState
+com.google.android.gms.common.moduleinstall.ModuleInstallStatusUpdate$InstallState;com.google.android.gms.common.moduleinstall.ModuleInstallStatusUpdate$InstallState
+Android.Gms.Common.ModuleInstall.Internal.IZae, Xamarin.GooglePlayServices.Base;com.google.android.gms.common.moduleinstall.internal.zae
+Android.Gms.Common.ModuleInstall.Internal.IZae;com.google.android.gms.common.moduleinstall.internal.zae
+com.google.android.gms.common.moduleinstall.internal.zae;com.google.android.gms.common.moduleinstall.internal.zae
+Android.Gms.Common.ModuleInstall.Internal.IZah, Xamarin.GooglePlayServices.Base;com.google.android.gms.common.moduleinstall.internal.zah
+Android.Gms.Common.ModuleInstall.Internal.IZah;com.google.android.gms.common.moduleinstall.internal.zah
+com.google.android.gms.common.moduleinstall.internal.zah;com.google.android.gms.common.moduleinstall.internal.zah
 Android.Gms.Common.Images.ImageManager+IOnImageLoadedListener, Xamarin.GooglePlayServices.Base;com.google.android.gms.common.images.ImageManager$OnImageLoadedListener
 Android.Gms.Common.Images.ImageManager.IOnImageLoadedListener;com.google.android.gms.common.images.ImageManager$OnImageLoadedListener
 com.google.android.gms.common.images.ImageManager$OnImageLoadedListener;com.google.android.gms.common.images.ImageManager$OnImageLoadedListener
@@ -2695,6 +2716,9 @@ com.google.android.gms.common.api.Api$Client;com.google.android.gms.common.api.A
 Android.Gms.Common.Apis.IHasApiKey, Xamarin.GooglePlayServices.Base;com.google.android.gms.common.api.HasApiKey
 Android.Gms.Common.Apis.IHasApiKey;com.google.android.gms.common.api.HasApiKey
 com.google.android.gms.common.api.HasApiKey;com.google.android.gms.common.api.HasApiKey
+Android.Gms.Common.Apis.IOptionalModuleApi, Xamarin.GooglePlayServices.Base;com.google.android.gms.common.api.OptionalModuleApi
+Android.Gms.Common.Apis.IOptionalModuleApi;com.google.android.gms.common.api.OptionalModuleApi
+com.google.android.gms.common.api.OptionalModuleApi;com.google.android.gms.common.api.OptionalModuleApi
 Android.Gms.Common.Apis.PendingResult+IStatusListener, Xamarin.GooglePlayServices.Base;com.google.android.gms.common.api.PendingResult$StatusListener
 Android.Gms.Common.Apis.PendingResult.IStatusListener;com.google.android.gms.common.api.PendingResult$StatusListener
 com.google.android.gms.common.api.PendingResult$StatusListener;com.google.android.gms.common.api.PendingResult$StatusListener
@@ -2800,6 +2824,9 @@ com.google.android.gms.common.internal.safeparcel.SafeParcelable$Indicator;com.g
 Android.Gms.Common.Internal.SafeParcel.ISafeParcelableParam, Xamarin.GooglePlayServices.Basement;com.google.android.gms.common.internal.safeparcel.SafeParcelable$Param
 Android.Gms.Common.Internal.SafeParcel.ISafeParcelableParam;com.google.android.gms.common.internal.safeparcel.SafeParcelable$Param
 com.google.android.gms.common.internal.safeparcel.SafeParcelable$Param;com.google.android.gms.common.internal.safeparcel.SafeParcelable$Param
+Android.Gms.Common.Internal.SafeParcel.ISafeParcelableRemovedParam, Xamarin.GooglePlayServices.Basement;com.google.android.gms.common.internal.safeparcel.SafeParcelable$RemovedParam
+Android.Gms.Common.Internal.SafeParcel.ISafeParcelableRemovedParam;com.google.android.gms.common.internal.safeparcel.SafeParcelable$RemovedParam
+com.google.android.gms.common.internal.safeparcel.SafeParcelable$RemovedParam;com.google.android.gms.common.internal.safeparcel.SafeParcelable$RemovedParam
 Android.Gms.Common.Internal.SafeParcel.ISafeParcelableReserved, Xamarin.GooglePlayServices.Basement;com.google.android.gms.common.internal.safeparcel.SafeParcelable$Reserved
 Android.Gms.Common.Internal.SafeParcel.ISafeParcelableReserved;com.google.android.gms.common.internal.safeparcel.SafeParcelable$Reserved
 com.google.android.gms.common.internal.safeparcel.SafeParcelable$Reserved;com.google.android.gms.common.internal.safeparcel.SafeParcelable$Reserved

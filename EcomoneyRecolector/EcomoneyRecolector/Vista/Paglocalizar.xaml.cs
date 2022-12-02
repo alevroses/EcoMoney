@@ -7,29 +7,31 @@ using System.Threading.Tasks;
 
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
-//using Xamarin.Forms.GoogleMaps;
+using Xamarin.Forms.GoogleMaps;
 using Xamarin.Essentials;
+using EcomoneyRecolector.VistaModelo;
 
 namespace EcomoneyRecolector.Vista
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class Paglocalizar : ContentPage
     {
-        //Pin punto = new Pin()
-        //public static double latitud = 0;
-        //public static double longitud = 0;
+        Pin punto = new Pin();
+        public static double latitud = 0;
+        public static double longitud = 0;
+        
         public Paglocalizar()
         {
             InitializeComponent();
         }
 
-        /*
+        
          private void map_PinDragEnd(object sender, Xamarin.Forms.GoogleMaps.PinDragEventArgs e)
         {
             var posicion = new Position(e.Pin.Position.Latitude, e.Pin.Position.Longitude);
             map.MoveToRegion(MapSpan.FromCenterAndRadius(posicion, Distance.FromMeters(500)));
             latitud = e.Pin.Position.Latitude;
-            longitud = e.Pin.Position.Longitude;
+            longitud = e.Pin.Position.Longitude;            
         }
 
         protected override async void OnAppearing()
@@ -38,7 +40,7 @@ namespace EcomoneyRecolector.Vista
             {
                 Label = "Tu ubicación",
                 Type = PinType.Place,
-                Icon = (Device.RuntimePlatform == Device.Android) ? BitmapDescriptorFactory.FromBundle("camion.png") : BitmapDescriptorFactory.FromView(new Image() { Source = "camion.png", WidthRequest = 64, HeightRequest = 64 }),
+                Icon = (Device.RuntimePlatform == Device.Android) ? BitmapDescriptorFactory.FromBundle("truck.png") : BitmapDescriptorFactory.FromView(new Image() { Source = "truck.png", WidthRequest = 64, HeightRequest = 64 }),
                 Position = new Position(0, 0),
                 IsDraggable = true
             };
@@ -80,8 +82,17 @@ namespace EcomoneyRecolector.Vista
             }
         }
 
-         */
-
-
+        private async void btnConfirmar_Clicked(object sender, EventArgs e)
+        {
+            if (latitud != 0 && longitud != 0)
+            {
+                VMclientes.Geolocalizacion = latitud + "," + longitud;
+                await Navigation.PopAsync();
+            }
+            else
+            {
+                await DisplayAlert("Sin datos", "Ubique un punto", "OK");
+            }
+        }
     }
 }

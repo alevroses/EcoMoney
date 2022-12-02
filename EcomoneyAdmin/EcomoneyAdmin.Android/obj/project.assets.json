@@ -7061,7 +7061,6 @@
         "monoandroid12.0"
       ],
       "sources": {
-        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -7081,14 +7080,6 @@
             "target": "Package",
             "version": "[3.7.2, )"
           },
-          "FirebaseAuthentication.net": {
-            "target": "Package",
-            "version": "[3.7.2, )"
-          },
-          "FirebaseDatabase.net": {
-            "target": "Package",
-            "version": "[4.1.0, )"
-          },
           "FirebaseDatabase.net": {
             "target": "Package",
             "version": "[4.1.0, )"
@@ -7097,21 +7088,9 @@
             "target": "Package",
             "version": "[1.7.0, )"
           },
-          "Xamarin.Essentials": {
-            "target": "Package",
-            "version": "[1.7.0, )"
-          },
           "Xamarin.Forms": {
             "target": "Package",
             "version": "[5.0.0.2196, )"
-          },
-          "Xamarin.Forms": {
-            "target": "Package",
-            "version": "[5.0.0.2196, )"
-          },
-          "Xamarin.Forms.PancakeView": {
-            "target": "Package",
-            "version": "[2.3.0.759, )"
           },
           "Xamarin.Forms.PancakeView": {
             "target": "Package",

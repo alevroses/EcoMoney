@@ -13,14 +13,15 @@ using System.Text;
 
 [Application(Debuggable = true)]
 [MetaData("com.google.android.maps.v2.API_KEY",
-    Value =Constantes.GoogleMapsApiKey)]
-    public class Activitymaps:Application
-    {
+    Value = Constantes.GoogleMapsApiKey)]
+public class Activitymaps : Application
+{
     public Activitymaps(IntPtr handle, JniHandleOwnership transer)
-        :base(handle, transer)
+        : base(handle, transer)
     {
 
     }
+
     public override void OnCreate()
     {
         base.OnCreate();

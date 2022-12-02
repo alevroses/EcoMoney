@@ -13,6 +13,7 @@
             </LinearGradientBrush>
         </Grid.Background>
         <ImageButton Source="https://i.postimg.cc/0yyLwbqv/leftarrow.png"
+                     WidthRequest="30"
                      BackgroundColor="Transparent"
                      HorizontalOptions="Start"
                      Margin="10,30,0,0"
@@ -25,7 +26,7 @@
                        BackgroundColor="#191725"
                        HasShadow="False">
                     <StackLayout VerticalOptions="Center"
-                                 Margin="15">
+                                 Margin="10">
                         <Frame BackgroundColor="#A1E6B2"
                                CornerRadius="200"
                                HasShadow="False"                               
@@ -33,7 +34,7 @@
                             <Image Source="https://i.postimg.cc/m2npnVHc/truck.png" />
                         </Frame>
                         <Label Text="Recolectores"
-                               FontSize="20"
+                               FontSize="16"
                                FontAttributes="Bold"
                                TextColor="White"
                                HorizontalOptions="Center"
@@ -49,7 +50,7 @@
                        Grid.Row="0"
                        Grid.Column="1">
                     <StackLayout VerticalOptions="Center"
-                                 Margin="15">
+                                 Margin="10">
                         <Frame BackgroundColor="#A1E6B2"
                                CornerRadius="200"
                                HasShadow="False"
@@ -57,7 +58,7 @@
                             <Image Source="https://i.postimg.cc/dQkVPwQQ/recycling.png" />
                         </Frame>
                         <Label Text="Productos"
-                               FontSize="20"
+                               FontSize="16"
                                FontAttributes="Bold"
                                TextColor="White"
                                HorizontalOptions="Center"

@@ -25,12 +25,12 @@
                            HorizontalOptions="Center"/>
                     <Grid ColumnDefinitions="*,*">
                         <StackLayout VerticalOptions="Center">
-                            <Image Source="https://i.postimg.cc/1RMctdHx/container.png"
-                                   HeightRequest="30"
+                            <Image Source="https://i.postimg.cc/G2Xb87d5/admin.png"
+                                   HeightRequest="50"
                                    HorizontalOptions="Start"/>
                             <StackLayout Orientation="Horizontal">
                                 <Label Text="Eco"
-                                       CharacterSpacing="10"
+                                       CharacterSpacing="4"
                                        FontSize="18"
                                        TextColor="Black"
                                        FontAttributes="Bold"

@@ -2,7 +2,8 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="EcomoneyRecolector.Vista.Paglocalizar"
-             NavigationPage.HasNavigationBar="False">
+             NavigationPage.HasNavigationBar="False"
+             xmlns:maps="clr-namespace:Xamarin.Forms.GoogleMaps;assembly=Xamarin.Forms.GoogleMaps">
     <Grid BackgroundColor="#26213d"
           RowDefinitions="90,*">
         <StackLayout Margin="0,30,10,0"
@@ -13,8 +14,12 @@
                     BackgroundColor="White"
                     CornerRadius="10"
                     FontAttributes="Bold"
-                    />
+                    x:Name="btnConfirmar"
+                    Clicked="btnConfirmar_Clicked"/>
         </StackLayout>
-        
+        <maps:Map Grid.Row="1"
+                  x:Name="map"
+                  PinDragEnd="map_PinDragEnd"
+                  HasZoomEnabled="True" />
     </Grid>
 </ContentPage>
