@@ -45405,12 +45405,13 @@ public final class R {
     public static final int navigation_transition=0x7f120000;
   }
   public static final class xml {
-    public static final int image_share_filepaths=0x7f130000;
-    public static final int standalone_badge=0x7f130001;
-    public static final int standalone_badge_gravity_bottom_end=0x7f130002;
-    public static final int standalone_badge_gravity_bottom_start=0x7f130003;
-    public static final int standalone_badge_gravity_top_start=0x7f130004;
-    public static final int standalone_badge_offset=0x7f130005;
-    public static final int xamarin_essentials_fileprovider_file_paths=0x7f130006;
+    public static final int file_paths=0x7f130000;
+    public static final int image_share_filepaths=0x7f130001;
+    public static final int standalone_badge=0x7f130002;
+    public static final int standalone_badge_gravity_bottom_end=0x7f130003;
+    public static final int standalone_badge_gravity_bottom_start=0x7f130004;
+    public static final int standalone_badge_gravity_top_start=0x7f130005;
+    public static final int standalone_badge_offset=0x7f130006;
+    public static final int xamarin_essentials_fileprovider_file_paths=0x7f130007;
   }
 }

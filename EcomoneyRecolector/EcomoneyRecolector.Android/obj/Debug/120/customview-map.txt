@@ -37,6 +37,7 @@ declare-styleable;D:\1-Software\Platzi\B-Projects\DMP\EcoMoney\EcomoneyRecolecto
 declare-styleable;D:\1-Software\Platzi\B-Projects\DMP\EcoMoney\EcomoneyRecolector\EcomoneyRecolector.Android\obj\Debug\120\lp\67\jl\res\values\attrs.xml
 enum;D:\1-Software\Platzi\B-Projects\DMP\EcoMoney\EcomoneyRecolector\EcomoneyRecolector.Android\obj\Debug\120\lp\3\jl\res\values\values.xml
 external-cache-path;D:\1-Software\Platzi\B-Projects\DMP\EcoMoney\EcomoneyRecolector\EcomoneyRecolector.Android\obj\Debug\120\lp\64\jl\res\xml\xamarin_essentials_fileprovider_file_paths.xml
+external-files-path;obj\Debug\120\res\xml\file_paths.xml
 external-path;D:\1-Software\Platzi\B-Projects\DMP\EcoMoney\EcomoneyRecolector\EcomoneyRecolector.Android\obj\Debug\120\lp\64\jl\res\xml\xamarin_essentials_fileprovider_file_paths.xml
 foreground;obj\Debug\120\res\mipmap-anydpi-v26\icon.xml
 foreground;obj\Debug\120\res\mipmap-anydpi-v26\icon_round.xml
@@ -48,6 +49,7 @@ item;D:\1-Software\Platzi\B-Projects\DMP\EcoMoney\EcomoneyRecolector\EcomoneyRec
 item;D:\1-Software\Platzi\B-Projects\DMP\EcoMoney\EcomoneyRecolector\EcomoneyRecolector.Android\obj\Debug\120\lp\67\jl\res\values\styles.xml
 LinearLayout;D:\1-Software\Platzi\B-Projects\DMP\EcoMoney\EcomoneyRecolector\EcomoneyRecolector.Android\obj\Debug\120\lp\67\jl\res\layout\bottomtablayout.xml
 paths;D:\1-Software\Platzi\B-Projects\DMP\EcoMoney\EcomoneyRecolector\EcomoneyRecolector.Android\obj\Debug\120\lp\64\jl\res\xml\xamarin_essentials_fileprovider_file_paths.xml
+paths;obj\Debug\120\res\xml\file_paths.xml
 ProgressBar;D:\1-Software\Platzi\B-Projects\DMP\EcoMoney\EcomoneyRecolector\EcomoneyRecolector.Android\obj\Debug\120\lp\1\jl\res\layout\loading.xml
 RelativeLayout;D:\1-Software\Platzi\B-Projects\DMP\EcoMoney\EcomoneyRecolector\EcomoneyRecolector.Android\obj\Debug\120\lp\1\jl\res\layout\loading.xml
 RelativeLayout;D:\1-Software\Platzi\B-Projects\DMP\EcoMoney\EcomoneyRecolector\EcomoneyRecolector.Android\obj\Debug\120\lp\1\jl\res\layout\loadingimage.xml

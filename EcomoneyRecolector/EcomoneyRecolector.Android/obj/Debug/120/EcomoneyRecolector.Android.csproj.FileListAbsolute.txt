@@ -817,3 +817,4 @@ D:\1-Software\Platzi\B-Projects\DMP\EcoMoney\EcomoneyRecolector\EcomoneyRecolect
 D:\1-Software\Platzi\B-Projects\DMP\EcoMoney\EcomoneyRecolector\EcomoneyRecolector.Android\obj\Debug\120\stamp\_GeneratePackageManagerJava.stamp
 D:\1-Software\Platzi\B-Projects\DMP\EcoMoney\EcomoneyRecolector\EcomoneyRecolector.Android\obj\Debug\120\stamp\_ResolveLibraryProjectImports.stamp
 D:\1-Software\Platzi\B-Projects\DMP\EcoMoney\EcomoneyRecolector\EcomoneyRecolector.Android\obj\Debug\120\android\src\mono\com\google\android\gms\common\moduleinstall\InstallStatusListenerImplementor.java
+D:\1-Software\Platzi\B-Projects\DMP\EcoMoney\EcomoneyRecolector\EcomoneyRecolector.Android\obj\Debug\120\res\xml\file_paths.xml

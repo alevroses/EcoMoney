@@ -18,6 +18,9 @@
   <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
   <uses-permission android:name="android.permission.ACCESS_MOCK_LOCATION" />
   <application android:label="EcomoneyRecolector.Android" android:theme="@style/MainTheme" android:debuggable="true" android:name="crc64eb0977cb6e6d9696.Activitymaps" android:allowBackup="true" android:icon="@mipmap/icon" android:extractNativeLibs="true">
+    <provider android:name="androidx.core.content.FileProvider" android:authorities="com.companyname.ecomoneyrecolector.fileprovider" android:exported="false" android:grantUriPermissions="true">
+      <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/file_paths"></meta-data>
+    </provider>
     <meta-data android:name="com.google.android.maps.v2.API_KEY" android:value="AIzaSyD07p-6HM92_eIEXTbcvQP1gNYCRhl65Bw" />
     <uses-library android:name="org.apache.http.legacy" android:required="false" />
     <activity android:configChanges="orientation|smallestScreenSize|screenLayout|screenSize|uiMode" android:icon="@mipmap/icon" android:label="EcomoneyRecolector" android:theme="@style/MainTheme" android:name="crc64661540820a3bd3d7.MainActivity" android:exported="true">

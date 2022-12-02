@@ -11,6 +11,7 @@
             <Button Text="Confirmar"
                     TextTransform="None"
                     HorizontalOptions="EndAndExpand"
+                    TextColor="Black"
                     BackgroundColor="White"
                     CornerRadius="10"
                     FontAttributes="Bold"
