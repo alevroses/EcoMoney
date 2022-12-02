@@ -45,7 +45,7 @@ namespace EcomoneyRecolector.Vista
             };
             map.Pins.Add(punto);
             await LocalizacionActual();
-            //await MapearSolicitudes();
+            await MapearSolicitudes();
         }
         public async Task LocalizacionActual()
         {
@@ -81,12 +81,13 @@ namespace EcomoneyRecolector.Vista
             }
         }
 
-        /*private async Task MapearSolicitudes()
+        private async Task MapearSolicitudes()
         {
             var funcion = new Dasignaciones();
             var parametros = new Masignaciones();
             parametros.idrecolector = IdRecolector;
             var Listasolicitudes = await funcion.MostrarclientesAsignados(parametros);
+            
             foreach (var data in Listasolicitudes)
             {
                 string coordenadas = data.Geolocalizacion;
@@ -99,7 +100,7 @@ namespace EcomoneyRecolector.Vista
                 {
                     Label = label,
                     Type = PinType.Place,
-                    Icon = (Device.RuntimePlatform == Device.Android) ? BitmapDescriptorFactory.FromBundle("pin11.png") : BitmapDescriptorFactory.FromView(new Image() { Source = "pin11.png", WidthRequest = 64, HeightRequest = 64 }),
+                    Icon = (Device.RuntimePlatform == Device.Android) ? BitmapDescriptorFactory.FromBundle("location-pin.png") : BitmapDescriptorFactory.FromView(new Image() { Source = "location-pin.png", WidthRequest = 64, HeightRequest = 64 }),
                     Position = new Position(latitud, longitud),
                     IsDraggable = true
                 };
@@ -109,7 +110,7 @@ namespace EcomoneyRecolector.Vista
 
         }
 
-        private async void btnver_Clicked(object sender, EventArgs e)
+        /*private async void btnver_Clicked(object sender, EventArgs e)
         {
             try
             {
