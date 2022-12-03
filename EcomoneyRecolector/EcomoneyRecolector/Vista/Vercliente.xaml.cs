@@ -20,13 +20,14 @@ namespace EcomoneyRecolector.Vista
         public Vercliente()
         {
             InitializeComponent();
-            //Obtederdatos();
+            Obtederdatos();
         }
-
-        /*private async void btnvolver_Clicked(object sender, EventArgs e)
+        
+        private async void btnvolver_Clicked(object sender, EventArgs e)
         {
             await Navigation.PopAsync();
         }
+
         private void Obtederdatos()
         {
             lblnombre.Text = nombre;
@@ -34,6 +35,5 @@ namespace EcomoneyRecolector.Vista
             lbldni.Text = dni;
             fotofachada.Source = foto;
         }
-        */
     }
 }

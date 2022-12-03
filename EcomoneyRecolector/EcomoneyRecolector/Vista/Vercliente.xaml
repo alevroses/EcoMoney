@@ -27,7 +27,7 @@
                        FontAttributes="Bold"
                        x:Name="lblnombre" />
                 <StackLayout Orientation="Horizontal">
-                    <Image Source="https://i.ibb.co/F5YDdV4/herramienta.png"
+                    <Image Source="https://i.postimg.cc/XYWRC2vw/location.png"
                            WidthRequest="20" />
                     <Label x:Name="lbldireccion"
                            Text="Direccion"
@@ -35,7 +35,7 @@
                            FontAttributes="Bold" />
                 </StackLayout>
                 <StackLayout Orientation="Horizontal">
-                    <Image Source="https://i.ibb.co/4Pn6c2W/patron.png"
+                    <Image Source="https://i.postimg.cc/zGjGbHqG/id-card.png"
                            WidthRequest="20" />
                     <Label Text="Identificacion"
                            FontSize="20"
