@@ -95,8 +95,8 @@ namespace EcomoneyRecolector.Vista
                 string[] separadas = coordenadas.Split(',');
                 double latitud = Convert.ToDouble(separadas[0]);
                 double longitud = Convert.ToDouble(separadas[1]);
-                Pin Puntocliente = new Pin();
-                Puntocliente = new Pin()
+                //Pin Puntocliente = new Pin();
+                punto = new Pin() //Puntocliente
                 {
                     Label = label,
                     Type = PinType.Place,
@@ -104,13 +104,11 @@ namespace EcomoneyRecolector.Vista
                     Position = new Position(latitud, longitud),
                     IsDraggable = true
                 };
-                map.Pins.Add(Puntocliente);
+                map.Pins.Add(punto); //Puntocliente
 
             }
 
         }
-
-        
 
         private async void btnver_Clicked(object sender, EventArgs e)
         {
@@ -123,7 +121,7 @@ namespace EcomoneyRecolector.Vista
                 var parametros = new Mclientes();
                 parametros.Idcliente = idcliente;
                 var lista = await funcion.MostrarclientesXid(parametros);
-                
+
                 foreach (var data in lista)
                 {
                     nombre = data.NombresApe;
@@ -144,8 +142,9 @@ namespace EcomoneyRecolector.Vista
                 await DisplayAlert("No permitido", "Accion denegada", "OK");
             }
         }
+        
 
-        /*private async void btnir_Clicked(object sender, EventArgs e)
+        private async void btnir_Clicked(object sender, EventArgs e)
         {
             try
             {
@@ -159,23 +158,20 @@ namespace EcomoneyRecolector.Vista
             {
                 await DisplayAlert("Sin coordenadas", "Seleccione un destino/ Revise que Google maps este instalado", "OK");
             }
-
-
         }
 
         private async void btnComprar_Clicked(object sender, EventArgs e)
         {
             try
             {
-
                 string titulo = map.SelectedPin.Label.ToString();
                 string[] separadas = titulo.Split('|');
                 idcliente = separadas[2];
                 idsolicitud = separadas[3];
 
-                await Eliminarcomprasincon();
+                //await Eliminarcomprasincon();
                 VMregCompras.idcliente = idcliente;
-                VMregCompras.Idsolicitud = idsolicitud;
+                //VMregCompras.Idsolicitud = idsolicitud;
                 await Navigation.PushAsync(new RegCompras());
             }
             catch (Exception)
@@ -184,7 +180,7 @@ namespace EcomoneyRecolector.Vista
                 throw;
             }
         }
-        private async Task Eliminarcomprasincon()
+        /*private async Task Eliminarcomprasincon()
         {
             var funcion = new Ddetallecompras();
             var parametros = new Mdetallecompras();

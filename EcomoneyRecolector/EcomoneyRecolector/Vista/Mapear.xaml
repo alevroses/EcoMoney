@@ -23,14 +23,18 @@
                         HorizontalOptions="EndAndExpand"
                         Margin="0,5,10,5"
                         CornerRadius="10"
-                        FontAttributes="Bold" />
+                        FontAttributes="Bold" 
+                        x:Name="btnComprar"
+                        Clicked="btnComprar_Clicked"/>
                 <Button Text="Ir"
                         TextColor="Black"
                         BackgroundColor="White"
                         HorizontalOptions="EndAndExpand"
                         Margin="0,5,10,5"
                         CornerRadius="10"
-                        FontAttributes="Bold" />
+                        FontAttributes="Bold" 
+                        x:Name="btnir"
+                        Clicked="btnir_Clicked"/>
             </StackLayout>
             
         </Grid>

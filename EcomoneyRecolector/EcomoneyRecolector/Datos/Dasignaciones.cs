@@ -55,7 +55,7 @@ namespace EcomoneyRecolector.Datos
                     Idturno = itemsoli.Idturno;
                     pclientes.Idcliente = itemsoli.Idcliente;
                 }
-                var fturno = new Dturnosrecojo(); //Dturnosrecojos
+                var fturno = new Dturnosrecojos(); //Dturnosrecojos
                 var pturno = new Mturnosrecojo();
                 pturno.Idturno = Idturno;
                 var listaturnos = await fturno.Mostrarturnosrecojo(pturno);
