@@ -28,8 +28,8 @@ namespace EcomoneyRecolector.VistaModelo
         {
             Navigation = navigation;
             DependencyService.Get<VMstatusbar>().TransparentarStatusbar();
-            /*AgregarcompraNavcommand = new Command<Mproductos>(async (p) => await NavegaragregarCompra(p));
-            Guardarcommand = new Command(async () => await Guardardetallecompra());
+            AgregarcompraNavcommand = new Command<Mproductos>(async (p) => await NavegaragregarCompra(p));
+            /*Guardarcommand = new Command(async () => await Guardardetallecompra());
             Eliminardcompracommand = new Command<Mdetallecompras>(async (d) => await EliminarDcompra(d));
             Mostrardcompracommand = new Command(async () => await MostrarDetallecompra());
             Gridprincipal = true;
@@ -68,17 +68,19 @@ namespace EcomoneyRecolector.VistaModelo
         }*/
         #endregion
         #region PROCESOS
-        private async Task Mostrarproductos()
-        {
-            var funcion = new Dproductos();
-            Listaproductos = await funcion.Mostrarproductos();
-        }
-        /*private async Task NavegaragregarCompra(Mproductos productos)
+        private async Task NavegaragregarCompra(Mproductos productos)
         {
             VMagregarcompra.Idcliente = idcliente;
             await Navigation.PushAsync(new Agregarcompra(productos));
 
         }
+
+        private async Task Mostrarproductos()
+        {
+            var funcion = new Dproductos();
+            Listaproductos = await funcion.Mostrarproductos();
+        }
+        /*
         
         public async Task<string> Sumartotal()
         {
@@ -141,8 +143,8 @@ namespace EcomoneyRecolector.VistaModelo
 
         #endregion
         #region COMANDOS
-        /*public Command AgregarcompraNavcommand { get; }
-        public Command Guardarcommand { get; }
+        public Command AgregarcompraNavcommand { get; }
+        /*public Command Guardarcommand { get; }
         public Command Eliminardcompracommand { get; }
         public Command Mostrardcompracommand { get; }*/
         #endregion
