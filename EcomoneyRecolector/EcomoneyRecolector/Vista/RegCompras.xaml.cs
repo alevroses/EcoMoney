@@ -17,7 +17,7 @@ namespace EcomoneyRecolector.Vista
         public RegCompras()
         {
             InitializeComponent();
-            BindingContext = new VMregCompras();
+            BindingContext = new VMregCompras(Navigation);
         }
     }
 }

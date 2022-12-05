@@ -1,12 +1,200 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="EcomoneyRecolector.Vista.RegCompras">
-    <ContentPage.Content>
-        <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+             x:Class="EcomoneyRecolector.Vista.RegCompras"
+             NavigationPage.HasNavigationBar="False"
+             xmlns:degrado="clr-namespace:Xamarin.Forms.PancakeView;assembly=Xamarin.Forms.PancakeView">
+    <Grid BackgroundColor="#1E1E1E">
+        <Grid  RowDefinitions="50,auto,80"
+               x:Name="Gridprincipal"
+               IsVisible="{Binding Gridprincipal}">
+            <Grid.Background>
+                <LinearGradientBrush EndPoint="0,1">
+                    <GradientStop x:Name="Gra1"
+                                  Color="#26213d"
+                                  Offset="0.1" />
+                    <GradientStop x:Name="Gra2"
+                                  Color="#191725"
+                                  Offset="1.0" />
+                </LinearGradientBrush>
+            </Grid.Background>
+            <StackLayout Grid.Row="1"
+                         x:Name="PanelGruposproductos">
+                <Grid BackgroundColor="Transparent">
+                    <CollectionView ItemsSource="{Binding Listaproductos}"
+                                    x:Name="ListaProductos">
+                        <CollectionView.ItemsLayout>
+                            <GridItemsLayout Orientation="Vertical"
+                                             Span="1"
+                                             SnapPointsType="MandatorySingle"
+                                             SnapPointsAlignment="Center" />
+                        </CollectionView.ItemsLayout>
+                        <CollectionView.ItemTemplate>
+                            <DataTemplate>
+                                <Grid RowDefinitions="*,20">
+                                    <Frame CornerRadius="15"
+                                           Margin="30"
+                                           HasShadow="False">
+                                        <Grid RowDefinitions="*,auto,50">
+                                            <Frame Grid.Row="0"
+                                                   Padding="20"
+                                                   CornerRadius="200"
+                                                   HasShadow="False"
+                                                   BackgroundColor="{Binding Color}"
+                                                   VerticalOptions="Center"
+                                                   HorizontalOptions="Center">
+                                                <Image Source="{Binding Icono}"
+                                                       Margin="20" />
+                                            </Frame>
+                                            <Label Grid.Row="1"
+                                                   Text="{Binding Descripcion}"
+                                                   VerticalOptions="Center"
+                                                   HorizontalOptions="Center"
+                                                   TextColor="#4A4A4A"
+                                                   FontAttributes="Bold"
+                                                   FontSize="50"
+                                                   HorizontalTextAlignment="Center" />
+                                            <StackLayout Grid.Row="2"
+                                                         Orientation="Horizontal"
+                                                         HorizontalOptions="Center">
+                                                <Image Source="https://i.ibb.co/d7Tf5YH/moneda-dolar.png" />
+                                                <Label Text="{Binding PreciocompraString}"
+                                                       FontSize="15"
+                                                       TextColor="Black"
+                                                       FontAttributes="Bold"
+                                                       VerticalOptions="Center" />
+                                            </StackLayout>
+                                        </Grid>
+                                        <Frame.GestureRecognizers>
+                                            <TapGestureRecognizer Command="{Binding 
+                                            Path=BindingContext.AgregarcompraNavcommand,
+                                            Source={x:Reference ListaProductos}}"
+                                                                  CommandParameter="{Binding .}" />
+                                        </Frame.GestureRecognizers>
+                                    </Frame>
+                                </Grid>
+                            </DataTemplate>
+                        </CollectionView.ItemTemplate>
+                    </CollectionView>
+                </Grid>
+            </StackLayout>
+            <degrado:PancakeView Grid.Row="2"
+                                 BackgroundColor="#1E1E1E"
+                                 CornerRadius="30,30,0,0"
+                                 x:Name="Panelcontador">
+                <StackLayout Orientation="Horizontal"
+                             VerticalOptions="CenterAndExpand"
+                             Margin="16,0,16,0">
+                    <StackLayout.GestureRecognizers>
+                        <SwipeGestureRecognizer Direction="Up"
+                                                Swiped="DeslizarPanelcontador"
+                                                Command="{Binding Mostrardcompracommand}" />
+                    </StackLayout.GestureRecognizers>
+                    <Label Text="S/."
+                           FontAttributes="Bold"
+                           FontSize="24"
+                           TextColor="White"
+                           VerticalOptions="Center" />
+                    <Frame HorizontalOptions="EndAndExpand"
+                           HeightRequest="48"
+                           WidthRequest="48"
+                           CornerRadius="24"
+                           Padding="0">
+                        <Label FontSize="16"
+                               TextColor="Black"
+                               VerticalOptions="Center"
+                               HorizontalOptions="Center"
+                               FontAttributes="Bold"
+                               x:Name="Txttotal" />
+                    </Frame>
+                </StackLayout>
+            </degrado:PancakeView>
+        </Grid>
+        <StackLayout BackgroundColor="#1E1E1E"
+                     x:Name="Paneldetallecompra"
+                     IsVisible="{Binding Paneldetallecompra}">
+            <StackLayout.GestureRecognizers>
+                <SwipeGestureRecognizer Direction="Down"
+                                        Swiped="DeslizarPaneldetallecompra" />
+            </StackLayout.GestureRecognizers>
+            <Label Text="Detalle de compra"
+                   FontSize="32"
+                   HeightRequest="120"
+                   TextColor="White"
+                   FontAttributes="Bold"
+                   Margin="20,40,0,0" />
+            <CollectionView ItemsSource="{Binding Listadetallecompras}"
+                            x:Name="Listadcompras"
+                            Margin="20,0,20,0">
+                <CollectionView.ItemTemplate>
+                    <DataTemplate>
+                        <SwipeView>
+                            <SwipeView.RightItems>
+                                <SwipeItems Mode="Reveal">
+                                    <SwipeItem Text="Eliminar"
+                                               BackgroundColor="#E83C40"
+                                               Command="{Binding 
+                                          Path=BindingContext.Eliminardcompracommand,Source={x:Reference Listadcompras}}"
+                                               CommandParameter="{Binding .}" />
+                                </SwipeItems>
+                            </SwipeView.RightItems>
+                            <SwipeView.LeftItems>
+                                <SwipeItems Mode="Reveal">
+                                    <SwipeItem Text="Eliminar"
+                                               BackgroundColor="#E83C40"
+                                               Command="{Binding 
+                                          Path=BindingContext.Eliminardcompracommand,Source={x:Reference Listadcompras}}"
+                                               CommandParameter="{Binding .}" />
+                                </SwipeItems>
+                            </SwipeView.LeftItems>
+                            <StackLayout Orientation="Horizontal"
+                                         Spacing="10">
+                                <Image Source="{Binding ProducIcono}"
+                                       WidthRequest="40"
+                                       Margin="10" />
+                                <Label Text="{Binding Cantidad}"
+                                       VerticalOptions="Center"
+                                       TextColor="White" />
+                                <Label Text="x"
+                                       TextColor="White"
+                                       VerticalOptions="Center" />
+                                <Label Text="{Binding Producto}"
+                                       VerticalOptions="Center"
+                                       TextColor="WhiteSmoke" />
+                                <Label Text="{Binding Total}"
+                                       VerticalOptions="Center"
+                                       HorizontalOptions="EndAndExpand"
+                                       HorizontalTextAlignment="End"
+                                       TextColor="Gray"
+                                       CharacterSpacing="1" />
+                            </StackLayout>
+                        </SwipeView>
+                    </DataTemplate>
+                </CollectionView.ItemTemplate>
+            </CollectionView>
+            <StackLayout Orientation="Horizontal"
+                         Margin="40,34,40,12">
+                <Label Text="Total: S/."
+                       TextColor="White"
+                       VerticalOptions="Center"
+                       FontSize="24"
+                       HorizontalOptions="StartAndExpand"
+                       FontAttributes="Bold" />
+                <Label x:Name="lblTotal"
+                       FontAttributes="Bold"
+                       FontSize="32"
+                       TextColor="White"
+                       Text="{Binding Total}"
+                       CharacterSpacing="1" />
+            </StackLayout>
+            <Button Text="Guardar"
+                    BackgroundColor="White"
+                    HorizontalOptions="Center"
+                    CornerRadius="40"
+                    FontAttributes="Bold"
+                    VerticalOptions="EndAndExpand"
+                    Margin="0,0,0,40"
+                    Command="{Binding Guardarcommand}" />
         </StackLayout>
-    </ContentPage.Content>
+    </Grid>
 </ContentPage>
