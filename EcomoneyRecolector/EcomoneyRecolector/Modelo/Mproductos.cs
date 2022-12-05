@@ -9,7 +9,7 @@ namespace EcomoneyRecolector.Modelo
         public string Descripcion { get; set; }
         public string Precioventa { get; set; }
         public string Preciocompra { get; set; }
-        //public string PreciocompraString { get; set; }
+        public string PreciocompraString { get; set; }
 
         public string Und { get; set; }
         public string Idproducto { get; set; }

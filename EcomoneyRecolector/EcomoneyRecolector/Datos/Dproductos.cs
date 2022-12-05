@@ -20,7 +20,7 @@ namespace EcomoneyRecolector.Datos
               .OnceAsync<Mproductos>()).Where(a => a.Key != "Modelo").Select(item => new Mproductos
               {
                   Preciocompra = item.Object.Preciocompra,
-                  //PreciocompraString = "Precio de compra por " + item.Object.Und + " =S/." + item.Object.Preciocompra,
+                  PreciocompraString = "Precio de compra por " + item.Object.Und + " =S/." + item.Object.Preciocompra,
                   Descripcion = item.Object.Descripcion,
                   Icono = item.Object.Icono,
                   Color = item.Object.Color,

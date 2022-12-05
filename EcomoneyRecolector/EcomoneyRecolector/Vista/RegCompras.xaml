@@ -57,7 +57,7 @@
                                             <StackLayout Grid.Row="2"
                                                          Orientation="Horizontal"
                                                          HorizontalOptions="Center">
-                                                <Image Source="https://i.ibb.co/d7Tf5YH/moneda-dolar.png" />
+                                                <Image Source="https://i.postimg.cc/RVB2L38V/money.png" />
                                                 <Label Text="{Binding PreciocompraString}"
                                                        FontSize="15"
                                                        TextColor="Black"
