@@ -31,19 +31,20 @@ namespace EcomoneyRecolector.VistaModelo
         #endregion
         #region OBJETOS
         public Mproductos Productos { get; set; }
-        /*public string Cantidadtxt
+        public string Cantidadtxt
         {
             get { return Cantidad; }
             set { SetValue(ref Cantidad, value); }
         }
+        
         public string Totaltxt
         {
             get { return Total; }
             set { SetValue(ref Total, value); }
-        }*/
+        }
         #endregion
         #region PROCESOS
-        /*private async Task Insertardetallecompra()
+        private async Task Insertardetallecompra()
         {
             CalcularTotal();
             var funcion = new Ddetallecompras();
@@ -61,6 +62,7 @@ namespace EcomoneyRecolector.VistaModelo
             await funcion.InsertarDetallecompra(parametros);
             await Navigation.PopAsync();
         }
+
         private void CalcularTotal()
         {
             if (!string.IsNullOrEmpty(Cantidadtxt))
@@ -75,7 +77,7 @@ namespace EcomoneyRecolector.VistaModelo
             {
                 Application.Current.MainPage.DisplayAlert("Error", "Ingrese un valor", "OK");
             }
-        }*/
+        }
         #endregion
         #region COMANDOS
         public Command Insertarcommand { get; }
