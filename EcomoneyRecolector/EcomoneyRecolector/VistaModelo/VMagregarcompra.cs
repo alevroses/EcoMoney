@@ -24,7 +24,7 @@ namespace EcomoneyRecolector.VistaModelo
         {
             Navigation = navigation;
             DependencyService.Get<VMstatusbar>().TransparentarStatusbar();
-            //Insertarcommand = new Command(async () => await Insertardetallecompra());
+            Insertarcommand = new Command(async () => await Insertardetallecompra());
             Productos = productos;
         }
 

@@ -44,6 +44,7 @@ namespace EcomoneyRecolector.Datos
                     Total = item.Object.Total
                 }).ToList();
         }
+        
         public async Task<string> SumarTotal(Mdetallecompras parametrosPedir)
         {
             var funcion = new Ddetallecompras();
@@ -57,6 +58,7 @@ namespace EcomoneyRecolector.Datos
             }
             return total.ToString();
         }
+
         public async Task EliDcompraSinconfirmar(Mdetallecompras parametros)
         {
             var dataEliminar = (await Constantes.firebase

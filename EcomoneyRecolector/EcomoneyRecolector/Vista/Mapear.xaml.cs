@@ -180,6 +180,7 @@ namespace EcomoneyRecolector.Vista
                 throw;
             }
         }
+        
         /*private async Task Eliminarcomprasincon()
         {
             var funcion = new Ddetallecompras();
