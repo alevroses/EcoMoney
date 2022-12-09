@@ -169,7 +169,7 @@ namespace EcomoneyRecolector.Vista
                 idcliente = separadas[2];
                 idsolicitud = separadas[3];
 
-                //await Eliminarcomprasincon();
+                await Eliminarcomprasincon();
                 VMregCompras.idcliente = idcliente;
                 //VMregCompras.Idsolicitud = idsolicitud;
                 await Navigation.PushAsync(new RegCompras());
@@ -181,12 +181,12 @@ namespace EcomoneyRecolector.Vista
             }
         }
         
-        /*private async Task Eliminarcomprasincon()
+        private async Task Eliminarcomprasincon()
         {
             var funcion = new Ddetallecompras();
             var parametros = new Mdetallecompras();
             parametros.Idcliente = idcliente;
             await funcion.EliDcompraSinconfirmar(parametros);
-        }*/
+        }
     }
 }
