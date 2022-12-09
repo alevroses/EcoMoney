@@ -15,8 +15,8 @@ namespace EcomoneyRecolector.VistaModelo
         #region VARIABLES
         public static string idcliente;
         public string identificacion;
-        /*string total;
-        bool gridprincipal;
+        string total;
+        /*bool gridprincipal;
         bool paneldetallecompra;
         public static string Idsolicitud;
         List<Mdetallecompras> listadetallecompras = new List<Mdetallecompras>();*/
@@ -35,7 +35,7 @@ namespace EcomoneyRecolector.VistaModelo
             Gridprincipal = true;
             Paneldetallecompra = false;*/
             Mostrarproductos();
-            //Sumartotal();
+            Sumartotal();
         }
 
             #endregion
@@ -45,16 +45,18 @@ namespace EcomoneyRecolector.VistaModelo
             get { return listaproductos; }
             set { SetValue(ref listaproductos, value); }
         }
-        /*public List<Mdetallecompras> Listadetallecompras
-        {
-            get { return listadetallecompras; }
-            set { SetValue(ref listadetallecompras, value); }
-        }
+
         public string Total
         {
             get { return total; }
             set { SetValue(ref total, value); }
         }
+        /*public List<Mdetallecompras> Listadetallecompras
+        {
+            get { return listadetallecompras; }
+            set { SetValue(ref listadetallecompras, value); }
+        }
+        
         public bool Gridprincipal
         {
             get { return gridprincipal; }
@@ -80,7 +82,7 @@ namespace EcomoneyRecolector.VistaModelo
             var funcion = new Dproductos();
             Listaproductos = await funcion.Mostrarproductos();
         }
-        /*
+        
         
         public async Task<string> Sumartotal()
         {
@@ -90,7 +92,7 @@ namespace EcomoneyRecolector.VistaModelo
             Total = await funcion.SumarTotal(parametros);
             return Total;
         }
-        public async Task SumartotalLabel()
+        /*public async Task SumartotalLabel()
         {
             var funcion = new Ddetallecompras();
             var parametros = new Mdetallecompras();
