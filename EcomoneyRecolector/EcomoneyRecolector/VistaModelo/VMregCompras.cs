@@ -16,10 +16,12 @@ namespace EcomoneyRecolector.VistaModelo
         public static string idcliente;
         public string identificacion;
         string total;
-        /*bool gridprincipal;
+        
+        bool gridprincipal;
         bool paneldetallecompra;
+
         public static string Idsolicitud;
-        List<Mdetallecompras> listadetallecompras = new List<Mdetallecompras>();*/
+        List<Mdetallecompras> listadetallecompras = new List<Mdetallecompras>();
         private List<Mproductos> listaproductos = new List<Mproductos>();
 
         #endregion
@@ -29,17 +31,17 @@ namespace EcomoneyRecolector.VistaModelo
             Navigation = navigation;
             DependencyService.Get<VMstatusbar>().TransparentarStatusbar();
             AgregarcompraNavcommand = new Command<Mproductos>(async (p) => await NavegaragregarCompra(p));
-            /*Guardarcommand = new Command(async () => await Guardardetallecompra());
-            Eliminardcompracommand = new Command<Mdetallecompras>(async (d) => await EliminarDcompra(d));
-            Mostrardcompracommand = new Command(async () => await MostrarDetallecompra());
+            Guardarcommand = new Command(async () => await Guardardetallecompra());
+            //Eliminardcompracommand = new Command<Mdetallecompras>(async (d) => await EliminarDcompra(d));
+            //Mostrardcompracommand = new Command(async () => await MostrarDetallecompra());
             Gridprincipal = true;
-            Paneldetallecompra = false;*/
+            Paneldetallecompra = false;
             Mostrarproductos();
             Sumartotal();
         }
 
-            #endregion
-            #region OBJETOS
+        #endregion
+        #region OBJETOS
         public List<Mproductos> Listaproductos
         {
             get { return listaproductos; }
@@ -51,7 +53,7 @@ namespace EcomoneyRecolector.VistaModelo
             get { return total; }
             set { SetValue(ref total, value); }
         }
-        /*public List<Mdetallecompras> Listadetallecompras
+        public List<Mdetallecompras> Listadetallecompras
         {
             get { return listadetallecompras; }
             set { SetValue(ref listadetallecompras, value); }
@@ -67,7 +69,7 @@ namespace EcomoneyRecolector.VistaModelo
         {
             get { return paneldetallecompra; }
             set { SetValue(ref paneldetallecompra, value); }
-        }*/
+        }
         #endregion
         #region PROCESOS
         private async Task NavegaragregarCompra(Mproductos productos)
@@ -92,6 +94,20 @@ namespace EcomoneyRecolector.VistaModelo
             Total = await funcion.SumarTotal(parametros);
             return Total;
         }
+
+        private async Task Guardardetallecompra()
+        {
+            var funcion = new Ddetallecompras();
+            var parametros = new Mdetallecompras();
+            parametros.Idcliente = idcliente;
+            await funcion.Confirmardetallecompra(parametros);
+            /*await Eliminarasignacion();
+            await Eliminarsolicitud();
+            await DisplayAlert("Registrado", "Compra guardada correctamente", "OK");
+            await Navigation.PopAsync();*/
+        }
+
+
         /*public async Task SumartotalLabel()
         {
             var funcion = new Ddetallecompras();
@@ -100,17 +116,7 @@ namespace EcomoneyRecolector.VistaModelo
             Total = await funcion.SumarTotal(parametros);
 
         }
-        private async Task Guardardetallecompra()
-        {
-            var funcion = new Ddetallecompras();
-            var parametros = new Mdetallecompras();
-            parametros.Idcliente = idcliente;
-            await funcion.Confirmardetallecompra(parametros);
-            await Eliminarasignacion();
-            await Eliminarsolicitud();
-            await DisplayAlert("Registrado", "Compra guardada correctamente", "OK");
-            await Navigation.PopAsync();
-        }
+        
         private async Task Eliminarsolicitud()
         {
             var funcion = new Dsolicitudesrecojo();
@@ -146,8 +152,8 @@ namespace EcomoneyRecolector.VistaModelo
         #endregion
         #region COMANDOS
         public Command AgregarcompraNavcommand { get; }
-        /*public Command Guardarcommand { get; }
-        public Command Eliminardcompracommand { get; }
+        public Command Guardarcommand { get; }
+        /*public Command Eliminardcompracommand { get; }
         public Command Mostrardcompracommand { get; }*/
         #endregion
     }

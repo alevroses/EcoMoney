@@ -80,6 +80,7 @@ namespace EcomoneyRecolector.Datos
             }
 
         }
+
         public async Task Confirmardetallecompra(Mdetallecompras parametros)
         {
             var data = (await Constantes.firebase
