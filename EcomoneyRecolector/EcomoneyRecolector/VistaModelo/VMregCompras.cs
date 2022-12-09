@@ -16,7 +16,6 @@ namespace EcomoneyRecolector.VistaModelo
         public static string idcliente;
         public string identificacion;
         string total;
-        
         bool gridprincipal;
         bool paneldetallecompra;
 

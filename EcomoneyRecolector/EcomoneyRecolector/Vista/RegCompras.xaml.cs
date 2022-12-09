@@ -46,6 +46,7 @@ namespace EcomoneyRecolector.Vista
         {
             await Mostrargridprincipal();
         }
+
         private async Task Mostrargridprincipal()
         {
             uint duracion = 700;
