@@ -54,7 +54,6 @@ namespace EcomoneyRecolector.Vista
                 Gridprincipal.TranslateTo(0, 0, duracion, Easing.CubicIn),
                 Paneldetallecompra.TranslateTo(0, -800, duracion, Easing.CubicIn),
                 Paneldetallecompra.FadeTo(0, duracion)
-
                 );
             Gridprincipal.IsVisible = true;
             var vistamodelo = new VMregCompras(Navigation);
