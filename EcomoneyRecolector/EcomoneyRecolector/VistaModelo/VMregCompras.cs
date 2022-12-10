@@ -31,7 +31,7 @@ namespace EcomoneyRecolector.VistaModelo
             DependencyService.Get<VMstatusbar>().TransparentarStatusbar();
             AgregarcompraNavcommand = new Command<Mproductos>(async (p) => await NavegaragregarCompra(p));
             Guardarcommand = new Command(async () => await Guardardetallecompra());
-            //Eliminardcompracommand = new Command<Mdetallecompras>(async (d) => await EliminarDcompra(d));
+            Eliminardcompracommand = new Command<Mdetallecompras>(async (d) => await EliminarDcompra(d));
             //Mostrardcompracommand = new Command(async () => await MostrarDetallecompra());
             Gridprincipal = true;
             Paneldetallecompra = false;
@@ -124,12 +124,26 @@ namespace EcomoneyRecolector.VistaModelo
             await funcion.Eliminarasignacion(parametros);
         }
 
+        private async Task EliminarDcompra(Mdetallecompras parametrosPedir)
+        {
+            var funcion = new Ddetallecompras();
+            var parametros = new Mdetallecompras();
+            parametros.Iddetallecompra = parametrosPedir.Iddetallecompra;
+            await funcion.EliminarDcompra(parametros);
+            await MostrarDetallecompra();
+            //await SumartotalLabel();
+            await Sumartotal();
+
+        }
+
         public async Task MostrarDetallecompra()
         {
             var funcion = new Ddetallecompras();
             Listadetallecompras = await funcion.MostrarDcompra(idcliente);
             //await SumartotalLabel();
         }
+
+
 
         /*public async Task SumartotalLabel()
         {
@@ -142,25 +156,15 @@ namespace EcomoneyRecolector.VistaModelo
         
         
         
-        private async Task EliminarDcompra(Mdetallecompras parametrosPedir)
-        {
-            var funcion = new Ddetallecompras();
-            var parametros = new Mdetallecompras();
-            parametros.Iddetallecompra = parametrosPedir.Iddetallecompra;
-            await funcion.EliminarDcompra(parametros);
-            await MostrarDetallecompra();
-            await SumartotalLabel();
-            await Sumartotal();
-
-        }
+        
         */
 
         #endregion
         #region COMANDOS
         public Command AgregarcompraNavcommand { get; }
         public Command Guardarcommand { get; }
-        /*public Command Eliminardcompracommand { get; }
-        public Command Mostrardcompracommand { get; }*/
+        public Command Eliminardcompracommand { get; }
+        /*public Command Mostrardcompracommand { get; }*/
         #endregion
     }
 }
