@@ -4,7 +4,7 @@
              x:Class="EcomoneyRecolector.Vista.RegCompras"
              NavigationPage.HasNavigationBar="False"
              xmlns:degrado="clr-namespace:Xamarin.Forms.PancakeView;assembly=Xamarin.Forms.PancakeView">
-    <Grid BackgroundColor="#1E1E1E">
+    <Grid BackgroundColor="#26213d">
         <Grid  RowDefinitions="50,auto,80"
                x:Name="Gridprincipal"
                IsVisible="{Binding Gridprincipal}">
@@ -79,7 +79,7 @@
                 </Grid>
             </StackLayout>
             <degrado:PancakeView Grid.Row="2"
-                                 BackgroundColor="#1E1E1E"
+                                 BackgroundColor="Black"
                                  CornerRadius="30,30,0,0"
                                  x:Name="Panelcontador">
                 <StackLayout Orientation="Horizontal"
@@ -110,7 +110,7 @@
                 </StackLayout>
             </degrado:PancakeView>
         </Grid>
-        <StackLayout BackgroundColor="#1E1E1E"
+        <StackLayout BackgroundColor="Black"
                      x:Name="Paneldetallecompra"
                      IsVisible="{Binding Paneldetallecompra}">
             <StackLayout.GestureRecognizers>
@@ -148,24 +148,26 @@
                                 </SwipeItems>
                             </SwipeView.LeftItems>
                             <StackLayout Orientation="Horizontal"
+                                         
                                          Spacing="10">
                                 <Image Source="{Binding ProducIcono}"
                                        WidthRequest="40"
                                        Margin="10" />
                                 <Label Text="{Binding Cantidad}"
                                        VerticalOptions="Center"
-                                       TextColor="White" />
+                                       TextColor="Black" />
                                 <Label Text="x"
-                                       TextColor="White"
+                                       TextColor="Black"
                                        VerticalOptions="Center" />
                                 <Label Text="{Binding Producto}"
                                        VerticalOptions="Center"
-                                       TextColor="WhiteSmoke" />
+                                       TextColor="Black" />
                                 <Label Text="{Binding Total}"
                                        VerticalOptions="Center"
                                        HorizontalOptions="EndAndExpand"
                                        HorizontalTextAlignment="End"
-                                       TextColor="Gray"
+                                       TextColor="Black"
+                                       Margin="10"
                                        CharacterSpacing="1" />
                             </StackLayout>
                         </SwipeView>

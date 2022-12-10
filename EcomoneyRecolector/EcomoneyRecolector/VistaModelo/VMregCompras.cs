@@ -32,7 +32,7 @@ namespace EcomoneyRecolector.VistaModelo
             AgregarcompraNavcommand = new Command<Mproductos>(async (p) => await NavegaragregarCompra(p));
             Guardarcommand = new Command(async () => await Guardardetallecompra());
             Eliminardcompracommand = new Command<Mdetallecompras>(async (d) => await EliminarDcompra(d));
-            //Mostrardcompracommand = new Command(async () => await MostrarDetallecompra());
+            Mostrardcompracommand = new Command(async () => await MostrarDetallecompra());
             Gridprincipal = true;
             Paneldetallecompra = false;
             Mostrarproductos();
@@ -85,8 +85,7 @@ namespace EcomoneyRecolector.VistaModelo
             var funcion = new Dproductos();
             Listaproductos = await funcion.Mostrarproductos();
         }
-        
-        
+
         public async Task<string> Sumartotal()
         {
             var funcion = new Ddetallecompras();
@@ -94,6 +93,14 @@ namespace EcomoneyRecolector.VistaModelo
             parametros.Idcliente = idcliente;
             Total = await funcion.SumarTotal(parametros);
             return Total;
+        }
+
+        public async Task SumartotalLabel()
+        {
+            var funcion = new Ddetallecompras();
+            var parametros = new Mdetallecompras();
+            parametros.Idcliente = idcliente;
+            Total = await funcion.SumarTotal(parametros);
         }
 
         private async Task Guardardetallecompra()
@@ -131,7 +138,7 @@ namespace EcomoneyRecolector.VistaModelo
             parametros.Iddetallecompra = parametrosPedir.Iddetallecompra;
             await funcion.EliminarDcompra(parametros);
             await MostrarDetallecompra();
-            //await SumartotalLabel();
+            await SumartotalLabel();
             await Sumartotal();
 
         }
@@ -140,31 +147,14 @@ namespace EcomoneyRecolector.VistaModelo
         {
             var funcion = new Ddetallecompras();
             Listadetallecompras = await funcion.MostrarDcompra(idcliente);
-            //await SumartotalLabel();
+            await SumartotalLabel();
         }
-
-
-
-        /*public async Task SumartotalLabel()
-        {
-            var funcion = new Ddetallecompras();
-            var parametros = new Mdetallecompras();
-            parametros.Idcliente = idcliente;
-            Total = await funcion.SumarTotal(parametros);
-
-        }
-        
-        
-        
-        
-        */
-
         #endregion
         #region COMANDOS
         public Command AgregarcompraNavcommand { get; }
         public Command Guardarcommand { get; }
         public Command Eliminardcompracommand { get; }
-        /*public Command Mostrardcompracommand { get; }*/
+        public Command Mostrardcompracommand { get; }
         #endregion
     }
 }
