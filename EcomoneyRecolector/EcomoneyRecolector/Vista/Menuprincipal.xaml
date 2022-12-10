@@ -55,7 +55,8 @@
                                 <Label Text="{Binding Txtcontadorasig}"
                                        FontAttributes="Bold"
                                        FontSize="15"
-                                       TextColor="White" />
+                                       TextColor="White"
+                                       x:Name="txtContador"/>
                             </StackLayout>
                         </StackLayout>
                         <Image Grid.Column="1"

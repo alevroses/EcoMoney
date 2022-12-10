@@ -18,5 +18,11 @@ namespace EcomoneyRecolector.Vista
             InitializeComponent();
             BindingContext = new VMmenuprincipal(Navigation);
         }
+
+        protected override async void OnAppearing()
+        {
+            var vistamodelo = new VMmenuprincipal(Navigation);
+            txtContador.Text = await vistamodelo.obtenerdatosRecolector();
+        }
     }
 }

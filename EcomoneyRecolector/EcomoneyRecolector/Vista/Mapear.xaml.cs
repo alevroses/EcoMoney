@@ -95,8 +95,8 @@ namespace EcomoneyRecolector.Vista
                 string[] separadas = coordenadas.Split(',');
                 double latitud = Convert.ToDouble(separadas[0]);
                 double longitud = Convert.ToDouble(separadas[1]);
-                //Pin Puntocliente = new Pin();
-                punto = new Pin() //Puntocliente
+                Pin Puntocliente = new Pin();
+                Puntocliente = new Pin() //Puntocliente
                 {
                     Label = label,
                     Type = PinType.Place,
@@ -104,7 +104,7 @@ namespace EcomoneyRecolector.Vista
                     Position = new Position(latitud, longitud),
                     IsDraggable = true
                 };
-                map.Pins.Add(punto); //Puntocliente
+                map.Pins.Add(Puntocliente); //Puntocliente
 
             }
 

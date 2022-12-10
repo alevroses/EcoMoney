@@ -51,7 +51,7 @@ namespace EcomoneyRecolector.VistaModelo
         #endregion
 
         #region PROCESOS
-        public async Task obtenerdatosRecolector() //<string>
+        public async Task<string> obtenerdatosRecolector() //<string>
         {
             try
             {
@@ -71,11 +71,11 @@ namespace EcomoneyRecolector.VistaModelo
                     break;
                 }
                 await Contarasignaciones();
-                //return Txtcontadorasig;
+                return Txtcontadorasig;
             }
             catch (Exception)
             {
-                //return Txtcontadorasig;
+                return Txtcontadorasig;
             }
         }
 
