@@ -47,16 +47,18 @@ namespace EcomoneyRecolector.VistaModelo
             set { SetValue(ref listaproductos, value); }
         }
 
-        public string Total
-        {
-            get { return total; }
-            set { SetValue(ref total, value); }
-        }
         public List<Mdetallecompras> Listadetallecompras
         {
             get { return listadetallecompras; }
             set { SetValue(ref listadetallecompras, value); }
         }
+
+        public string Total
+        {
+            get { return total; }
+            set { SetValue(ref total, value); }
+        }
+        
         
         public bool Gridprincipal
         {
@@ -122,6 +124,13 @@ namespace EcomoneyRecolector.VistaModelo
             await funcion.Eliminarasignacion(parametros);
         }
 
+        public async Task MostrarDetallecompra()
+        {
+            var funcion = new Ddetallecompras();
+            Listadetallecompras = await funcion.MostrarDcompra(idcliente);
+            //await SumartotalLabel();
+        }
+
         /*public async Task SumartotalLabel()
         {
             var funcion = new Ddetallecompras();
@@ -144,12 +153,7 @@ namespace EcomoneyRecolector.VistaModelo
             await Sumartotal();
 
         }
-        public async Task MostrarDetallecompra()
-        {
-            var funcion = new Ddetallecompras();
-            Listadetallecompras = await funcion.MostrarDcompra(idcliente);
-            await SumartotalLabel();
-        }*/
+        */
 
         #endregion
         #region COMANDOS
