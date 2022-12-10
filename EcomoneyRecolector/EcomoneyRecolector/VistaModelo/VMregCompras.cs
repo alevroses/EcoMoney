@@ -100,12 +100,27 @@ namespace EcomoneyRecolector.VistaModelo
             var parametros = new Mdetallecompras();
             parametros.Idcliente = idcliente;
             await funcion.Confirmardetallecompra(parametros);
-            /*await Eliminarasignacion();
+            await Eliminarasignacion();
             await Eliminarsolicitud();
             await DisplayAlert("Registrado", "Compra guardada correctamente", "OK");
-            await Navigation.PopAsync();*/
+            await Navigation.PopAsync();
         }
 
+        private async Task Eliminarsolicitud()
+        {
+            var funcion = new Dsolicitudesrecojo();
+            var parametros = new Msolicitudesrecojo();
+            parametros.Idsolicitud = Idsolicitud;
+            await funcion.Eliminarsolicitud(parametros);
+        }
+
+        private async Task Eliminarasignacion()
+        {
+            var funcion = new Dasignaciones();
+            var parametros = new Masignaciones();
+            parametros.idsolicitud = Idsolicitud;
+            await funcion.Eliminarasignacion(parametros);
+        }
 
         /*public async Task SumartotalLabel()
         {
@@ -116,20 +131,8 @@ namespace EcomoneyRecolector.VistaModelo
 
         }
         
-        private async Task Eliminarsolicitud()
-        {
-            var funcion = new Dsolicitudesrecojo();
-            var parametros = new Msolicitudesrecojo();
-            parametros.Idsolicitud = Idsolicitud;
-            await funcion.Eliminarsolicitud(parametros);
-        }
-        private async Task Eliminarasignacion()
-        {
-            var funcion = new Dasignaciones();
-            var parametros = new Masignaciones();
-            parametros.idsolicitud = Idsolicitud;
-            await funcion.Eliminarasignacion(parametros);
-        }
+        
+        
         private async Task EliminarDcompra(Mdetallecompras parametrosPedir)
         {
             var funcion = new Ddetallecompras();

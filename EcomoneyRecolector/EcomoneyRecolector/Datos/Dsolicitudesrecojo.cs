@@ -28,11 +28,11 @@ namespace EcomoneyRecolector.Datos
         public async Task Eliminarsolicitud(Msolicitudesrecojo parametros)
         {
             var dataEliminar = (await Constantes.firebase
-                .Child("Solicitudesrecojo")
+                .Child("Solicitudes")
                 .OnceAsync<Msolicitudesrecojo>())
                 .Where(a => a.Key == parametros.Idsolicitud)
                 .FirstOrDefault();
-            await Constantes.firebase.Child("Solicitudesrecojo")
+            await Constantes.firebase.Child("Solicitudes")
                 .Child(dataEliminar.Key).DeleteAsync();
         }
     }

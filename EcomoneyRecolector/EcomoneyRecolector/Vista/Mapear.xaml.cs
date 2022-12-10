@@ -171,7 +171,7 @@ namespace EcomoneyRecolector.Vista
 
                 await Eliminarcomprasincon();
                 VMregCompras.idcliente = idcliente;
-                //VMregCompras.Idsolicitud = idsolicitud;
+                VMregCompras.Idsolicitud = idsolicitud;
                 await Navigation.PushAsync(new RegCompras());
             }
             catch (Exception)
