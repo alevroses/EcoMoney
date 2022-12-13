@@ -64,13 +64,14 @@
                    VerticalOptions="Center"
                    HeightRequest="200"/>
             <Label Text="Solicitud enviada ¡Gracias! por cuidar nuestro planeta Tierra"
+                   Margin="20"
                    HorizontalTextAlignment="Center"
-                   FontSize="25"
+                   FontSize="18"
                    TextColor="White"/>
             <Button Text="Aceptar"
                     FontAttributes="Bold"
                     BackgroundColor="Black"
-                    TextColor="#813fdf"
+                    TextColor="White"
                     CornerRadius="15"
                     HorizontalOptions="Center"
                     Command="{Binding Volvercommand}"/>

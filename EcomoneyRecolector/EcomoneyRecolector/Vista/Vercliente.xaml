@@ -18,6 +18,7 @@
             <StackLayout Margin="10,30,10,10">
                 <Button Text="Volver"
                         CornerRadius="15"
+                        TextColor="Black"
                         BackgroundColor="White"
                         HorizontalOptions="EndAndExpand"
                         x:Name="btnvolver"

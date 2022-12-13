@@ -158,13 +158,13 @@
                                            TextColor="{Binding Color}"
                                            FontSize="18" />
                                     <Label Text="{Binding Preciocompra}"
-                                           TextColor="Aqua" />
+                                           TextColor="White" />
                                 </StackLayout>
                                 <Label Text="{Binding Total}"
                                        TextColor="White"
                                        HorizontalOptions="EndAndExpand"
                                        VerticalOptions="Center"
-                                       FontSize="20" />
+                                       FontSize="16" />
                             </StackLayout>
                         </Frame>
                         <BoxView BackgroundColor="Aqua"

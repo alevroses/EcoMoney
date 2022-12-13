@@ -42,7 +42,8 @@
                                                TextColor="{Binding Color}"
                                                FontSize="18" />
                                         <Label Text="{Binding Preciocompra}"
-                                               TextColor="Aqua" />
+                                               TextColor="White"
+                                               FontSize="14" />
                                         <Label Text="{Binding Fecha}"
                                                TextColor="White" />
                                     </StackLayout>
@@ -55,7 +56,7 @@
                             </Frame>
                             <BoxView BackgroundColor="Aqua"
                                      Grid.Row="1"
-                                     Grid.Column="1" />
+                                     Grid.Column="1"/>
                         </Grid>
                     </DataTemplate>
                 </CollectionView.ItemTemplate>

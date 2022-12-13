@@ -148,25 +148,25 @@
                                 </SwipeItems>
                             </SwipeView.LeftItems>
                             <StackLayout Orientation="Horizontal"
-                                         
+                                         BackgroundColor="#191725"
                                          Spacing="10">
                                 <Image Source="{Binding ProducIcono}"
                                        WidthRequest="40"
                                        Margin="10" />
                                 <Label Text="{Binding Cantidad}"
                                        VerticalOptions="Center"
-                                       TextColor="Black" />
+                                       TextColor="White" />
                                 <Label Text="x"
-                                       TextColor="Black"
+                                       TextColor="White"
                                        VerticalOptions="Center" />
                                 <Label Text="{Binding Producto}"
                                        VerticalOptions="Center"
-                                       TextColor="Black" />
+                                       TextColor="White" />
                                 <Label Text="{Binding Total}"
                                        VerticalOptions="Center"
                                        HorizontalOptions="EndAndExpand"
                                        HorizontalTextAlignment="End"
-                                       TextColor="Black"
+                                       TextColor="White"
                                        Margin="10"
                                        CharacterSpacing="1" />
                             </StackLayout>
@@ -190,6 +190,7 @@
                        CharacterSpacing="1" />
             </StackLayout>
             <Button Text="Guardar"
+                    TextColor="Black"
                     BackgroundColor="White"
                     HorizontalOptions="Center"
                     CornerRadius="40"
