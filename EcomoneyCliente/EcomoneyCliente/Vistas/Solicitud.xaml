@@ -29,7 +29,7 @@
             </DatePicker>
             <StackLayout Orientation="Horizontal"
                          HorizontalOptions="Center">
-                <Label Text="Entre a las"
+                <Label Text="Entre las"
                        FontAttributes="Bold"
                        HorizontalOptions="Center"
                        VerticalOptions="Center"
