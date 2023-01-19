@@ -12,7 +12,7 @@ namespace EcomoneyRecolector
         {
             InitializeComponent();
 
-            MainPage = new NavigationPage(new Login());
+            MainPage = new NavigationPage(new RegCompras());
         }
 
         protected override void OnStart()
