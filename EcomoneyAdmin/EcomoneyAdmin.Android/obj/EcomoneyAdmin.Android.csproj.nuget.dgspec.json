@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\1-Software\\Platzi\\B-Projects\\DMP\\EcoMoney\\EcomoneyAdmin\\EcomoneyAdmin.Android\\EcomoneyAdmin.Android.csproj": {}
+    "D:\\1-Learn\\Projects\\DMP\\EcoMoney\\EcomoneyAdmin\\EcomoneyAdmin.Android\\EcomoneyAdmin.Android.csproj": {}
   },
   "projects": {
-    "D:\\1-Software\\Platzi\\B-Projects\\DMP\\EcoMoney\\EcomoneyAdmin\\EcomoneyAdmin.Android\\EcomoneyAdmin.Android.csproj": {
+    "D:\\1-Learn\\Projects\\DMP\\EcoMoney\\EcomoneyAdmin\\EcomoneyAdmin.Android\\EcomoneyAdmin.Android.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\1-Software\\Platzi\\B-Projects\\DMP\\EcoMoney\\EcomoneyAdmin\\EcomoneyAdmin.Android\\EcomoneyAdmin.Android.csproj",
+        "projectUniqueName": "D:\\1-Learn\\Projects\\DMP\\EcoMoney\\EcomoneyAdmin\\EcomoneyAdmin.Android\\EcomoneyAdmin.Android.csproj",
         "projectName": "EcomoneyAdmin.Android",
-        "projectPath": "D:\\1-Software\\Platzi\\B-Projects\\DMP\\EcoMoney\\EcomoneyAdmin\\EcomoneyAdmin.Android\\EcomoneyAdmin.Android.csproj",
+        "projectPath": "D:\\1-Learn\\Projects\\DMP\\EcoMoney\\EcomoneyAdmin\\EcomoneyAdmin.Android\\EcomoneyAdmin.Android.csproj",
         "packagesPath": "C:\\Users\\aleVR\\.nuget\\packages\\",
-        "outputPath": "D:\\1-Software\\Platzi\\B-Projects\\DMP\\EcoMoney\\EcomoneyAdmin\\EcomoneyAdmin.Android\\obj\\",
+        "outputPath": "D:\\1-Learn\\Projects\\DMP\\EcoMoney\\EcomoneyAdmin\\EcomoneyAdmin.Android\\obj\\",
         "projectStyle": "PackageReference",
         "skipContentFileWrite": true,
         "fallbackFolders": [
@@ -31,8 +31,8 @@
         "frameworks": {
           "monoandroid12.0": {
             "projectReferences": {
-              "D:\\1-Software\\Platzi\\B-Projects\\DMP\\EcoMoney\\EcomoneyAdmin\\EcomoneyAdmin\\EcomoneyAdmin.csproj": {
-                "projectPath": "D:\\1-Software\\Platzi\\B-Projects\\DMP\\EcoMoney\\EcomoneyAdmin\\EcomoneyAdmin\\EcomoneyAdmin.csproj"
+              "D:\\1-Learn\\Projects\\DMP\\EcoMoney\\EcomoneyAdmin\\EcomoneyAdmin\\EcomoneyAdmin.csproj": {
+                "projectPath": "D:\\1-Learn\\Projects\\DMP\\EcoMoney\\EcomoneyAdmin\\EcomoneyAdmin\\EcomoneyAdmin.csproj"
               }
             }
           }
@@ -65,14 +65,14 @@
         }
       }
     },
-    "D:\\1-Software\\Platzi\\B-Projects\\DMP\\EcoMoney\\EcomoneyAdmin\\EcomoneyAdmin\\EcomoneyAdmin.csproj": {
+    "D:\\1-Learn\\Projects\\DMP\\EcoMoney\\EcomoneyAdmin\\EcomoneyAdmin\\EcomoneyAdmin.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\1-Software\\Platzi\\B-Projects\\DMP\\EcoMoney\\EcomoneyAdmin\\EcomoneyAdmin\\EcomoneyAdmin.csproj",
+        "projectUniqueName": "D:\\1-Learn\\Projects\\DMP\\EcoMoney\\EcomoneyAdmin\\EcomoneyAdmin\\EcomoneyAdmin.csproj",
         "projectName": "EcomoneyAdmin",
-        "projectPath": "D:\\1-Software\\Platzi\\B-Projects\\DMP\\EcoMoney\\EcomoneyAdmin\\EcomoneyAdmin\\EcomoneyAdmin.csproj",
+        "projectPath": "D:\\1-Learn\\Projects\\DMP\\EcoMoney\\EcomoneyAdmin\\EcomoneyAdmin\\EcomoneyAdmin.csproj",
         "packagesPath": "C:\\Users\\aleVR\\.nuget\\packages\\",
-        "outputPath": "D:\\1-Software\\Platzi\\B-Projects\\DMP\\EcoMoney\\EcomoneyAdmin\\EcomoneyAdmin\\obj\\",
+        "outputPath": "D:\\1-Learn\\Projects\\DMP\\EcoMoney\\EcomoneyAdmin\\EcomoneyAdmin\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

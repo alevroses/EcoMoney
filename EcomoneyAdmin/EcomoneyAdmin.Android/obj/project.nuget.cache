@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "GXR68dG8lTZDQ3QGhrx6oRR9opRCw+llzjfTogMo/tpqWanPuN1LMoOwfMpS4Lg01IsDUUjeuS+2ZNPXmv6YkA==",
+  "dgSpecHash": "cNNvQfBgx7m0rJWoSWMsKVTgHzNa9ZBGQ+6XtmXzYzKSaRRczjtTjARC6mYU6gHVwnlS3cMfCuVXW0Tfrzjvpw==",
   "success": true,
-  "projectFilePath": "D:\\1-Software\\Platzi\\B-Projects\\DMP\\EcoMoney\\EcomoneyAdmin\\EcomoneyAdmin.Android\\EcomoneyAdmin.Android.csproj",
+  "projectFilePath": "D:\\1-Learn\\Projects\\DMP\\EcoMoney\\EcomoneyAdmin\\EcomoneyAdmin.Android\\EcomoneyAdmin.Android.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\aleVR\\.nuget\\packages\\firebaseauthentication.net\\3.7.2\\firebaseauthentication.net.3.7.2.nupkg.sha512",
     "C:\\Users\\aleVR\\.nuget\\packages\\firebasedatabase.net\\4.1.0\\firebasedatabase.net.4.1.0.nupkg.sha512",

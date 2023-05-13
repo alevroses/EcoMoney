@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "uDDSmmbwu+V8x1dX2tO6rhqzCQovp9U1oVLDC6WuUI17raKRWWyLCicP3wRnnJtXWYRDUFbOmGynL/wXziEI8g==",
+  "dgSpecHash": "LOUniBjxFUb17bb+n9D9xEIStwOHFFFEBKXlC3hcs3dBsj2zZ8CrKQvoerVtcteLcIbF3ApKehQXu4X9pT7MXA==",
   "success": true,
-  "projectFilePath": "D:\\1-Software\\Platzi\\B-Projects\\DMP\\EcoMoney\\EcomoneyRecolector\\EcomoneyRecolector.Android\\EcomoneyRecolector.Android.csproj",
+  "projectFilePath": "D:\\1-Learn\\Projects\\DMP\\EcoMoney\\EcomoneyRecolector\\EcomoneyRecolector.Android\\EcomoneyRecolector.Android.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\aleVR\\.nuget\\packages\\acr.userdialogs\\7.1.0.514\\acr.userdialogs.7.1.0.514.nupkg.sha512",
     "C:\\Users\\aleVR\\.nuget\\packages\\andhud\\1.4.2\\andhud.1.4.2.nupkg.sha512",

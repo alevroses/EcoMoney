@@ -6421,11 +6421,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\1-Software\\Platzi\\B-Projects\\DMP\\EcoMoney\\EcomoneyAdmin\\EcomoneyAdmin.iOS\\EcomoneyAdmin.iOS.csproj",
+      "projectUniqueName": "D:\\1-Learn\\Projects\\DMP\\EcoMoney\\EcomoneyAdmin\\EcomoneyAdmin.iOS\\EcomoneyAdmin.iOS.csproj",
       "projectName": "EcomoneyAdmin.iOS",
-      "projectPath": "D:\\1-Software\\Platzi\\B-Projects\\DMP\\EcoMoney\\EcomoneyAdmin\\EcomoneyAdmin.iOS\\EcomoneyAdmin.iOS.csproj",
+      "projectPath": "D:\\1-Learn\\Projects\\DMP\\EcoMoney\\EcomoneyAdmin\\EcomoneyAdmin.iOS\\EcomoneyAdmin.iOS.csproj",
       "packagesPath": "C:\\Users\\aleVR\\.nuget\\packages\\",
-      "outputPath": "D:\\1-Software\\Platzi\\B-Projects\\DMP\\EcoMoney\\EcomoneyAdmin\\EcomoneyAdmin.iOS\\obj\\",
+      "outputPath": "D:\\1-Learn\\Projects\\DMP\\EcoMoney\\EcomoneyAdmin\\EcomoneyAdmin.iOS\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "fallbackFolders": [
@@ -6445,8 +6445,8 @@
       "frameworks": {
         "xamarinios10": {
           "projectReferences": {
-            "D:\\1-Software\\Platzi\\B-Projects\\DMP\\EcoMoney\\EcomoneyAdmin\\EcomoneyAdmin\\EcomoneyAdmin.csproj": {
-              "projectPath": "D:\\1-Software\\Platzi\\B-Projects\\DMP\\EcoMoney\\EcomoneyAdmin\\EcomoneyAdmin\\EcomoneyAdmin.csproj"
+            "D:\\1-Learn\\Projects\\DMP\\EcoMoney\\EcomoneyAdmin\\EcomoneyAdmin\\EcomoneyAdmin.csproj": {
+              "projectPath": "D:\\1-Learn\\Projects\\DMP\\EcoMoney\\EcomoneyAdmin\\EcomoneyAdmin\\EcomoneyAdmin.csproj"
             }
           }
         }

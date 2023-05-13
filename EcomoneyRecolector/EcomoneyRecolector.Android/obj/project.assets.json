@@ -8069,11 +8069,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\1-Software\\Platzi\\B-Projects\\DMP\\EcoMoney\\EcomoneyRecolector\\EcomoneyRecolector.Android\\EcomoneyRecolector.Android.csproj",
+      "projectUniqueName": "D:\\1-Learn\\Projects\\DMP\\EcoMoney\\EcomoneyRecolector\\EcomoneyRecolector.Android\\EcomoneyRecolector.Android.csproj",
       "projectName": "EcomoneyRecolector.Android",
-      "projectPath": "D:\\1-Software\\Platzi\\B-Projects\\DMP\\EcoMoney\\EcomoneyRecolector\\EcomoneyRecolector.Android\\EcomoneyRecolector.Android.csproj",
+      "projectPath": "D:\\1-Learn\\Projects\\DMP\\EcoMoney\\EcomoneyRecolector\\EcomoneyRecolector.Android\\EcomoneyRecolector.Android.csproj",
       "packagesPath": "C:\\Users\\aleVR\\.nuget\\packages\\",
-      "outputPath": "D:\\1-Software\\Platzi\\B-Projects\\DMP\\EcoMoney\\EcomoneyRecolector\\EcomoneyRecolector.Android\\obj\\",
+      "outputPath": "D:\\1-Learn\\Projects\\DMP\\EcoMoney\\EcomoneyRecolector\\EcomoneyRecolector.Android\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "fallbackFolders": [
@@ -8093,8 +8093,8 @@
       "frameworks": {
         "monoandroid12.0": {
           "projectReferences": {
-            "D:\\1-Software\\Platzi\\B-Projects\\DMP\\EcoMoney\\EcomoneyRecolector\\EcomoneyRecolector\\EcomoneyRecolector.csproj": {
-              "projectPath": "D:\\1-Software\\Platzi\\B-Projects\\DMP\\EcoMoney\\EcomoneyRecolector\\EcomoneyRecolector\\EcomoneyRecolector.csproj"
+            "D:\\1-Learn\\Projects\\DMP\\EcoMoney\\EcomoneyRecolector\\EcomoneyRecolector\\EcomoneyRecolector.csproj": {
+              "projectPath": "D:\\1-Learn\\Projects\\DMP\\EcoMoney\\EcomoneyRecolector\\EcomoneyRecolector\\EcomoneyRecolector.csproj"
             }
           }
         }

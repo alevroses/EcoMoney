@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "cSqc8Cd0jpAVN/dFr0qrepfjIhKPDNBaSu1Kiiw68YnrFXryP3kRgcQlYchC7gwPanBXnk7bwJJoU5qHnA8BuQ==",
+  "dgSpecHash": "dc7Yff84ck08XSbH/JoiFCDPxLgclC2O/LKOIbQEzevv31vbFIjQmL+y1UEYvR5mqgHL7tZRtT1Tdjm2IqNalg==",
   "success": true,
-  "projectFilePath": "D:\\1-Software\\Platzi\\B-Projects\\DMP\\EcoMoney\\EcomoneyRecolector\\EcomoneyRecolector\\EcomoneyRecolector.csproj",
+  "projectFilePath": "D:\\1-Learn\\Projects\\DMP\\EcoMoney\\EcomoneyRecolector\\EcomoneyRecolector\\EcomoneyRecolector.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\aleVR\\.nuget\\packages\\acr.userdialogs\\7.1.0.514\\acr.userdialogs.7.1.0.514.nupkg.sha512",
     "C:\\Users\\aleVR\\.nuget\\packages\\com.airbnb.xamarin.forms.lottie\\4.0.10\\com.airbnb.xamarin.forms.lottie.4.0.10.nupkg.sha512",

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\1-Software\\Platzi\\B-Projects\\DMP\\EcoMoney\\EcomoneyRecolector\\EcomoneyRecolector.iOS\\EcomoneyRecolector.iOS.csproj": {}
+    "D:\\1-Learn\\Projects\\DMP\\EcoMoney\\EcomoneyRecolector\\EcomoneyRecolector.iOS\\EcomoneyRecolector.iOS.csproj": {}
   },
   "projects": {
-    "D:\\1-Software\\Platzi\\B-Projects\\DMP\\EcoMoney\\EcomoneyRecolector\\EcomoneyRecolector.iOS\\EcomoneyRecolector.iOS.csproj": {
+    "D:\\1-Learn\\Projects\\DMP\\EcoMoney\\EcomoneyRecolector\\EcomoneyRecolector.iOS\\EcomoneyRecolector.iOS.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\1-Software\\Platzi\\B-Projects\\DMP\\EcoMoney\\EcomoneyRecolector\\EcomoneyRecolector.iOS\\EcomoneyRecolector.iOS.csproj",
+        "projectUniqueName": "D:\\1-Learn\\Projects\\DMP\\EcoMoney\\EcomoneyRecolector\\EcomoneyRecolector.iOS\\EcomoneyRecolector.iOS.csproj",
         "projectName": "EcomoneyRecolector.iOS",
-        "projectPath": "D:\\1-Software\\Platzi\\B-Projects\\DMP\\EcoMoney\\EcomoneyRecolector\\EcomoneyRecolector.iOS\\EcomoneyRecolector.iOS.csproj",
+        "projectPath": "D:\\1-Learn\\Projects\\DMP\\EcoMoney\\EcomoneyRecolector\\EcomoneyRecolector.iOS\\EcomoneyRecolector.iOS.csproj",
         "packagesPath": "C:\\Users\\aleVR\\.nuget\\packages\\",
-        "outputPath": "D:\\1-Software\\Platzi\\B-Projects\\DMP\\EcoMoney\\EcomoneyRecolector\\EcomoneyRecolector.iOS\\obj\\",
+        "outputPath": "D:\\1-Learn\\Projects\\DMP\\EcoMoney\\EcomoneyRecolector\\EcomoneyRecolector.iOS\\obj\\",
         "projectStyle": "PackageReference",
         "skipContentFileWrite": true,
         "fallbackFolders": [
@@ -31,8 +31,8 @@
         "frameworks": {
           "xamarinios10": {
             "projectReferences": {
-              "D:\\1-Software\\Platzi\\B-Projects\\DMP\\EcoMoney\\EcomoneyRecolector\\EcomoneyRecolector\\EcomoneyRecolector.csproj": {
-                "projectPath": "D:\\1-Software\\Platzi\\B-Projects\\DMP\\EcoMoney\\EcomoneyRecolector\\EcomoneyRecolector\\EcomoneyRecolector.csproj"
+              "D:\\1-Learn\\Projects\\DMP\\EcoMoney\\EcomoneyRecolector\\EcomoneyRecolector\\EcomoneyRecolector.csproj": {
+                "projectPath": "D:\\1-Learn\\Projects\\DMP\\EcoMoney\\EcomoneyRecolector\\EcomoneyRecolector\\EcomoneyRecolector.csproj"
               }
             }
           }
@@ -108,14 +108,14 @@
         }
       }
     },
-    "D:\\1-Software\\Platzi\\B-Projects\\DMP\\EcoMoney\\EcomoneyRecolector\\EcomoneyRecolector\\EcomoneyRecolector.csproj": {
+    "D:\\1-Learn\\Projects\\DMP\\EcoMoney\\EcomoneyRecolector\\EcomoneyRecolector\\EcomoneyRecolector.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\1-Software\\Platzi\\B-Projects\\DMP\\EcoMoney\\EcomoneyRecolector\\EcomoneyRecolector\\EcomoneyRecolector.csproj",
+        "projectUniqueName": "D:\\1-Learn\\Projects\\DMP\\EcoMoney\\EcomoneyRecolector\\EcomoneyRecolector\\EcomoneyRecolector.csproj",
         "projectName": "EcomoneyRecolector",
-        "projectPath": "D:\\1-Software\\Platzi\\B-Projects\\DMP\\EcoMoney\\EcomoneyRecolector\\EcomoneyRecolector\\EcomoneyRecolector.csproj",
+        "projectPath": "D:\\1-Learn\\Projects\\DMP\\EcoMoney\\EcomoneyRecolector\\EcomoneyRecolector\\EcomoneyRecolector.csproj",
         "packagesPath": "C:\\Users\\aleVR\\.nuget\\packages\\",
-        "outputPath": "D:\\1-Software\\Platzi\\B-Projects\\DMP\\EcoMoney\\EcomoneyRecolector\\EcomoneyRecolector\\obj\\",
+        "outputPath": "D:\\1-Learn\\Projects\\DMP\\EcoMoney\\EcomoneyRecolector\\EcomoneyRecolector\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
